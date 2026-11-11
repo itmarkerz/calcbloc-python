@@ -4,14 +4,15 @@ build-backend = "hatchling.build"
 
 [project]
 name = "calcbloc"
-dynamic = ["version"]
+dynamic = ["version", "readme"]
 description = "Income tax brackets, social security rates and payroll tax tables for 2026, offline or via the CalcBloc tax tables API."
-readme = "README.md"
+# readme: README.md with utm_medium=pypi on its links, generated at build time by hatch_build.py.
 requires-python = ">=3.9"
 # Code: MIT. Bundled tax table data: CC BY 4.0 (see DATA_LICENSE.md).
 license = "MIT AND CC-BY-4.0"
 license-files = ["LICENSE", "DATA_LICENSE.md"]
-authors = [{ name = "CalcBloc", email = "hello@calcbloc.com" }]
+authors = [{ name = "itmarkerz technologies", email = "hello@calcbloc.com" }]
+maintainers = [{ name = "itmarkerz technologies", email = "hello@calcbloc.com" }]
 keywords = [
     "tax",
     "income tax brackets",
@@ -62,6 +63,9 @@ Changelog = "https://github.com/itmarkerz/calcbloc-python/blob/main/CHANGELOG.md
 [tool.hatch.version]
 path = "src/calcbloc/_version.py"
 
+[tool.hatch.metadata.hooks.custom]
+path = "hatch_build.py"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/calcbloc"]
 
@@ -75,6 +79,7 @@ include = [
     "LICENSE",
     "DATA_LICENSE.md",
     "pyproject.toml",
+    "hatch_build.py",
 ]
 
 [tool.pytest.ini_options]

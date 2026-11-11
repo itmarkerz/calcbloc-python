@@ -228,6 +228,8 @@ Upgrade the package to refresh the bundled snapshot, or call the API when you ne
 
 ## Data licence and attribution
 
+Copyright (c) 2026 itmarkerz technologies. CalcBloc is a product of itmarkerz technologies.
+
 * **Code**: MIT licence (see [LICENSE](https://github.com/itmarkerz/calcbloc-python/blob/main/LICENSE)).
 * **Data** (the bundled tables and everything the API returns): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
   (see [DATA_LICENSE.md](https://github.com/itmarkerz/calcbloc-python/blob/main/DATA_LICENSE.md)).
