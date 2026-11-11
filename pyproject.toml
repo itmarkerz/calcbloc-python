@@ -1,0 +1,82 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "calcbloc"
+dynamic = ["version"]
+description = "Income tax brackets, social security rates and payroll tax tables for 2026, offline or via the CalcBloc tax tables API."
+readme = "README.md"
+requires-python = ">=3.9"
+# Code: MIT. Bundled tax table data: CC BY 4.0 (see DATA_LICENSE.md).
+license = "MIT AND CC-BY-4.0"
+license-files = ["LICENSE", "DATA_LICENSE.md"]
+authors = [{ name = "CalcBloc", email = "hello@calcbloc.com" }]
+keywords = [
+    "tax",
+    "income tax brackets",
+    "tax tables",
+    "tax tables 2026",
+    "tax brackets 2026",
+    "social security rates",
+    "payroll tax",
+    "employer cost",
+    "take-home pay",
+    "net salary",
+    "salary calculator",
+    "tax api",
+    "payroll",
+    "calcbloc",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://calcbloc.com"
+Documentation = "https://calcbloc.com/developers"
+Data = "https://calcbloc.com/data"
+Source = "https://github.com/itmarkerz/calcbloc-python"
+Issues = "https://github.com/itmarkerz/calcbloc-python/issues"
+Changelog = "https://github.com/itmarkerz/calcbloc-python/blob/main/CHANGELOG.md"
+
+[tool.hatch.version]
+path = "src/calcbloc/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/calcbloc"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/calcbloc",
+    "tests",
+    "scripts/sync_tables.py",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "DATA_LICENSE.md",
+    "pyproject.toml",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

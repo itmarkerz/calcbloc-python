@@ -1,0 +1,317 @@
+# calcbloc: income tax brackets, social security rates and tax tables for Python
+
+[![PyPI](https://img.shields.io/pypi/v/calcbloc.svg)](https://pypi.org/project/calcbloc/)
+[![Python versions](https://img.shields.io/pypi/pyversions/calcbloc.svg)](https://pypi.org/project/calcbloc/)
+[![Tests](https://github.com/itmarkerz/calcbloc-python/actions/workflows/tests.yml/badge.svg)](https://github.com/itmarkerz/calcbloc-python/actions/workflows/tests.yml)
+[![Code licence: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](https://github.com/itmarkerz/calcbloc-python/blob/main/LICENSE)
+[![Data licence: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-green.svg)](https://calcbloc.com/data)
+
+Official 2026 tax tables in Python: income tax brackets, social security and payroll contribution rates,
+thresholds and allowances for the US, UK, Canada, Australia, much of Europe and more. Every figure carries
+its official source and the date it was checked.
+
+`calcbloc` gives you two ways in:
+
+* **Offline tables.** The CalcBloc open dataset ([calcbloc.com/data](https://calcbloc.com/data)) ships inside the
+  package. Load a country's tax tables with no network, no API key and no rate limit.
+* **A typed API client.** `calcbloc.Client` wraps the [CalcBloc tax tables API](https://calcbloc.com/developers):
+  the latest tables (JSON or CSV), plus take-home pay, employer cost and two-country salary comparisons
+  computed by the same engines as the calculators on calcbloc.com.
+
+Pure Python, Python 3.9+, no runtime dependencies (the client uses `urllib` from the standard library),
+fully typed (`py.typed`).
+
+## Install
+
+```bash
+pip install calcbloc
+```
+
+> **Not yet published.** The package is not on PyPI yet. Until it is, install from a clone:
+> `pip install .` in the repository root.
+
+## Three examples
+
+All output below is real, produced from the data bundled with this version.
+
+### 1. US federal income tax brackets for 2026
+
+```python
+from calcbloc import tables, tax_from_bands
+
+us = tables.load("us", "2026")
+single = tables.section(us, "federal-income-tax-single")
+print(single["title"], "|", single["basis"])
+for band in single["rows"]:
+    span = f"${band['from']:,} to ${band['to']:,}" if band["to"] is not None else f"over ${band['from']:,}"
+    print(f"{band['rate']:>4.0%}  {span}")
+
+print(tax_from_bands(single, 75_000))   # federal income tax on $75,000 of taxable income
+print(single["source"]["url"])
+```
+
+```text
+Federal income tax brackets: Single | Taxable income, per year
+ 10%  $0 to $12,400
+ 12%  $12,400 to $50,400
+ 22%  $50,400 to $105,700
+ 24%  $105,700 to $201,775
+ 32%  $201,775 to $256,225
+ 35%  $256,225 to $640,600
+ 37%  over $640,600
+11212.0
+https://www.irs.gov/pub/irs-drop/rp-25-32.pdf
+```
+
+The result matches the IRS rate schedule in Rev. Proc. 2025-32: $5,800 plus 22% of the excess over $50,400.
+
+### 2. Ireland's Universal Social Charge, band by band
+
+```python
+from calcbloc import band_breakdown, tables, tax_from_bands
+
+usc = tables.section(tables.load("ireland", "2026"), "usc")
+for band in band_breakdown(usc, 50_000):
+    print(f"{band.rate:.1%} on EUR {band.amount:,.2f} = EUR {band.tax:,.2f}")
+print(round(tax_from_bands(usc, 50_000), 2))
+```
+
+```text
+0.5% on EUR 12,012.00 = EUR 60.06
+2.0% on EUR 16,688.00 = EUR 333.76
+3.0% on EUR 21,300.00 = EUR 639.00
+8.0% on EUR 0.00 = EUR 0.00
+1032.82
+```
+
+This is Revenue's own worked example (Sadhbh, EUR 50,000) from
+[Calculating your USC](https://www.revenue.ie/en/jobs-and-pensions/usc/calculating-usc.aspx), to the cent.
+
+### 3. German social security rates, with their sources
+
+Every table also has a flat `rows` list (the same rows as the CSV download), each with its own tax year,
+effective dates, official source URL and retrieval date:
+
+```python
+from calcbloc import tables
+
+de = tables.load("germany")
+for row in de["rows"]:
+    if row["group"] == "employee" and row["unit"] == "rate":
+        print(f"{row['rate']:6.2%}  {row['section']}: {row['label']}")
+
+pension = next(r for r in de["rows"] if r["section_id"] == "pension-insurance")
+print(pension["source_url"], pension["retrieved_at"])
+```
+
+```text
+18.60%  Pension insurance (Rentenversicherung): Contribution rate (employee and employer each pay half)
+ 2.60%  Unemployment insurance (Arbeitslosenversicherung): Contribution rate (employee and employer each pay half)
+14.60%  Health insurance (Krankenversicherung): General contribution rate (employee and employer each pay half)
+ 2.90%  Health insurance (Krankenversicherung): Average additional contribution rate (Zusatzbeitrag; each fund sets its own, shared equally)
+ 3.60%  Long-term care insurance (Pflegeversicherung): Contribution rate (employee and employer each pay half; see Saxony below)
+ 0.60%  Long-term care insurance (Pflegeversicherung): Surcharge for childless members (employee only)
+ 0.25%  Long-term care insurance (Pflegeversicherung): Reduction per child (employee share)
+ 1.00%  Long-term care insurance (Pflegeversicherung): Saxony: extra employee share (employer pays correspondingly less)
+https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html 2026-10-17
+```
+
+## Offline tables
+
+```python
+from calcbloc import tables
+
+tables.list_countries()              # ['us', 'uk', 'australia', ...] from the bundled manifest
+tables.years("uk")                   # ['2026-27', '2025-26'], current year first
+tables.regions("canada")             # [{'code': 'ab', 'name': 'Alberta', 'slug': 'alberta'}, ...]
+tables.load("uk")                    # current tax year
+tables.load("uk", "2025-26", region="scotland")
+tables.load("us", 2026, region="california")   # region by code or slug
+tables.manifest()                    # countries, years, regions, page and API URLs, sources
+tables.data_date()                   # when the bundled data was generated
+```
+
+A table has the same shape as the API's `/api/v1/tax-tables/{country}/{year}` response:
+
+* `sections`: titled groups such as income tax bands, employee and employer contributions. `kind` is `"bands"`
+  (rows with `from`, `to`, `rate`) or `"values"` (rows with `label`, `value`, `unit`). Each section has a
+  `source` (title, URL, retrieval date) and usually a `basis` saying what the figures apply to.
+* `rows`: every band and value as a flat record with `source_url`, `retrieved_at`, `effective_from`,
+  `effective_to` and `status` (`verified`, `under_review` or `not_applicable`).
+* `sources`, `effectiveFrom`, `effectiveTo`, `status`, `underReview`, `pageUrl` and `attribution`.
+
+Rates are decimals (`0.2` is 20%). Money is in the country's currency, per year unless a label says
+otherwise. A regional table (US state, Canadian province, Scotland, a Swiss canton...) holds the regional
+figures only. Unknown countries, years or regions raise `calcbloc.TableNotFoundError`, with the same `code`
+the API uses (`unsupported_country`, `unsupported_year`, `unsupported_region`).
+
+### Applying brackets: `tax_from_bands`
+
+`tax_from_bands(section, income, above=0)` applies a `"bands"` section progressively: each slice of income is
+taxed at the rate of its band. `band_breakdown()` returns the slices, and `marginal_rate()` returns the rate of
+the band an amount falls in. Use `above=` to stack one income on another (UK dividends sit on top of other
+taxable income).
+
+These helpers are a **convenience, not tax advice**. They apply the bands to the amount you pass and nothing
+else: no allowances, credits, tapers, surcharges, filing rules or the authority's rounding. Check the section's
+`basis` (for example "Taxable income above the Personal Allowance, per year") to know which amount to pass.
+For a complete take-home pay figure, use the API's `net-salary` endpoint.
+
+## The API client
+
+```python
+from calcbloc import Client
+
+client = Client()                                   # reference data works without a key
+table = client.tax_tables("canada", "latest", region="on")
+csv_text = client.tax_tables("uk", "2026-27", format="csv")
+countries = client.countries()                      # endpoints and parameters per country
+
+client = Client(api_key="your-key")                 # or set CALCBLOC_API_KEY
+pay = client.net_salary("uk", 45_000, region="scotland", pension_pct=5)
+cost = client.employer_cost("us", 85_000, region="tx", health_per_month=600)
+both = client.compare("uk", "ireland", 60_000, currency="GBP")
+```
+
+Country-specific parameters are passed as keyword arguments by their API names (`filing_status`,
+`pension_pct`, `student_loan`...); `client.countries()` and the
+[OpenAPI file](https://calcbloc.com/api/openapi.json) list them, with allowed values and defaults. Unknown
+parameters are refused by the API, so typos never pass silently.
+
+Errors raise typed exceptions built from the API's `{"error": {"code", "message", "docs"}}` body:
+
+```python
+from calcbloc import AuthenticationError, CalcBlocError, Client, RateLimitError
+
+try:
+    Client(api_key="your-key").net_salary("norway", 600_000)
+except RateLimitError as e:
+    print("retry in", e.retry_after, "seconds")
+except AuthenticationError as e:          # api_key_required or invalid_key (401)
+    print(e.code)
+except CalcBlocError as e:
+    print(e.status, e.code, e.message)    # 400 unsupported_country: Norway has tax tables only
+```
+
+Countries marked `tables_only` in `client.countries()` have tax tables but no calculation engine yet; the
+calculation endpoints answer them with `400 unsupported_country`. `client.last_rate_limit` holds the
+`X-RateLimit-*` headers of the last response. Pass `transport=` to `Client` to plug in your own HTTP layer
+(proxy, retries, caching or tests).
+
+### API keys and rate limits
+
+| Access | Per day | Per minute | Endpoints |
+|---|---|---|---|
+| No key (per IP address) | 50 | 5 | Countries and tax tables |
+| Free key | 5,000 | 60 | All, including net salary, employer cost and compare |
+
+Get a free key, instantly and without an email address, at
+[calcbloc.com/developers/keys](https://calcbloc.com/developers/keys). The client sends it in the `X-API-Key`
+header; keys in the URL are refused by the API because URLs end up in logs. The calculation endpoints are
+meant to be called with a key: without one they answer `401 api_key_required`, unless keyless calculations
+are switched on at the anonymous limits (the current setting is shown in the
+[limits table](https://calcbloc.com/developers#limits)). For higher volumes or use without attribution, see
+[calcbloc.com/developers](https://calcbloc.com/developers).
+
+### Offline or API?
+
+| | Offline tables | API |
+|---|---|---|
+| Network, key, limits | None | HTTPS; free key for calculations; limits above |
+| Tax tables | Snapshot dated `tables.data_date()` | Always the latest published figures |
+| CSV download | No (JSON) | `format="csv"` |
+| Take-home pay, employer cost, compare | No (only `tax_from_bands` on single sections) | Yes |
+
+Upgrade the package to refresh the bundled snapshot, or call the API when you need today's figures.
+
+## Data licence and attribution
+
+* **Code**: MIT licence (see [LICENSE](https://github.com/itmarkerz/calcbloc-python/blob/main/LICENSE)).
+* **Data** (the bundled tables and everything the API returns): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+  (see [DATA_LICENSE.md](https://github.com/itmarkerz/calcbloc-python/blob/main/DATA_LICENSE.md)).
+  Show this credit, with a link, wherever you display the figures:
+
+  > Data by CalcBloc ([calcbloc.com/data](https://calcbloc.com/data))
+
+Each table carries an `attribution` block and a `pageUrl` for the matching tax tables page on calcbloc.com.
+API use is also covered by the [API terms](https://calcbloc.com/developers/terms).
+
+## Country coverage
+
+<!-- coverage:start -->
+
+Bundled data generated 2026-11-11: **29 countries**, 213 tables (183 of them regional). This table is generated from `manifest.json` by `scripts/sync_tables.py`.
+
+| Country | Code | Current tax year | Years bundled | Regional tables | Last verified | Tax tables page |
+|---|---|---|---|---|---|---|
+| United States | `us` | 2026 | 2026 | 51 | 2026-11-09 | [United States tax tables](https://calcbloc.com/us/tax-tables/2026) |
+| United Kingdom | `uk` | 2026-27 | 2026-27, 2025-26 | 2 | 2026-11-09 | [United Kingdom tax tables](https://calcbloc.com/uk/tax-tables/2026-27) |
+| Australia | `australia` | 2026-27 | 2026-27 | - | 2026-11-09 | [Australia tax tables](https://calcbloc.com/australia/tax-tables/2026-27) |
+| New Zealand | `new-zealand` | 2026-27 | 2026-27 | - | 2026-11-09 | [New Zealand tax tables](https://calcbloc.com/new-zealand/tax-tables/2026-27) |
+| Canada | `canada` | 2026 | 2026 | 13 | 2026-11-09 | [Canada tax tables](https://calcbloc.com/canada/tax-tables/2026) |
+| Ireland | `ireland` | 2026 | 2026 | - | 2026-11-06 | [Ireland tax tables](https://calcbloc.com/ireland/tax-tables/2026) |
+| India | `india` | 2026-27 | 2026-27 | - | 2026-11-11 | [India tax tables](https://calcbloc.com/india/tax-tables/2026-27) |
+| Germany | `germany` | 2026 | 2026 | - | 2026-11-09 | [Germany tax tables](https://calcbloc.com/germany/tax-tables/2026) |
+| Spain | `spain` | 2026 | 2026 | 21 | 2026-11-09 | [Spain tax tables](https://calcbloc.com/spain/tax-tables/2026) |
+| Netherlands | `netherlands` | 2026 | 2026 | - | 2026-11-09 | [Netherlands tax tables](https://calcbloc.com/netherlands/tax-tables/2026) |
+| France | `france` | 2026 | 2026 | - | 2026-11-09 | [France tax tables](https://calcbloc.com/france/tax-tables/2026) |
+| Singapore | `singapore` | 2026 | 2026 | - | 2026-11-09 | [Singapore tax tables](https://calcbloc.com/singapore/tax-tables/2026) |
+| United Arab Emirates | `uae` | 2026 | 2026 | - | 2026-11-09 | [United Arab Emirates tax tables](https://calcbloc.com/uae/tax-tables/2026) |
+| Italy | `italy` | 2026 | 2026 | 21 | 2026-11-09 | [Italy tax tables](https://calcbloc.com/italy/tax-tables/2026) |
+| Portugal | `portugal` | 2026 | 2026 | 2 | 2026-11-09 | [Portugal tax tables](https://calcbloc.com/portugal/tax-tables/2026) |
+| Switzerland | `switzerland` | 2026 | 2026 | 26 | 2026-11-09 | [Switzerland tax tables](https://calcbloc.com/switzerland/tax-tables/2026) |
+| Denmark | `denmark` | 2026 | 2026 | 5 | 2026-11-09 | [Denmark tax tables](https://calcbloc.com/denmark/tax-tables/2026) |
+| Sweden | `sweden` | 2026 | 2026 | 21 | 2026-11-10 | [Sweden tax tables](https://calcbloc.com/sweden/tax-tables/2026) |
+| Austria | `austria` | 2026 | 2026 | - | 2026-11-10 | [Austria tax tables](https://calcbloc.com/austria/tax-tables/2026) |
+| Poland | `poland` | 2026 | 2026 | - | 2026-11-10 | [Poland tax tables](https://calcbloc.com/poland/tax-tables/2026) |
+| Luxembourg | `luxembourg` | 2026 | 2026 | - | 2026-11-11 | [Luxembourg tax tables](https://calcbloc.com/luxembourg/tax-tables/2026) |
+| Czechia | `czechia` | 2026 | 2026 | - | 2026-11-11 | [Czechia tax tables](https://calcbloc.com/czechia/tax-tables/2026) |
+| Norway | `norway` | 2026 | 2026 | - | 2026-11-11 | [Norway tax tables](https://calcbloc.com/norway/tax-tables/2026) |
+| Finland | `finland` | 2026 | 2026 | 19 | 2026-11-11 | [Finland tax tables](https://calcbloc.com/finland/tax-tables/2026) |
+| Slovenia | `slovenia` | 2026 | 2026 | - | 2026-11-11 | [Slovenia tax tables](https://calcbloc.com/slovenia/tax-tables/2026) |
+| Romania | `romania` | 2026 | 2026 | - | 2026-11-11 | [Romania tax tables](https://calcbloc.com/romania/tax-tables/2026) |
+| Hungary | `hungary` | 2026 | 2026 | - | 2026-11-11 | [Hungary tax tables](https://calcbloc.com/hungary/tax-tables/2026) |
+| Slovakia | `slovakia` | 2026 | 2026 | - | 2026-11-11 | [Slovakia tax tables](https://calcbloc.com/slovakia/tax-tables/2026) |
+| Greece | `greece` | 2026 | 2026 | - | 2026-11-11 | [Greece tax tables](https://calcbloc.com/greece/tax-tables/2026) |
+
+Coming later (tables under review, not yet published): Belgium.
+
+<!-- coverage:end -->
+
+## How the data is tested
+
+The test suite checks every bundled table (each row has a source URL and a retrieval date, bands are well
+formed) and reproduces figures published by tax authorities with `tax_from_bands`:
+
+* Ireland: Revenue, [Calculating your USC](https://www.revenue.ie/en/jobs-and-pensions/usc/calculating-usc.aspx), Examples 1 to 4 (2026).
+* United Kingdom: GOV.UK, [Tax on dividends](https://www.gov.uk/tax-on-dividends), worked example (2026 to 2027).
+* Singapore: IRAS, [Individual income tax rates](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates), gross tax payable column (YA 2024 onwards).
+* United States: IRS, [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf), 2026 rate schedules for single, married filing jointly and head of household.
+* New Zealand: Inland Revenue, [IR335 Employer's guide](https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf), ESCT rate examples.
+
+```bash
+pip install -e ".[test]"
+pytest
+```
+
+## Updating the bundled data
+
+The tables come from the [calcbloc-data](https://github.com/itmarkerz/calcbloc-data) repository. With it
+checked out next to this one:
+
+```bash
+python scripts/sync_tables.py                 # copies ../calcbloc-data/tables, validates, refreshes this README
+python scripts/sync_tables.py --source PATH   # or set CALCBLOC_DATA_TABLES
+python scripts/sync_tables.py --check         # exit 1 if the bundled data is out of date
+```
+
+Tables are stored gzip-compressed inside the package (the JSON is unchanged once decompressed), so every
+country, year and region fits in under 1 MB.
+
+## Links
+
+* Developer documentation: [calcbloc.com/developers](https://calcbloc.com/developers)
+* Open data and downloads: [calcbloc.com/data](https://calcbloc.com/data)
+* OpenAPI 3.1 description: [calcbloc.com/api/openapi.json](https://calcbloc.com/api/openapi.json)
+* Calculators: [calcbloc.com](https://calcbloc.com)
+* Changelog: [CHANGELOG.md](https://github.com/itmarkerz/calcbloc-python/blob/main/CHANGELOG.md)

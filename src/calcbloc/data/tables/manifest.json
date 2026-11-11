@@ -1,0 +1,2424 @@
+{
+  "generatedAt": "2026-11-11",
+  "source": "https://calcbloc.com/data",
+  "licence": "CC BY 4.0",
+  "credit": "Data by CalcBloc (calcbloc.com/data)",
+  "api": "https://calcbloc.com/developers",
+  "countries": [
+    {
+      "country": "us",
+      "name": "United States",
+      "currency": "USD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [
+        {
+          "code": "al",
+          "name": "Alabama",
+          "slug": "alabama"
+        },
+        {
+          "code": "ak",
+          "name": "Alaska",
+          "slug": "alaska"
+        },
+        {
+          "code": "az",
+          "name": "Arizona",
+          "slug": "arizona"
+        },
+        {
+          "code": "ar",
+          "name": "Arkansas",
+          "slug": "arkansas"
+        },
+        {
+          "code": "ca",
+          "name": "California",
+          "slug": "california"
+        },
+        {
+          "code": "co",
+          "name": "Colorado",
+          "slug": "colorado"
+        },
+        {
+          "code": "ct",
+          "name": "Connecticut",
+          "slug": "connecticut"
+        },
+        {
+          "code": "de",
+          "name": "Delaware",
+          "slug": "delaware"
+        },
+        {
+          "code": "dc",
+          "name": "District of Columbia",
+          "slug": "district-of-columbia"
+        },
+        {
+          "code": "fl",
+          "name": "Florida",
+          "slug": "florida"
+        },
+        {
+          "code": "ga",
+          "name": "Georgia",
+          "slug": "georgia"
+        },
+        {
+          "code": "hi",
+          "name": "Hawaii",
+          "slug": "hawaii"
+        },
+        {
+          "code": "id",
+          "name": "Idaho",
+          "slug": "idaho"
+        },
+        {
+          "code": "il",
+          "name": "Illinois",
+          "slug": "illinois"
+        },
+        {
+          "code": "in",
+          "name": "Indiana",
+          "slug": "indiana"
+        },
+        {
+          "code": "ia",
+          "name": "Iowa",
+          "slug": "iowa"
+        },
+        {
+          "code": "ks",
+          "name": "Kansas",
+          "slug": "kansas"
+        },
+        {
+          "code": "ky",
+          "name": "Kentucky",
+          "slug": "kentucky"
+        },
+        {
+          "code": "la",
+          "name": "Louisiana",
+          "slug": "louisiana"
+        },
+        {
+          "code": "me",
+          "name": "Maine",
+          "slug": "maine"
+        },
+        {
+          "code": "md",
+          "name": "Maryland",
+          "slug": "maryland"
+        },
+        {
+          "code": "ma",
+          "name": "Massachusetts",
+          "slug": "massachusetts"
+        },
+        {
+          "code": "mi",
+          "name": "Michigan",
+          "slug": "michigan"
+        },
+        {
+          "code": "mn",
+          "name": "Minnesota",
+          "slug": "minnesota"
+        },
+        {
+          "code": "ms",
+          "name": "Mississippi",
+          "slug": "mississippi"
+        },
+        {
+          "code": "mo",
+          "name": "Missouri",
+          "slug": "missouri"
+        },
+        {
+          "code": "mt",
+          "name": "Montana",
+          "slug": "montana"
+        },
+        {
+          "code": "ne",
+          "name": "Nebraska",
+          "slug": "nebraska"
+        },
+        {
+          "code": "nv",
+          "name": "Nevada",
+          "slug": "nevada"
+        },
+        {
+          "code": "nh",
+          "name": "New Hampshire",
+          "slug": "new-hampshire"
+        },
+        {
+          "code": "nj",
+          "name": "New Jersey",
+          "slug": "new-jersey"
+        },
+        {
+          "code": "nm",
+          "name": "New Mexico",
+          "slug": "new-mexico"
+        },
+        {
+          "code": "ny",
+          "name": "New York",
+          "slug": "new-york"
+        },
+        {
+          "code": "nc",
+          "name": "North Carolina",
+          "slug": "north-carolina"
+        },
+        {
+          "code": "nd",
+          "name": "North Dakota",
+          "slug": "north-dakota"
+        },
+        {
+          "code": "oh",
+          "name": "Ohio",
+          "slug": "ohio"
+        },
+        {
+          "code": "ok",
+          "name": "Oklahoma",
+          "slug": "oklahoma"
+        },
+        {
+          "code": "or",
+          "name": "Oregon",
+          "slug": "oregon"
+        },
+        {
+          "code": "pa",
+          "name": "Pennsylvania",
+          "slug": "pennsylvania"
+        },
+        {
+          "code": "ri",
+          "name": "Rhode Island",
+          "slug": "rhode-island"
+        },
+        {
+          "code": "sc",
+          "name": "South Carolina",
+          "slug": "south-carolina"
+        },
+        {
+          "code": "sd",
+          "name": "South Dakota",
+          "slug": "south-dakota"
+        },
+        {
+          "code": "tn",
+          "name": "Tennessee",
+          "slug": "tennessee"
+        },
+        {
+          "code": "tx",
+          "name": "Texas",
+          "slug": "texas"
+        },
+        {
+          "code": "ut",
+          "name": "Utah",
+          "slug": "utah"
+        },
+        {
+          "code": "vt",
+          "name": "Vermont",
+          "slug": "vermont"
+        },
+        {
+          "code": "va",
+          "name": "Virginia",
+          "slug": "virginia"
+        },
+        {
+          "code": "wa",
+          "name": "Washington",
+          "slug": "washington"
+        },
+        {
+          "code": "wv",
+          "name": "West Virginia",
+          "slug": "west-virginia"
+        },
+        {
+          "code": "wi",
+          "name": "Wisconsin",
+          "slug": "wisconsin"
+        },
+        {
+          "code": "wy",
+          "name": "Wyoming",
+          "slug": "wyoming"
+        }
+      ],
+      "files": [
+        "us/2026.json",
+        "us/2026/al.json",
+        "us/2026/ak.json",
+        "us/2026/az.json",
+        "us/2026/ar.json",
+        "us/2026/ca.json",
+        "us/2026/co.json",
+        "us/2026/ct.json",
+        "us/2026/de.json",
+        "us/2026/dc.json",
+        "us/2026/fl.json",
+        "us/2026/ga.json",
+        "us/2026/hi.json",
+        "us/2026/id.json",
+        "us/2026/il.json",
+        "us/2026/in.json",
+        "us/2026/ia.json",
+        "us/2026/ks.json",
+        "us/2026/ky.json",
+        "us/2026/la.json",
+        "us/2026/me.json",
+        "us/2026/md.json",
+        "us/2026/ma.json",
+        "us/2026/mi.json",
+        "us/2026/mn.json",
+        "us/2026/ms.json",
+        "us/2026/mo.json",
+        "us/2026/mt.json",
+        "us/2026/ne.json",
+        "us/2026/nv.json",
+        "us/2026/nh.json",
+        "us/2026/nj.json",
+        "us/2026/nm.json",
+        "us/2026/ny.json",
+        "us/2026/nc.json",
+        "us/2026/nd.json",
+        "us/2026/oh.json",
+        "us/2026/ok.json",
+        "us/2026/or.json",
+        "us/2026/pa.json",
+        "us/2026/ri.json",
+        "us/2026/sc.json",
+        "us/2026/sd.json",
+        "us/2026/tn.json",
+        "us/2026/tx.json",
+        "us/2026/ut.json",
+        "us/2026/vt.json",
+        "us/2026/va.json",
+        "us/2026/wa.json",
+        "us/2026/wv.json",
+        "us/2026/wi.json",
+        "us/2026/wy.json"
+      ],
+      "pageUrl": "https://calcbloc.com/us/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/us/2026",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "http://www.cityofgadsden.com/DocumentCenter/View/752",
+        "https://apps.dced.pa.gov/munstats-public/ReportInformation2.aspx?report=EitWithCollector_Dyn_Excel&type=O",
+        "https://auburnalabama.org/revenue/tax-information/occupational-license-fee",
+        "https://azdor.gov/business/withholding-tax",
+        "https://azdor.gov/sites/default/files/document/FORMS_INDIVIDUAL_2026_140ESBooklet.pdf",
+        "https://cdle.colorado.gov/employers/unemployment-insurance-premiums/introductory-rates",
+        "https://ci.sheridan.co.us/288/Occupational-Privilege-Tax",
+        "https://code.wvlegislature.gov/11-21-4J/",
+        "https://codes.ohio.gov/ohio-administrative-code/rule-5703-7-10",
+        "https://codes.ohio.gov/ohio-revised-code/section-5747.02",
+        "https://content.civicplus.com/api/assets/mi-lansing/76bc3634-69b9-417d-aadb-91b69ace6cb8",
+        "https://content.leg.colorado.gov/sites/default/files/2026-09/sept2026-forecast-with-cover-for-remediation-and-posting-accessible.pdf",
+        "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/ouio/uctax/2026RateDetails.pdf",
+        "https://dam.ldr.la.gov/lawspolicies/RIB%2026-005-Updated%20Withholding%20Tables.pdf",
+        "https://dam.ldr.la.gov/taxforms/1306-1-26.pdf",
+        "https://dcpaidfamilyleave.dc.gov/employer-information/",
+        "https://delcode.delaware.gov/title30/c011/sc01/index.html",
+        "https://denvergov.org/files/assets/public/v/2/finance/documents/treasury/tax-guides/2026/taxguidetopic61_occupationalprivilegetaxes.pdf",
+        "https://des.az.gov/sites/default/files/dl/UIT-0603A_FY26.pdf",
+        "https://detr.nv.gov/Page/UI_Tax",
+        "https://dlr.sd.gov/ra/businesses/default.aspx",
+        "https://dlt.ri.gov/employers/employer-tax-unit",
+        "https://dlt.ri.gov/press-releases/2026-tax-rates-unemployment-insurance-and-temporary-disability-insurance",
+        "https://dol.georgia.gov/faqs-employers/employers-faqs-unemployment-insurance",
+        "https://dol.nebraska.gov/webdocs/Resources/Items/2026%20UI%20guide%20to%20understanding.pdf",
+        "https://dol.ny.gov/unemployment-insurance-rate-information",
+        "https://dor.georgia.gov/document/document/2026-employers-tax-guide-updated-september-2026/download",
+        "https://dor.mo.gov/forms/MO-1040ES_2026.pdf",
+        "https://dor.mo.gov/forms/Withholding%20Formula_2026.pdf",
+        "https://dor.sc.gov/administrative-legislative-regulations-tax-legislation-update-2026",
+        "https://dor.sc.gov/sites/dor/files/forms/WH1603F_2026.pdf",
+        "https://dor.sd.gov/individuals/taxes/",
+        "https://dor.wa.gov/taxes-rates/income-tax",
+        "https://dwd.wisconsin.gov/dwd/forms/ui/pdf/uct-43-e-2026.pdf",
+        "https://dws.arkansas.gov/workforce-services/unemployment/employer-ui-information/",
+        "https://dws.wyo.gov/dws-division/unemployment-insurance/wyui/unemployment-taxable-wage-base/",
+        "https://edd.ca.gov/en/payroll_taxes/rates_and_withholding/",
+        "https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf",
+        "https://esd.wa.gov/employer-requirements/unemployment-taxes/how-we-determine-tax-rates",
+        "https://essp.does.dc.gov/DOES%20ESSP%20Employer%20Landing%20Page.html",
+        "https://famli.colorado.gov/individuals-and-families/how-famli-works/premium-and-benefits-calculator",
+        "https://files.hawaii.gov/tax/legal/hrs/hrs_235.pdf",
+        "https://files.hawaii.gov/tax/news/pubs/25BkltA.pdf",
+        "https://floridarevenue.com/Forms_library/current/brochure/gt800025.pdf",
+        "https://floridarevenue.com/taxes/taxesfees/Pages/rt_rate.aspx",
+        "https://gov.georgia.gov/document/2026-signed-legislation/hb-463/download",
+        "https://ides.illinois.gov/content/dam/soi/en/web/ides/ides_forms_and_publications/EA-50_2026.pdf",
+        "https://labor.alaska.gov/estax/2026-experience-rates.html",
+        "https://labor.alaska.gov/estax/2026-industry-rates.html",
+        "https://labor.delaware.gov/divisions/unemployment-insurance/employer-services/",
+        "https://labor.hawaii.gov/dcd/files/2025/12/2026-Maximum-Weekly-Wage-Base.pdf",
+        "https://labor.maryland.gov/unemployment-insurance/employer-agent/tax-rate.shtml",
+        "https://labor.mo.gov/des/employers/tax-rates",
+        "https://labor.vermont.gov/unemployment-insurance/ui-employers/unemployment-tax-rates",
+        "https://laborfiles.delaware.gov/main/pfl/Employer_and_TPAs_Guide_to_DPL.pdf",
+        "https://le.utah.gov/Session/2026/bills/enrolled/SB0060.pdf",
+        "https://louisvilleky.gov/sites/default/files/2026-01/Louisville%20Metro%20Revenue%20Commission%20Regulations%20(2026).1.pdf",
+        "https://mn.gov/deed/assets/paid-leave-small-employer-premium-rate-designation-acc_tcm1045-716947.pdf",
+        "https://morgantownwv.gov/735/Municipal-Service-Fee",
+        "https://multco.us/file/employer_handbook_pfa_2026/download",
+        "https://oklahoma.gov/content/dam/ok/en/oesc/images/misc/Employer-Improtant-Numbers-2026.pdf",
+        "https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/rules-and-policies/agency-rules/2026/Chapter90-Withholding-2026.pdf",
+        "https://otr.cfo.dc.gov/sites/default/files/dc/sites/otr/publication/attachments/2026_D40ES_Book_wLinks04012026.pdf",
+        "https://otr.cfo.dc.gov/sites/default/files/dc/sites/otr/release_content/attachments/Important_Information_Regarding_the_District_of_Columbia_Withholding_for_Tax_Year_2022_updated_10_17_2022.pdf",
+        "https://oui.doleta.gov/unemploy/content/sigpros/2020-2029/July2026.pdf",
+        "https://oui.doleta.gov/unemploy/docs/potential_credit_states_2026.xlsx",
+        "https://paidleave.wa.gov/app/uploads/2021/12/Employer-Wage-Reporting-and-Premiums-Toolkit-v25.1-2026.06.26.pdf",
+        "https://parkersburgwv.gov/departments/finance/fees.php",
+        "https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf",
+        "https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-7.pdf",
+        "https://realfile.tax.newmexico.gov/FYI-104%202026.pdf",
+        "https://revenue.delaware.gov/employers-guide-withholding-regulations-employers-duties/",
+        "https://revenue.iowa.gov/taxes/tax-guidance/withholding-tax/iowa-withholding-tax-information",
+        "https://revenue.ky.gov/Forms/42A003-March%202026.pdf",
+        "https://revenue.mt.gov/news/recent-news/HB-337",
+        "https://revenue.nebraska.gov/sites/default/files/doc/business/Cir_En_2025/2026_instruct.pdf",
+        "https://revenue.nebraska.gov/sites/default/files/doc/research/chronology/4-607table1.pdf",
+        "https://revenue.support.tn.gov/hc/en-us/articles/360057595051-GEN-34-Income-Tax-Withholding",
+        "https://revenuefiles.mt.gov/files/Forms/Montana_Employer_and_Information_Agent_Guide_with_Tax_Tables.pdf",
+        "https://tax.alaska.gov/programs/programs/index.aspx?10001",
+        "https://tax.colorado.gov/sites/tax/files/documents/Wage_Withholding_Tax_Guide_Jan_2026.pdf",
+        "https://tax.idaho.gov/taxes/income-tax/withholding/computing/",
+        "https://tax.idaho.gov/wp-content/uploads/forms/EIN00046/EIN00046_03-02-2026.pdf",
+        "https://tax.illinois.gov/content/dam/soi/en/web/tax/research/publications/pubs/documents/pub-130.pdf",
+        "https://tax.illinois.gov/research/publications/bulletins/fy-2026-15.html",
+        "https://tax.nv.gov/about-nevada-department-of-taxation/income-tax-in-nevada/",
+        "https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf",
+        "https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2026%20Withholding%20Tax%20Booklet.pdf",
+        "https://tax.utah.gov/forms-pubs/pub-14/",
+        "https://tax.vermont.gov/sites/tax/files/documents/GB-1210-2026.pdf",
+        "https://tax.vermont.gov/sites/tax/files/documents/GB-1326.pdf",
+        "https://tax.wv.gov/business/withholding/helpandgeneralinformation/Pages/WithholdingHelpAndGeneralInformation.aspx",
+        "https://tcss.legis.texas.gov/resources/CN/htm/CN.8.htm",
+        "https://thefinder.tax.ohio.gov/?tab=fileDownloads",
+        "https://ui.ky.gov/Documents/KY-OUI_Employer%20Guide_2026.pdf",
+        "https://uid.dli.mt.gov/_docs/contributions-bureau/Rate-Explanation.pdf",
+        "https://workforce.iowa.gov/employers/unemployment-insurance/unemployment-insurance-employer-handbook/unemployment-insurance-taxes",
+        "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2026S1%2FPublic%2FACT2.pdf",
+        "https://www.birminghamal.gov/government/city-departments/parks-recreation/legion-field/magic-city-classic-2025/how-become-vendor-magic-city-classic",
+        "https://www.charlestonwv.gov/sites/default/files/documents/2022-12/CITY%20SERVICE%20FEE%20OVERVIEW%2012.22%20%282%29.pdf",
+        "https://www.cityofflint.com/wp-content/uploads/2026/01/2025-City-of-Flint-Employers-Withholding-Forms-and-Instruction-Booklet.pdf",
+        "https://www.cityofhuntington.com/business/taxes-and-fees/city-service-fee/",
+        "https://www.ctpaidleave.org/how-ct-paid-leave-works/contributions",
+        "https://www.des.nc.gov/employers/tax-rate-information",
+        "https://www.dfa.arkansas.gov/wp-content/uploads/Withholding-Tax-Instructions-for-Employers.pdf",
+        "https://www.dor.ms.gov/sites/default/files/tax-forms/business/89700251revised1.13.2026.pdf",
+        "https://www.ftb.ca.gov/about-ftb/newsroom/tax-news/index.html",
+        "https://www.glendale.co.us/355/Occupational-Privilege-Tax",
+        "https://www.grandrapidsmi.gov/departments/fiscal-services/income-tax/employers-and-withholders/income-tax-guide-for-withholders/",
+        "https://www.greenwoodvillage.com/1220/Occupational-Privilege-Tax-OPT",
+        "https://www.in.gov/dor/files/dn01.pdf",
+        "https://www.in.gov/dwd/indiana-unemployment/employers/employer-guide/rate-computation/new-employer-premium-rate",
+        "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+        "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf",
+        "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+        "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+        "https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf",
+        "https://www.kcmo.gov/city-hall/departments/finance/earnings-tax",
+        "https://www.ksrevenue.gov/pdf/k-40es26.pdf",
+        "https://www.ksrevenue.gov/pdf/kw100.pdf",
+        "https://www.labor.idaho.gov/wp-content/uploads/2024/12/Tax-rate_Class-array_2026.pdf",
+        "https://www.lexingtonky.gov/working/business-licensing-taxes/occupational-license-fee-rates-current-forms",
+        "https://www.maine.gov/paidleave/docs/2026/employers/faq/employerFAQenglish.pdf",
+        "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/2026-05/ind_tax_rate_sched_2026_rev.pdf",
+        "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/26_wh_tab_instr_August2026.pdf",
+        "https://www.maine.gov/unemployment/docs/2026/employers/uitaxrates2026.pdf",
+        "https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/withholding/2026/withholding-guide.pdf",
+        "https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/legal-publications/facts/withholding-tax-facts-2026.pdf",
+        "https://www.mass.gov/doc/massachusetts-circular-m-income-tax-withholding-tables-at-50-effective-january-1-2026/download",
+        "https://www.mass.gov/info-details/paid-family-and-medical-leave-employer-contribution-rates-and-calculator",
+        "https://www.mass.gov/info-details/tax-rates",
+        "https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/City-Withholding/TY2026/5469_ty2026.pdf",
+        "https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/SUW/TY2026/446_Withholding-Guide_2026.pdf",
+        "https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/04/15/425-income-tax-rate-for-individuals-and-fiduciaries-in-2026-tax-year",
+        "https://www.ncdor.gov/income-tax-withholding-tables-and-instructions-employers/open",
+        "https://www.nhes.nh.gov/employers/employer-claims-taxes/tax-rate-chart",
+        "https://www.nj.gov/labor/ea/employer-services/rate-info/",
+        "https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf",
+        "https://www.nj.gov/treasury/taxation/taxtables.shtml",
+        "https://www.nysenate.gov/legislation/laws/TAX/601",
+        "https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF",
+        "https://www.opelika-al.gov/338/Occupation-License",
+        "https://www.oregon.gov/dcbs/wbf/pages/index.aspx",
+        "https://www.oregon.gov/dor/forms/FormsPubs/publication-or-estimate_101-026_2026.pdf",
+        "https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf",
+        "https://www.oregon.gov/dor/programs/businesses/pages/statewide-transit-tax.aspx",
+        "https://www.oregon.gov/employ/NewsAndMedia/Documents/2025-11-18_Tax_Rate_2026_Press_Release.pdf",
+        "https://www.oregon.gov/employ/businesses/pages/current-tax-rate.aspx",
+        "https://www.oregonmetro.gov/sites/default/files/2026-01/metro-employer-handbook-2026.pdf",
+        "https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights",
+        "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/personal-income-tax",
+        "https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/employer/uc-tax-rates/uc-749%20rev%2009-25.pdf",
+        "https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf",
+        "https://www.phila.gov/departments/department-of-revenue/forms-documents/regulations-rulings/tax-rate-history/",
+        "https://www.revenue.alabama.gov/wp-content/uploads/2026/01/whbooklet_0126.pdf",
+        "https://www.revenue.nh.gov/taxes-glance/interest-dividends-tax",
+        "https://www.revenue.state.mn.us/press-release/2025-12-16/minnesota-income-tax-brackets-standard-deduction-and-dependent-exemption",
+        "https://www.revenue.state.mn.us/sites/default/files/2025-12/wh-inst-26.pdf",
+        "https://www.revenue.wi.gov/DOR%20Publications/pb166.pdf",
+        "https://www.revenue.wi.gov/TaxForms2026/2026-Form1-ES-Inst.pdf",
+        "https://www.stlouis-mo.gov/government/departments/collector/earnings-tax/payroll-tax-info.cfm",
+        "https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/28709-form-nd-1es-2026.pdf",
+        "https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2026-iit/2026-income-tax-withholding-rates-booklet.pdf",
+        "https://www.tax.newmexico.gov/businesses/workers-compensation/",
+        "https://www.tax.ny.gov/pdf/publications/withholding/nys50_t_nyc.pdf",
+        "https://www.tax.ny.gov/pdf/publications/withholding/nys50_t_nys.pdf",
+        "https://www.tax.ny.gov/pdf/publications/withholding/nys50_t_y.pdf",
+        "https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf",
+        "https://www.tax.virginia.gov/sites/default/files/vatax-pdf/employer-withholding-instructions.pdf",
+        "https://www.tn.gov/workforce/employers/tax-and-insurance-redirect/unemployment-insurance-tax/ui-tax-rates.html",
+        "https://www.uimn.org/employers/wages-taxes/tax-rates/new-employer-rates.jsp",
+        "https://www.vec.virginia.gov/FAQs/employers/what-wage-base-each-employee-i-will-pay-taxes",
+        "https://www.wcb.ny.gov/content/main/DisabilityBenefits/employer-disability-benefits.jsp",
+        "https://www.wcb.ny.gov/content/main/forms/PFLDocs/pfl-pay-deduction-notice-2026.pdf",
+        "https://www.wheelingwv.gov/media/Finance/City%20Service%20Fee/City%20Service%20Fee%20-%20Overview.pdf",
+        "https://www.wilmingtonde.gov/home/showpublisheddocument/462/638206223264700000",
+        "https://www.wvlegislature.gov/Bill_Text_HTML/2026_SESSIONS/RS/bills/sb1053%20sub2%20enr.htm",
+        "https://www.wyo.gov/about-wyoming"
+      ],
+      "rowCount": 70,
+      "underReviewRows": 0
+    },
+    {
+      "country": "uk",
+      "name": "United Kingdom",
+      "currency": "GBP",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27",
+        "2025-26"
+      ],
+      "regions": [
+        {
+          "code": "scotland",
+          "name": "Scotland",
+          "slug": "scotland"
+        },
+        {
+          "code": "wales",
+          "name": "Wales",
+          "slug": "wales"
+        }
+      ],
+      "files": [
+        "uk/2026-27.json",
+        "uk/2026-27/scotland.json",
+        "uk/2026-27/wales.json",
+        "uk/2025-26.json",
+        "uk/2025-26/scotland.json",
+        "uk/2025-26/wales.json"
+      ],
+      "pageUrl": "https://calcbloc.com/uk/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/uk/2026-27",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://www.gov.uk/government/publications/payroll-technical-specifications-student-loans/collection-of-student-loans-from-6-april-2026",
+        "https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax",
+        "https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past",
+        "https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions",
+        "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026",
+        "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+        "https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief",
+        "https://www.gov.uk/vat-rates",
+        "https://www.thepensionsregulator.gov.uk/employers/new-employers/im-an-employer-who-has-to-provide-a-pension/declare-your-compliance/ongoing-duties-for-employers/earnings-thresholds"
+      ],
+      "rowCount": 78,
+      "underReviewRows": 0
+    },
+    {
+      "country": "australia",
+      "name": "Australia",
+      "currency": "AUD",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "australia/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/australia/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/australia/2026-27",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://content.legislation.vic.gov.au/sites/default/files/2026-05/07-26aa041-authorised.pdf",
+        "https://legislation.act.gov.au/DownloadFile/di/2026-151/current/PDF/2026-151.PDF",
+        "https://legislation.nt.gov.au/api/sitecore/Act/PDF?id=12078",
+        "https://worksafe.nt.gov.au/forms-and-resources/bulletins/understanding-workers-compensation-premiums-northern-territory",
+        "https://worksafe.tas.gov.au/__data/assets/pdf_file/0006/808566/TAS-WC-Suggested-Premium-Rates-2026-27-FINAL.pdf",
+        "https://www.act.gov.au/__data/assets/pdf_file/0020/3062720/ACT-Workers-Compensation-Suggested-Reasonable-Premium-Rates-2026-27.pdf",
+        "https://www.icare.nsw.gov.au/workers-compensation/employers/workers-compensation-reform-faqs",
+        "https://www.legislation.gov.au/C2004A00446/latest/text",
+        "https://www.legislation.gov.au/C2004A01234/latest/text",
+        "https://www.legislation.gov.au/C2004A03348/latest/text",
+        "https://www.legislation.gov.au/C2004A03351/latest/text",
+        "https://www.legislation.gov.au/C2004A04402/latest/text",
+        "https://www.legislation.gov.au/C2004A05138/latest/text",
+        "https://www.legislation.gov.au/C2007A00031/latest/text",
+        "https://www.legislation.qld.gov.au/view/whole/pdf/inforce/2026-10-22/act-1971-037",
+        "https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/payroll-tax/lodge-and-pay-returns/thresholds-and-rates",
+        "https://www.revenuesa.sa.gov.au/__data/assets/pdf_file/0014/1422203/2026-27-Guide-to-Legislation-payroll-tax.pdf",
+        "https://www.rtwsa.com/about-us/news-room/articles/returntoworksa-average-premium-rate-for-2026-27-maintained",
+        "https://www.sro.tas.gov.au/payroll-tax/rates-thresholds",
+        "https://www.wa.gov.au/government/multi-step-guides/payroll-tax-employer-guide/calculation-payroll-tax-employer-guide",
+        "https://www.workcover.wa.gov.au/wp-content/uploads/2026/04/CEO-media-statement-RPR-2026-27.pdf",
+        "https://www.workcoverqld.com.au/news-and-events/news/2026/workcover-queensland-holds-premiums-steady-for-the-second-year",
+        "https://www1.worksafe.vic.gov.au/vwa/claimsmanual/Claims%20Manual/1-the-scheme/1-1-overview-of-the-scheme.htm"
+      ],
+      "rowCount": 88,
+      "underReviewRows": 0
+    },
+    {
+      "country": "new-zealand",
+      "name": "New Zealand",
+      "currency": "NZD",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "new-zealand/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/new-zealand/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/new-zealand/2026-27",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf",
+        "https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/calculating/how-fbt-is-calculated/full-alternate-rate-calculations",
+        "https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/fringe-benefit-tax-rates",
+        "https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/calculating-gst",
+        "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses",
+        "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates",
+        "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/individual-tax-credits/independent-earner-tax-credit-ietc",
+        "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+        "https://www.ird.govt.nz/kiwisaver/kiwisaver-individuals/kiwisaver-benefits"
+      ],
+      "rowCount": 55,
+      "underReviewRows": 0
+    },
+    {
+      "country": "canada",
+      "name": "Canada",
+      "currency": "CAD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [
+        {
+          "code": "on",
+          "name": "Ontario",
+          "slug": "ontario"
+        },
+        {
+          "code": "qc",
+          "name": "Quebec",
+          "slug": "quebec"
+        },
+        {
+          "code": "bc",
+          "name": "British Columbia",
+          "slug": "british-columbia"
+        },
+        {
+          "code": "ab",
+          "name": "Alberta",
+          "slug": "alberta"
+        },
+        {
+          "code": "mb",
+          "name": "Manitoba",
+          "slug": "manitoba"
+        },
+        {
+          "code": "nb",
+          "name": "New Brunswick",
+          "slug": "new-brunswick"
+        },
+        {
+          "code": "nl",
+          "name": "Newfoundland and Labrador",
+          "slug": "newfoundland-and-labrador"
+        },
+        {
+          "code": "ns",
+          "name": "Nova Scotia",
+          "slug": "nova-scotia"
+        },
+        {
+          "code": "pe",
+          "name": "Prince Edward Island",
+          "slug": "prince-edward-island"
+        },
+        {
+          "code": "sk",
+          "name": "Saskatchewan",
+          "slug": "saskatchewan"
+        },
+        {
+          "code": "nt",
+          "name": "Northwest Territories",
+          "slug": "northwest-territories"
+        },
+        {
+          "code": "nu",
+          "name": "Nunavut",
+          "slug": "nunavut"
+        },
+        {
+          "code": "yt",
+          "name": "Yukon",
+          "slug": "yukon"
+        }
+      ],
+      "files": [
+        "canada/2026.json",
+        "canada/2026/on.json",
+        "canada/2026/qc.json",
+        "canada/2026/bc.json",
+        "canada/2026/ab.json",
+        "canada/2026/mb.json",
+        "canada/2026/nb.json",
+        "canada/2026/nl.json",
+        "canada/2026/ns.json",
+        "canada/2026/pe.json",
+        "canada/2026/sk.json",
+        "canada/2026/nt.json",
+        "canada/2026/nu.json",
+        "canada/2026/yt.json"
+      ],
+      "pageUrl": "https://calcbloc.com/canada/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/canada/2026",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://www.canada.ca/content/dam/cra-arc/formspubs/pub/t4127-jan/t4127-01-26e.pdf",
+        "https://www.canada.ca/content/dam/cra-arc/formspubs/pub/t4127-jul/t4127-jul-26e.pdf",
+        "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html",
+        "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html",
+        "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html",
+        "https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html",
+        "https://www.fin.gov.nt.ca/en/services/licences-taxes-et-droits/payroll-tax-employees",
+        "https://www.gov.mb.ca/finance/taxation/pubs/bulletins/001he.pdf",
+        "https://www.gov.mb.ca/finance/taxation/taxes/retail.html",
+        "https://www.gov.nl.ca/fin/tax-programs-incentives/business/education/",
+        "https://www.nunavutlegislation.ca/en/file-download/download/public/292",
+        "https://www.ontario.ca/document/employer-health-tax-eht",
+        "https://www.revenuquebec.ca/documents/en/formulaires/tp/TP-1015.F-V%282026-01%29.pdf",
+        "https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/basic-rules-for-applying-the-gsthst-and-qst/",
+        "https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/contribution-related-to-labour-standards/",
+        "https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/contribution-to-the-workforce-skills-development-and-recognition-fund/",
+        "https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/total-payroll-threshold-and-health-services-fund-contribution-rate/",
+        "https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/provincial-taxes-policies-and-bulletins/provincial-sales-tax",
+        "https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview",
+        "https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst"
+      ],
+      "rowCount": 95,
+      "underReviewRows": 0
+    },
+    {
+      "country": "ireland",
+      "name": "Ireland",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "ireland/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/ireland/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/ireland/2026",
+      "lastVerified": "2026-11-06",
+      "sourceUrls": [
+        "https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf",
+        "https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx",
+        "https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx",
+        "https://www.revenue.ie/en/jobs-and-pensions/usc/reduced-rates.aspx",
+        "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
+        "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+        "https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-vat-rates.aspx"
+      ],
+      "rowCount": 50,
+      "underReviewRows": 0
+    },
+    {
+      "country": "india",
+      "name": "India",
+      "currency": "INR",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "india/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/india/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/india/2026-27",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://apct.gov.in/apportal/AllActs/APPT/APPTSchedule.aspx",
+        "https://chennaicorporation.gov.in/gcc/department/revenue/",
+        "https://commercialtax.gujarat.gov.in/vatwebsite/download/schedule/Rate_of_Profession_Tax.pdf",
+        "https://comtax.wb.gov.in/Ptax-Schedule-New_(w.e.f._1-4-2014).pdf",
+        "https://ctax.jharkhand.gov.in/documents/10231/16291/Other+Acts+and+Rules/4191b34f-315c-43c9-9ceb-628d3c2cb46a?version=1.2",
+        "https://egazette.gov.in/WriteReadData/2019/210356.pdf",
+        "https://egazette.gov.in/WriteReadData/2025/265620.pdf",
+        "https://egazette.gov.in/WriteReadData/2026/271439.pdf",
+        "https://egazette.gov.in/WriteReadData/2026/274112.pdf",
+        "https://esic.gov.in/contribution",
+        "https://finance.odisha.gov.in/sites/default/files/2026-04/1496-LAW%20DEPTT..pdf",
+        "https://finance.py.gov.in/sites/default/files/proftaxgo04jul17.pdf",
+        "https://glwb.gujarat.gov.in/labour-welfare-fund.htm",
+        "https://go.lsgkerala.gov.in/files/go20240627_37169.pdf",
+        "https://gstcouncil.gov.in/sites/default/files/2025-09/press_release_press_information_bureau_0.pdf",
+        "https://hi.prsindia.org/files/bills_acts/bills_states/maharashtra/2024/Bill10of2024MH.pdf",
+        "https://hrylabour.gov.in/content/cms/MTU",
+        "https://jklaw.nic.in/jklawData/StaActs/Professions, Trades, Callings and Employment Tax Act, 2005.pdf",
+        "https://labdirodisha.gov.in/sites/default/files/labouract/actrule.pdf",
+        "https://labour.goa.gov.in/?p=2773",
+        "https://labour.telangana.gov.in/content/ActsRules/TELANGANA%20LABOUR%20WELFARE%20FUND%20ACT,%201987.htm",
+        "https://meggst.gov.in/ActsRules/Meghalaya%20professional%20amendment%20act%202022.pdf",
+        "https://mptax.mp.gov.in/mpvatweb/download/home/MPCTD_Registration_Checklist&_Rates.pdf",
+        "https://nagalandtax.nic.in/docs/Professional%20Tax%20%20Rate.pdf",
+        "https://prsindia.org/files/bills_acts/acts_states/bihar/2011/2011Bihar10.pdf",
+        "https://prsindia.org/files/bills_acts/acts_states/chhattisgarh/1995/1995CG16.pdf",
+        "https://prsindia.org/files/bills_acts/acts_states/manipur/1981/Manipur%20Act%205%20of%201981.pdf",
+        "https://prsindia.org/files/bills_acts/acts_states/punjab/1965/1965PB17.pdf",
+        "https://prsindia.org/files/bills_acts/acts_states/punjab/2018/2018PB11.pdf",
+        "https://prsindia.org/files/bills_acts/acts_states/sikkim/2006/2006SK5.pdf",
+        "https://prsindia.org/files/bills_acts/bills_states/karnataka/2025/Bill68of2025KA.pdf",
+        "https://ptax.karnataka.gov.in/ptemployer/FAQ",
+        "https://tax.assam.gov.in/AssamTimsInfo/content/professional_tax.html",
+        "https://taxes.tripura.gov.in/sites/default/files/2024-04/PTAX_NOTF_2_up.pdf",
+        "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf",
+        "https://www.indiacode.nic.in/",
+        "https://www.labour.gov.in/static/uploads/2025/07/b0620548445580767b5c0d18c95c26f7.pdf",
+        "https://www.labour.gov.in/static/uploads/2026/01/de4758d5bfeffc456d7de97a801891b0.pdf",
+        "https://www.mahagst.gov.in/public/uploads/menufiles/PT%20Rate%20Schedule%20updated%20upto%2031.03.2025%20(1)%20(1).pdf",
+        "https://www.stationeryprinting.tn.gov.in/extraordinary/2022/538_Ex_III_1a.pdf",
+        "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTSchedule.aspx",
+        "https://zotax.nic.in/files/tax_schedules/Final%20Profession%20Tax%20Slab%202024.pdf"
+      ],
+      "rowCount": 190,
+      "underReviewRows": 29
+    },
+    {
+      "country": "germany",
+      "name": "Germany",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "germany/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/germany/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/germany/2026",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://www.bmf-steuerrechner.de/bl/bl2026/eingabeformbl2026.xhtml",
+        "https://www.bundesanzeiger.de/pub/publication/oUJYVk8GYRXybnb9Y4h/content/oUJYVk8GYRXybnb9Y4h/BAnz%20AT%2010.11.2025%20B7.pdf",
+        "https://www.deutsche-rentenversicherung.de/DRV/DE/Experten/Arbeitgeber-und-Steuerberater/Gleitzone-Uebergangsbereich/uebergangsbereich_gleitzone.html",
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__21.html",
+        "https://www.gesetze-im-internet.de/estg/__18.html",
+        "https://www.gesetze-im-internet.de/estg/__32.html",
+        "https://www.gesetze-im-internet.de/estg/__32a.html",
+        "https://www.gesetze-im-internet.de/estg/__66.html",
+        "https://www.gesetze-im-internet.de/estg/__9a.html",
+        "https://www.gesetze-im-internet.de/gewstg/__11.html",
+        "https://www.gesetze-im-internet.de/ksvg/__1.html",
+        "https://www.gesetze-im-internet.de/pbav_2025/BJNR1BE0A0024.html",
+        "https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html",
+        "https://www.gesetze-im-internet.de/sgb_3/__341.html",
+        "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+        "https://www.gesetze-im-internet.de/svbezgrv_2026/BJNR1160A0025.html",
+        "https://www.gesetze-im-internet.de/ustg_1980/__12.html",
+        "https://www.gesetze-im-internet.de/ustg_1980/__19.html",
+        "https://www.knappschaft.de/shareddocs/downloads/broschueren-listen-berichte/groessen-kv-12256.pdf?__blob=publicationFile",
+        "https://www.minijob-zentrale.de/DE/fuer-gewerbetreibende/abgaben-und-steuern/detailseite"
+      ],
+      "rowCount": 85,
+      "underReviewRows": 0
+    },
+    {
+      "country": "spain",
+      "name": "Spain",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [
+        {
+          "code": "md",
+          "name": "Comunidad de Madrid",
+          "slug": "madrid"
+        },
+        {
+          "code": "ct",
+          "name": "Cataluña",
+          "slug": "cataluna"
+        },
+        {
+          "code": "an",
+          "name": "Andalucía",
+          "slug": "andalucia"
+        },
+        {
+          "code": "vc",
+          "name": "Comunitat Valenciana",
+          "slug": "comunitat-valenciana"
+        },
+        {
+          "code": "ga",
+          "name": "Galicia",
+          "slug": "galicia"
+        },
+        {
+          "code": "cl",
+          "name": "Castilla y León",
+          "slug": "castilla-y-leon"
+        },
+        {
+          "code": "ar",
+          "name": "Aragón",
+          "slug": "aragon"
+        },
+        {
+          "code": "cn",
+          "name": "Canarias",
+          "slug": "canarias"
+        },
+        {
+          "code": "cm",
+          "name": "Castilla-La Mancha",
+          "slug": "castilla-la-mancha"
+        },
+        {
+          "code": "mc",
+          "name": "Región de Murcia",
+          "slug": "murcia"
+        },
+        {
+          "code": "as",
+          "name": "Asturias",
+          "slug": "asturias"
+        },
+        {
+          "code": "ib",
+          "name": "Illes Balears",
+          "slug": "illes-balears"
+        },
+        {
+          "code": "ex",
+          "name": "Extremadura",
+          "slug": "extremadura"
+        },
+        {
+          "code": "cb",
+          "name": "Cantabria",
+          "slug": "cantabria"
+        },
+        {
+          "code": "ri",
+          "name": "La Rioja",
+          "slug": "la-rioja"
+        },
+        {
+          "code": "ce",
+          "name": "Ceuta",
+          "slug": "ceuta"
+        },
+        {
+          "code": "ml",
+          "name": "Melilla",
+          "slug": "melilla"
+        },
+        {
+          "code": "bi",
+          "name": "Bizkaia",
+          "slug": "bizkaia"
+        },
+        {
+          "code": "gi",
+          "name": "Gipuzkoa",
+          "slug": "gipuzkoa"
+        },
+        {
+          "code": "al",
+          "name": "Álava",
+          "slug": "alava"
+        },
+        {
+          "code": "nc",
+          "name": "Navarra",
+          "slug": "navarra"
+        }
+      ],
+      "files": [
+        "spain/2026.json",
+        "spain/2026/md.json",
+        "spain/2026/ct.json",
+        "spain/2026/an.json",
+        "spain/2026/vc.json",
+        "spain/2026/ga.json",
+        "spain/2026/cl.json",
+        "spain/2026/ar.json",
+        "spain/2026/cn.json",
+        "spain/2026/cm.json",
+        "spain/2026/mc.json",
+        "spain/2026/as.json",
+        "spain/2026/ib.json",
+        "spain/2026/ex.json",
+        "spain/2026/cb.json",
+        "spain/2026/ri.json",
+        "spain/2026/ce.json",
+        "spain/2026/ml.json",
+        "spain/2026/bi.json",
+        "spain/2026/gi.json",
+        "spain/2026/al.json",
+        "spain/2026/nc.json"
+      ],
+      "pageUrl": "https://calcbloc.com/spain/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/spain/2026",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2025/12/31/c2508886.pdf",
+        "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2026/ALGORITMO_2026.pdf",
+        "https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf",
+        "https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1706268015592",
+        "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2025/12/30/I-1405_cas.pdf",
+        "https://www.boe.es/buscar/act.php?id=BOA-d-2005-90006",
+        "https://www.boe.es/buscar/act.php?id=BOC-j-2009-90008",
+        "https://www.boe.es/buscar/act.php?id=BOCL-h-2013-90254",
+        "https://www.boe.es/buscar/act.php?id=BOCM-m-2010-90068",
+        "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a93",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2011-10542",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2011-18161",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2015-945",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2017-13750",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2018-8159",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2024-6951",
+        "https://www.boe.es/buscar/act.php?id=BON-n-2008-90013",
+        "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7296"
+      ],
+      "rowCount": 90,
+      "underReviewRows": 0
+    },
+    {
+      "country": "netherlands",
+      "name": "Netherlands",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "netherlands/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/netherlands/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/netherlands/2026",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b62fd.pdf",
+        "https://ind.nl/en/forms/3086.pdf",
+        "https://ind.nl/en/residence-permits/work/self-employed-person",
+        "https://wetten.overheid.nl/BWBR0002638/",
+        "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/heffingskortingen/algemene_heffingskorting/tabel-algemene-heffingskorting-2026",
+        "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/heffingskortingen/arbeidskorting/tabel-arbeidskorting-2026",
+        "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/mkb-winstvrijstelling-2026",
+        "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026",
+        "https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/handhaving",
+        "https://www.rijksoverheid.nl/themas/werk/inkomstenbelasting/belastingvoordeel-buitenlandse-werknemers",
+        "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026"
+      ],
+      "rowCount": 61,
+      "underReviewRows": 0
+    },
+    {
+      "country": "france",
+      "name": "France",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "france/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/france/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/france/2026",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://bofip.impots.gouv.fr/bofip/11255-PGP.html/identifiant=BOI-BAREME-000037-20260706",
+        "https://bofip.impots.gouv.fr/bofip/849-PGP.html/identifiant=BOI-TVA-DECLA-40-10-10-20260701",
+        "https://reglementation.agirc-arrco.fr/home/baremes/listes-area/baremes-1/cotisations-au-regime-agirc-arrco-en-2026.html",
+        "https://www.ags-garantie-salaires.org/a-la-une/communiques-de-presse/maintien-du-taux-de-cotisations-AGS",
+        "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html",
+        "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/toutes-les-actualites/2026--modification-des-seuils-de.html",
+        "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/21-calcul_impot_369a382.pdf",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029924557",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030190792",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036679615",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037985788",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038839912",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044981918",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044981927",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048684728",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048837031",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048839886",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006178193/",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006178208/",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006073189/LEGISCTA000006155796/",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006073189/LEGISCTA000019946240/",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006073189/LEGISCTA000042675227/",
+        "https://www.legifrance.gouv.fr/conv_coll/article/KALIARTI000036732016",
+        "https://www.legifrance.gouv.fr/conv_coll/id/KALIARTI000051474222/?idConteneur=KALICONT000051488446",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053228984",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054248488",
+        "https://www.service-public.fr/particuliers/vosdroits/F2300",
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+        "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html"
+      ],
+      "rowCount": 158,
+      "underReviewRows": 36
+    },
+    {
+      "country": "singapore",
+      "name": "Singapore",
+      "currency": "SGD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "singapore/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/singapore/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/singapore/2026",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://www.cpf.gov.sg/content/dam/web/member/faq/growing-your-savings/documents/MARates2026.pdf",
+        "https://www.cpf.gov.sg/employer/employer-obligations/how-much-cpf-contributions-to-pay",
+        "https://www.cpf.gov.sg/employer/employer-obligations/skills-development-levy",
+        "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund(cpf)-relief-for-employees",
+        "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund-(cpf)-relief-for-self-employed-employee-who-is-also-self-employed",
+        "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/earned-income-relief",
+        "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+        "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency",
+        "https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/tax-obligations-of-self-employed-persons/filing-responsibilities-of-self-employed-persons-(including-individual-partners)",
+        "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+        "https://www.mom.gov.sg/passes-and-permits/s-pass/quota-and-levy/levy-and-quota-requirements",
+        "https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/construction-sector-requirements",
+        "https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/manufacturing-sector-requirements",
+        "https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/marine-sector-requirements",
+        "https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/process-sector-requirements",
+        "https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/services-sector-requirements"
+      ],
+      "rowCount": 94,
+      "underReviewRows": 0
+    },
+    {
+      "country": "uae",
+      "name": "United Arab Emirates",
+      "currency": "AED",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "uae/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/uae/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/uae/2026",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://gpssa.gov.ae/pages/en/help/faq/what-distribution-contributions-due-insured-individuals",
+        "https://icp.gov.ae/en/services/uae-green-residency/",
+        "https://mof.gov.ae/wp-content/uploads/2023/04/Cabinet-Decision-No-116-of-2022-on-the-annual-Taxable-Income-subject-to-Corporate-Tax.pdf",
+        "https://u.ae/en/information-and-services/business/Doing-business/doing-business-in-free-zones/starting-a-business-in-a-free-zone",
+        "https://u.ae/en/information-and-services/finance-and-investment/taxation",
+        "https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector",
+        "https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/payment-of-wages",
+        "https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/work-permits",
+        "https://u.ae/en/information-and-services/jobs/Sector-of-employment/working-in-uae-government-sector/pensions-and-social-security-for-uae-citizens",
+        "https://u.ae/en/information-and-services/jobs/Workplace-regulations/insurance/unemployment-insurance-scheme",
+        "https://u.ae/en/information-and-services/visa-and-emirates-id/Types-of-visas/Residence-visa/residence-visa-for-working-outside-the-uae",
+        "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/golden-visa",
+        "https://www.mohre.gov.ae/en/media-center/news/31/12/2025/mohre-raises-minimum-wage-for-emiratis-in-the-private-sector-to-aed-6000-per-month-effective-1",
+        "https://www.pension.gov.ae/Publications/20260408%20-%20Pension%20Guide_En.pdf",
+        "https://www.tax.gov.ae/en/content/mandatory.registration.aspx"
+      ],
+      "rowCount": 56,
+      "underReviewRows": 4
+    },
+    {
+      "country": "italy",
+      "name": "Italy",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [
+        {
+          "code": "abr",
+          "name": "Abruzzo",
+          "slug": "abruzzo"
+        },
+        {
+          "code": "bas",
+          "name": "Basilicata",
+          "slug": "basilicata"
+        },
+        {
+          "code": "bz",
+          "name": "Autonomous Province of Bolzano",
+          "slug": "bolzano"
+        },
+        {
+          "code": "cal",
+          "name": "Calabria",
+          "slug": "calabria"
+        },
+        {
+          "code": "cam",
+          "name": "Campania",
+          "slug": "campania"
+        },
+        {
+          "code": "emr",
+          "name": "Emilia-Romagna",
+          "slug": "emilia-romagna"
+        },
+        {
+          "code": "fvg",
+          "name": "Friuli Venezia Giulia",
+          "slug": "friuli-venezia-giulia"
+        },
+        {
+          "code": "laz",
+          "name": "Lazio",
+          "slug": "lazio"
+        },
+        {
+          "code": "lig",
+          "name": "Liguria",
+          "slug": "liguria"
+        },
+        {
+          "code": "lom",
+          "name": "Lombardy",
+          "slug": "lombardy"
+        },
+        {
+          "code": "mar",
+          "name": "Marche",
+          "slug": "marche"
+        },
+        {
+          "code": "mol",
+          "name": "Molise",
+          "slug": "molise"
+        },
+        {
+          "code": "pie",
+          "name": "Piedmont",
+          "slug": "piedmont"
+        },
+        {
+          "code": "pug",
+          "name": "Apulia (Puglia)",
+          "slug": "apulia"
+        },
+        {
+          "code": "sar",
+          "name": "Sardinia",
+          "slug": "sardinia"
+        },
+        {
+          "code": "sic",
+          "name": "Sicily",
+          "slug": "sicily"
+        },
+        {
+          "code": "tos",
+          "name": "Tuscany",
+          "slug": "tuscany"
+        },
+        {
+          "code": "tn",
+          "name": "Autonomous Province of Trento",
+          "slug": "trento"
+        },
+        {
+          "code": "umb",
+          "name": "Umbria",
+          "slug": "umbria"
+        },
+        {
+          "code": "vda",
+          "name": "Aosta Valley",
+          "slug": "aosta-valley"
+        },
+        {
+          "code": "ven",
+          "name": "Veneto",
+          "slug": "veneto"
+        }
+      ],
+      "files": [
+        "italy/2026.json",
+        "italy/2026/abr.json",
+        "italy/2026/bas.json",
+        "italy/2026/bz.json",
+        "italy/2026/cal.json",
+        "italy/2026/cam.json",
+        "italy/2026/emr.json",
+        "italy/2026/fvg.json",
+        "italy/2026/laz.json",
+        "italy/2026/lig.json",
+        "italy/2026/lom.json",
+        "italy/2026/mar.json",
+        "italy/2026/mol.json",
+        "italy/2026/pie.json",
+        "italy/2026/pug.json",
+        "italy/2026/sar.json",
+        "italy/2026/sic.json",
+        "italy/2026/tos.json",
+        "italy/2026/tn.json",
+        "italy/2026/umb.json",
+        "italy/2026/vda.json",
+        "italy/2026/ven.json"
+      ],
+      "pageUrl": "https://calcbloc.com/italy/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/italy/2026",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://ambankara.esteri.it/wp-content/uploads/2026/05/06_RESIDENZA-ELETTIVA_.pdf",
+        "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf3_istruzioni_2026_agg-13-05-2026",
+        "https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef",
+        "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+        "https://www.esteri.it/mae/normative/Normativa_Consolare/Visti/Decreto_Interministeriale_850_11-5-2011.pdf",
+        "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.versione=1&art.idGruppo=0&art.flagTipoArticolo=0&art.codiceRedazionale=24A01716&art.idArticolo=3&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2024-04-04&art.progressivo=0",
+        "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2023/10/Circolare_14306/Allegati/14431_Circolare-numero-88-del-31-10-2023.pdf",
+        "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+        "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+        "https://www.inps.it/it/it/inps-comunica/diritti-e-obblighi-in-materia-di-sicurezza-sociale-nell-unione-e/per-le-imprese/aliquote-contributive.html",
+        "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.lavoratori-dipendenti-limite-minimo-di-retribuzione-giornaliera-2026.html",
+        "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-06-01",
+        "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art24bis!vig=2026-06-01",
+        "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-02-05;3~art1!vig=2026-06-01",
+        "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-04-30;62~art7",
+        "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-01",
+        "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-05-29;297~art3",
+        "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207!vig=2026-06-01",
+        "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
+        "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=01&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=02&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=03&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=04&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=05&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=06&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=07&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=08&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=09&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=10&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=11&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=12&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=13&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=14&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=15&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=16&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=17&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=18&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=19&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=20&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=21&anno=2026",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=A271&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=A326&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=A345&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=A662&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=A944&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=A952&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=B354&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=B519&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=C352&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=D612&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=D969&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=F205&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=F839&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=G273&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=G478&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=G942&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=H501&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=L219&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=L378&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=L424&anno=9999",
+        "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/risultato.htm?cc=L736&anno=9999"
+      ],
+      "rowCount": 101,
+      "underReviewRows": 0
+    },
+    {
+      "country": "portugal",
+      "name": "Portugal",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [
+        {
+          "code": "ma",
+          "name": "Madeira",
+          "slug": "madeira"
+        },
+        {
+          "code": "ac",
+          "name": "Azores",
+          "slug": "azores"
+        }
+      ],
+      "files": [
+        "portugal/2026.json",
+        "portugal/2026/ma.json",
+        "portugal/2026/ac.json"
+      ],
+      "pageUrl": "https://calcbloc.com/portugal/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/portugal/2026",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://at.madeira.gov.pt/ficheiros/IISerie-013-2026-01-20Supl4.pdf",
+        "https://at.madeira.gov.pt/ficheiros/Portaria_480_A_2025_1%5B1%5D.pdf",
+        "https://files.diariodarepublica.pt/1s/2026/11/21400/0000500006.pdf",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf58a.aspx",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs70.aspx",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78a.aspx",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs68ra-202611.aspx",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/rendimento/cirs/Documents/PIV_25858.pdf",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-233-a-2026.pdf",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_25045_2024.pdf",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/circular-3-2026.pdf",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/outros_diplomas/Documents/decreto-legislativo-regional-17-2026-m.pdf",
+        "https://jo.azores.gov.pt/",
+        "https://vistos.mne.gov.pt/pt/vistos-nacionais/documentacao-instrutoria/meios-de-subsistencia",
+        "https://vistos.mne.gov.pt/pt/vistos-nacionais/documentacao-instrutoria/residencia",
+        "https://www.dgert.gov.pt/retribuicao-minima-mensal-garantida-para-2026",
+        "https://www.madeira.gov.pt//Portals/25/Documentos/Legislacao/DLR_1_2026_M.pdf",
+        "https://www.seg-social.pt/ptss/pssd/documento/cmc1xlxpq00d9kl2y0p3inyft",
+        "https://www.seg-social.pt/ptss/pssd/documento/cmdddzytm006agq2y1ci6tibc"
+      ],
+      "rowCount": 76,
+      "underReviewRows": 0
+    },
+    {
+      "country": "switzerland",
+      "name": "Switzerland",
+      "currency": "CHF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [
+        {
+          "code": "zh",
+          "name": "Zürich",
+          "slug": "zurich"
+        },
+        {
+          "code": "be",
+          "name": "Bern",
+          "slug": "bern"
+        },
+        {
+          "code": "lu",
+          "name": "Lucerne",
+          "slug": "lucerne"
+        },
+        {
+          "code": "ur",
+          "name": "Uri",
+          "slug": "uri"
+        },
+        {
+          "code": "sz",
+          "name": "Schwyz",
+          "slug": "schwyz"
+        },
+        {
+          "code": "ow",
+          "name": "Obwalden",
+          "slug": "obwalden"
+        },
+        {
+          "code": "nw",
+          "name": "Nidwalden",
+          "slug": "nidwalden"
+        },
+        {
+          "code": "gl",
+          "name": "Glarus",
+          "slug": "glarus"
+        },
+        {
+          "code": "zg",
+          "name": "Zug",
+          "slug": "zug"
+        },
+        {
+          "code": "fr",
+          "name": "Fribourg",
+          "slug": "fribourg"
+        },
+        {
+          "code": "so",
+          "name": "Solothurn",
+          "slug": "solothurn"
+        },
+        {
+          "code": "bs",
+          "name": "Basel-Stadt",
+          "slug": "basel-stadt"
+        },
+        {
+          "code": "bl",
+          "name": "Basel-Landschaft",
+          "slug": "basel-landschaft"
+        },
+        {
+          "code": "sh",
+          "name": "Schaffhausen",
+          "slug": "schaffhausen"
+        },
+        {
+          "code": "ar",
+          "name": "Appenzell Ausserrhoden",
+          "slug": "appenzell-ausserrhoden"
+        },
+        {
+          "code": "ai",
+          "name": "Appenzell Innerrhoden",
+          "slug": "appenzell-innerrhoden"
+        },
+        {
+          "code": "sg",
+          "name": "St. Gallen",
+          "slug": "st-gallen"
+        },
+        {
+          "code": "gr",
+          "name": "Graubünden",
+          "slug": "graubunden"
+        },
+        {
+          "code": "ag",
+          "name": "Aargau",
+          "slug": "aargau"
+        },
+        {
+          "code": "tg",
+          "name": "Thurgau",
+          "slug": "thurgau"
+        },
+        {
+          "code": "ti",
+          "name": "Ticino",
+          "slug": "ticino"
+        },
+        {
+          "code": "vd",
+          "name": "Vaud",
+          "slug": "vaud"
+        },
+        {
+          "code": "vs",
+          "name": "Valais",
+          "slug": "valais"
+        },
+        {
+          "code": "ne",
+          "name": "Neuchâtel",
+          "slug": "neuchatel"
+        },
+        {
+          "code": "ge",
+          "name": "Geneva",
+          "slug": "geneva"
+        },
+        {
+          "code": "ju",
+          "name": "Jura",
+          "slug": "jura"
+        }
+      ],
+      "files": [
+        "switzerland/2026.json",
+        "switzerland/2026/zh.json",
+        "switzerland/2026/be.json",
+        "switzerland/2026/lu.json",
+        "switzerland/2026/ur.json",
+        "switzerland/2026/sz.json",
+        "switzerland/2026/ow.json",
+        "switzerland/2026/nw.json",
+        "switzerland/2026/gl.json",
+        "switzerland/2026/zg.json",
+        "switzerland/2026/fr.json",
+        "switzerland/2026/so.json",
+        "switzerland/2026/bs.json",
+        "switzerland/2026/bl.json",
+        "switzerland/2026/sh.json",
+        "switzerland/2026/ar.json",
+        "switzerland/2026/ai.json",
+        "switzerland/2026/sg.json",
+        "switzerland/2026/gr.json",
+        "switzerland/2026/ag.json",
+        "switzerland/2026/tg.json",
+        "switzerland/2026/ti.json",
+        "switzerland/2026/vd.json",
+        "switzerland/2026/vs.json",
+        "switzerland/2026/ne.json",
+        "switzerland/2026/ge.json",
+        "switzerland/2026/ju.json"
+      ],
+      "pageUrl": "https://calcbloc.com/switzerland/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/switzerland/2026",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1983/797_797_797/20230101/de/pdf-a/fedlex-data-admin-ch-eli-cc-1983-797_797_797-20230101-de-pdf-a-9.pdf",
+        "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1999/404/20240303/de/pdf-a/fedlex-data-admin-ch-eli-cc-1999-404-20240303-de-pdf-a.pdf",
+        "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2018/274/20250110/de/pdf-a/fedlex-data-admin-ch-eli-cc-2018-274-20250110-de-pdf-a.pdf",
+        "https://m4.ti.ch/fileadmin/POTERI/GC/allegati/rapporti/29926_8163%20R.pdf",
+        "https://www.ahv-iv.ch/p/2.01.d",
+        "https://www.ahv-iv.ch/p/2.02.d",
+        "https://www.ahv-iv.ch/p/2.08.d",
+        "https://www.bs.ch/wsu/awa/arbeitsbeziehungen/loehne/mindestlohn/haeufige-fragen-zum-kantonalen-mindestlohn-faq",
+        "https://www.bsv.admin.ch/dam/de/sd-web/pOeFN0JP-S5E/uebersicht-schweizerische-soziale-sicherheit.pdf",
+        "https://www.bsv.admin.ch/dam/de/sd-web/sAgdISSXenMT/d_Betr%C3%A4ge%202026.pdf",
+        "https://www.estv.admin.ch/dam/de/sd-web/FZNWlk7WvHJA/steuerfuesse-np-1995-2026.xlsx",
+        "https://www.estv.admin.ch/dam/de/sd-web/vFK3ntWLQ4s4/2-215-D-2025-d.pdf",
+        "https://www.estv.admin.ch/de/mwst-steuersaetze-schweiz",
+        "https://www.estv.admin.ch/estv/de/home/direkte-bundessteuer/dbst-quellensteuer.html",
+        "https://www.estv2.admin.ch/stp/kb/ag-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/ai-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/ar-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/be-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/bl-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/bs-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/fr-fr.pdf",
+        "https://www.estv2.admin.ch/stp/kb/ge-fr.pdf",
+        "https://www.estv2.admin.ch/stp/kb/gl-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/gr-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/ju-fr.pdf",
+        "https://www.estv2.admin.ch/stp/kb/lu-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/ne-fr.pdf",
+        "https://www.estv2.admin.ch/stp/kb/nw-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/ow-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/sg-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/sh-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/so-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/sz-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/tg-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/ti-it.pdf",
+        "https://www.estv2.admin.ch/stp/kb/ur-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/vd-fr.pdf",
+        "https://www.estv2.admin.ch/stp/kb/vs-fr.pdf",
+        "https://www.estv2.admin.ch/stp/kb/zg-de.pdf",
+        "https://www.estv2.admin.ch/stp/kb/zh-de.pdf",
+        "https://www.ge.ch/appliquer-salaire-minimum-genevois/montant-calcul-du-salaire-minimum",
+        "https://www.jura.ch/fr/Autorites/Administration/DES/Economie-et-Emploi-SEE/Conditions-de-travail/Conditions-de-travail/Salaires-minimaux.html",
+        "https://www.ne.ch/sites/default/files/2026-02/SEMP_Memento_salaireminimum_2026_1.pdf",
+        "https://www.seco.admin.ch/de/normalarbeitsvertraege",
+        "https://www.sem.admin.ch/dam/sem/de/data/rechtsgrundlagen/weisungen/fza/20220403-rs-homeoffice-fza-drittstaaten.pdf.download.pdf/20220403-rs-homeoffice-fza-drittstaaten-d.pdf",
+        "https://www.sem.admin.ch/sem/en/home/themen/arbeit/faq.html",
+        "https://www.sem.admin.ch/sem/en/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html"
+      ],
+      "rowCount": 148,
+      "underReviewRows": 2
+    },
+    {
+      "country": "denmark",
+      "name": "Denmark",
+      "currency": "DKK",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [
+        {
+          "code": "hovedstaden",
+          "name": "Region Hovedstaden",
+          "slug": "hovedstaden"
+        },
+        {
+          "code": "sjaelland",
+          "name": "Region Sjælland",
+          "slug": "sjaelland"
+        },
+        {
+          "code": "syddanmark",
+          "name": "Region Syddanmark",
+          "slug": "syddanmark"
+        },
+        {
+          "code": "midtjylland",
+          "name": "Region Midtjylland",
+          "slug": "midtjylland"
+        },
+        {
+          "code": "nordjylland",
+          "name": "Region Nordjylland",
+          "slug": "nordjylland"
+        }
+      ],
+      "files": [
+        "denmark/2026.json",
+        "denmark/2026/hovedstaden.json",
+        "denmark/2026/sjaelland.json",
+        "denmark/2026/syddanmark.json",
+        "denmark/2026/midtjylland.json",
+        "denmark/2026/nordjylland.json"
+      ],
+      "pageUrl": "https://calcbloc.com/denmark/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/denmark/2026",
+      "lastVerified": "2026-11-09",
+      "sourceUrls": [
+        "https://lifeindenmark.borger.dk/working/work-rights/working-conditions/pay",
+        "https://nyidanmark.dk/en-GB/You-want-to-apply/Residence-as-a-Nordic-citizen-or-EU-or-EEA-citizen/EU-self-employed-person",
+        "https://skat.dk/borger/am-bidrag",
+        "https://skat.dk/erhverv/ansatte-og-loen/udenlandsk-arbejdskraft/forskerskatteordningen",
+        "https://svmn.dk/media/0oia30i5/kommuneskattesatser_2026.xlsx",
+        "https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/arbejdsmarkedsbidragsloven",
+        "https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/ligningsloven",
+        "https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/momsloven",
+        "https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven",
+        "https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/virksomhedsskatteloven",
+        "https://svmn.dk/tal-og-metode/satser/statistik-i-kommunerne/kommuneskatter-gennemsnitsprocenten-i-2026",
+        "https://virk.dk/vejledning/atp/atp-arbejdsgiver/atp-satser/",
+        "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work",
+        "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Start-up-Denmark",
+        "https://www.retsinformation.dk/eli/lta/2023/214/pdf"
+      ],
+      "rowCount": 87,
+      "underReviewRows": 0
+    },
+    {
+      "country": "sweden",
+      "name": "Sweden",
+      "currency": "SEK",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [
+        {
+          "code": "ab",
+          "name": "Stockholm County",
+          "slug": "stockholm"
+        },
+        {
+          "code": "c",
+          "name": "Uppsala County",
+          "slug": "uppsala"
+        },
+        {
+          "code": "d",
+          "name": "Södermanland County",
+          "slug": "sodermanland"
+        },
+        {
+          "code": "e",
+          "name": "Östergötland County",
+          "slug": "ostergotland"
+        },
+        {
+          "code": "f",
+          "name": "Jönköping County",
+          "slug": "jonkoping"
+        },
+        {
+          "code": "g",
+          "name": "Kronoberg County",
+          "slug": "kronoberg"
+        },
+        {
+          "code": "h",
+          "name": "Kalmar County",
+          "slug": "kalmar"
+        },
+        {
+          "code": "i",
+          "name": "Gotland County",
+          "slug": "gotland"
+        },
+        {
+          "code": "k",
+          "name": "Blekinge County",
+          "slug": "blekinge"
+        },
+        {
+          "code": "m",
+          "name": "Skåne County",
+          "slug": "skane"
+        },
+        {
+          "code": "n",
+          "name": "Halland County",
+          "slug": "halland"
+        },
+        {
+          "code": "o",
+          "name": "Västra Götaland County",
+          "slug": "vastra-gotaland"
+        },
+        {
+          "code": "s",
+          "name": "Värmland County",
+          "slug": "varmland"
+        },
+        {
+          "code": "t",
+          "name": "Örebro County",
+          "slug": "orebro"
+        },
+        {
+          "code": "u",
+          "name": "Västmanland County",
+          "slug": "vastmanland"
+        },
+        {
+          "code": "w",
+          "name": "Dalarna County",
+          "slug": "dalarna"
+        },
+        {
+          "code": "x",
+          "name": "Gävleborg County",
+          "slug": "gavleborg"
+        },
+        {
+          "code": "y",
+          "name": "Västernorrland County",
+          "slug": "vasternorrland"
+        },
+        {
+          "code": "z",
+          "name": "Jämtland County",
+          "slug": "jamtland"
+        },
+        {
+          "code": "ac",
+          "name": "Västerbotten County",
+          "slug": "vasterbotten"
+        },
+        {
+          "code": "bd",
+          "name": "Norrbotten County",
+          "slug": "norrbotten"
+        }
+      ],
+      "files": [
+        "sweden/2026.json",
+        "sweden/2026/ab.json",
+        "sweden/2026/c.json",
+        "sweden/2026/d.json",
+        "sweden/2026/e.json",
+        "sweden/2026/f.json",
+        "sweden/2026/g.json",
+        "sweden/2026/h.json",
+        "sweden/2026/i.json",
+        "sweden/2026/k.json",
+        "sweden/2026/m.json",
+        "sweden/2026/n.json",
+        "sweden/2026/o.json",
+        "sweden/2026/s.json",
+        "sweden/2026/t.json",
+        "sweden/2026/u.json",
+        "sweden/2026/w.json",
+        "sweden/2026/x.json",
+        "sweden/2026/y.json",
+        "sweden/2026/z.json",
+        "sweden/2026/ac.json",
+        "sweden/2026/bd.json"
+      ],
+      "pageUrl": "https://calcbloc.com/sweden/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/sweden/2026",
+      "lastVerified": "2026-11-10",
+      "sourceUrls": [
+        "https://forskarskattenamnden.se/om-skattelattnad",
+        "https://www.migrationsverket.se/du-vill-ansoka/arbeta/anstalld-eller-egen-foretagare.html",
+        "https://www.migrationsverket.se/du-vill-ansoka/arbeta/anstalld-eller-egen-foretagare/anstalld.html",
+        "https://www.migrationsverket.se/du-vill-ansoka/arbeta/anstalld-eller-egen-foretagare/egen-foretagare.html",
+        "https://www.regeringen.se/rattsliga-dokument/kommittedirektiv/2022/12/dir.-2022140",
+        "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-1989253-om-allmanna-helgdagar_sfs-1989-253/",
+        "https://www.scb.se/hitta-statistik/statistik-efter-amne/offentlig-ekonomi/finanser-for-den-kommunala-sektorn/kommunalskatterna/pong/statistiknyhet/kommunalskatterna-2026/",
+        "https://www.scb.se/hitta-statistik/statistik-efter-amne/offentlig-ekonomi/finanser-for-den-kommunala-sektorn/kommunalskatterna/pong/tabell-och-diagram/totala-kommunala-skattesatser-2026-kommunvis/",
+        "https://www.skatteverket.se/download/18.1522bf3f19aea8075ba55c/1766385913260/teknisk-beskrivning-skv-433-2026-utgava-36.pdf",
+        "https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/enskildnaringsverksamhet/egenavgifterochsarskildloneskatt.4.361dc8c15312eff6fd1f678.html",
+        "https://www.skatteverket.se/foretag/drivaforetag/startaochregistrera/fochfaskatt.4.58d555751259e4d661680006355.html",
+        "https://www.skatteverket.se/foretag/moms/momsregistrering/ivissafallbehoverduinteregistreradittforetagformoms.4.3152d9ac158968eb8fd1efe.html",
+        "https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatserochundantagfranmoms.4.58d555751259e4d66168000409.html",
+        "https://www.skatteverket.se/omoss/pressochmedia/nyheter/2026/nyheter/livsmedelsmomsensankstill6procent.5.70685bee19c85dd5dd0a3f.html",
+        "https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html",
+        "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__OE__OE0101/BegrochKyrkoavg2000/"
+      ],
+      "rowCount": 140,
+      "underReviewRows": 0
+    },
+    {
+      "country": "austria",
+      "name": "Austria",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "austria/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/austria/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/austria/2026",
+      "lastVerified": "2026-11-10",
+      "sourceUrls": [
+        "https://www.bmf.gv.at/dam/jcr:436f8c01-38e0-41bf-b904-c0e62a862bf1/251117_Steuerbuch2026_DE_BF.pdf",
+        "https://www.bmf.gv.at/themen/steuern/arbeitnehmerveranlagung/steuertarif-steuerabsetzbetraege/familienbonus-plus.html",
+        "https://www.bmf.gv.at/themen/steuern/arbeitnehmerveranlagung/steuertarif-steuerabsetzbetraege/steuertarif-steuerabsetzbetraege.html",
+        "https://www.bmf.gv.at/themen/steuern/arbeitnehmerveranlagung/steuertarif-steuerabsetzbetraege/uebersicht-steuerabsetzbetraege.html",
+        "https://www.bmf.gv.at/themen/steuern/arbeitnehmerveranlagung/zuzugsbeguenstigung.html",
+        "https://www.bmf.gv.at/themen/steuern/fristen-verfahren/fristen-faelligkeiten.html",
+        "https://www.bvaeb.at/cdscontent/load?contentid=10008.800982&version=1766151381",
+        "https://www.gesundheitskasse.at/cdscontent/load?contentid=10008.802672&version=1775628844",
+        "https://www.migration.gv.at/en/types-of-immigration/permanent-immigration/self-employedkeyworkers/",
+        "https://www.migration.gv.at/en/types-of-immigration/permanent-immigration/start-up-founders/",
+        "https://www.migration.gv.at/en/types-of-immigration/temporary-residence/",
+        "https://www.sozialministerium.gv.at/Themen/Arbeit/Arbeitsrecht/Entlohnung/Mindestlohn-in-OE.html",
+        "https://www.svs.at/cdscontent/?contentid=10007.816638&portal=svsportal",
+        "https://www.svs.at/cdscontent/?contentid=10007.816718&portal=svsportal",
+        "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/pauschalierung-weitere-infos/uebersicht-ueber-die-pauschalierungsmoeglichkeiten-im-detail.html",
+        "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html",
+        "https://www.wko.at/lohnverrechnung/lohnverrechnung-abrechnung-dienstnehmer"
+      ],
+      "rowCount": 95,
+      "underReviewRows": 0
+    },
+    {
+      "country": "poland",
+      "name": "Poland",
+      "currency": "PLN",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "poland/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/poland/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/poland/2026",
+      "lastVerified": "2026-11-10",
+      "sourceUrls": [
+        "https://dziennikustaw.gov.pl/D2025000062001.pdf",
+        "https://dziennikustaw.gov.pl/D2025000084301.pdf",
+        "https://dziennikustaw.gov.pl/D2025000107901.pdf",
+        "https://dziennikustaw.gov.pl/D2025000124201.pdf",
+        "https://dziennikustaw.gov.pl/D2025000146101.pdf",
+        "https://dziennikustaw.gov.pl/D2025000148001.pdf",
+        "https://dziennikustaw.gov.pl/D2026000006201.pdf",
+        "https://dziennikustaw.gov.pl/D2026000019201.pdf",
+        "https://dziennikustaw.gov.pl/D2026000019901.pdf",
+        "https://dziennikustaw.gov.pl/D2026000059201.pdf",
+        "https://dziennikustaw.gov.pl/D2026000121301.pdf",
+        "https://dziennikustaw.gov.pl/D2026000126301.pdf",
+        "https://monitorpolski.gov.pl/M2025000127401.pdf",
+        "https://www.gov.pl/web/poland-businessharbour-en/it-specialist",
+        "https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne"
+      ],
+      "rowCount": 93,
+      "underReviewRows": 0
+    },
+    {
+      "country": "luxembourg",
+      "name": "Luxembourg",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "luxembourg/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/luxembourg/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/luxembourg/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf",
+        "https://ccss.public.lu/dam-assets/publications/2026/ccss-20260313-avis-60-fr-de.pdf",
+        "https://cnap.public.lu/fr/actualites/2026/applicationindiciairejuin2026.html",
+        "https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2025/12/19/a591/jo/fr/pdfa/eli-etat-leg-loi-2025-12-19-a591-jo-fr-pdfa.pdf",
+        "https://guichet.public.lu/fr/citoyens/immigration/vivre/non-luxembourg/immigration/pays-tiers.html",
+        "https://guichet.public.lu/fr/citoyens/immigration/vivre/non-luxembourg/immigration/pays-tiers/travailleur-independant/independant.html",
+        "https://igss.gouvernement.lu/dam-assets/publications/param%C3%A8tres-sociaux/2026/par-soc-202606.pdf",
+        "https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf",
+        "https://impotsdirects.public.lu/fr/az/f/fond_empl.html",
+        "https://impotsdirects.public.lu/fr/baremes.html",
+        "https://itm.public.lu/fr/questions-reponses/droit-travail/remuneration/a/a3.html",
+        "https://pfi.public.lu/dam-assets/pdf/tva/sme/faq-fr.pdf"
+      ],
+      "rowCount": 126,
+      "underReviewRows": 0
+    },
+    {
+      "country": "czechia",
+      "name": "Czechia",
+      "currency": "CZK",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "czechia/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/czechia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/czechia/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://e-sbirka.gov.cz/sb/1992/586/2026-08-01",
+        "https://e-sbirka.gov.cz/sb/1992/589/2026-11-01",
+        "https://e-sbirka.gov.cz/sb/1992/592/2026-11-01",
+        "https://e-sbirka.gov.cz/sb/2004/235/2026-01-01",
+        "https://e-sbirka.gov.cz/sb/2006/187/2026-11-01",
+        "https://e-sbirka.gov.cz/sb/2025/356",
+        "https://e-sbirka.gov.cz/sb/2025/365/2026-01-01",
+        "https://e-sbirka.gov.cz/sb/2026/171",
+        "https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/informace-k-institutu-pausalni-dane-pro-rok-2025",
+        "https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/zamestnanci-zamestnavatele/dotazy-a-odpovedi/2026/aktualni-dotazy-a-odpovedi-k-dani-z",
+        "https://mpo.gov.cz/assets/cz/zahranicni-obchod/ekonomicka-migrace/programy-a-projekty/2025/7/Program-digitalni-nomad_1-7-2025.pdf",
+        "https://mv.gov.cz/clanek/prostredky-k-pobytu-pro-ucely-dlouhodobeho-viza.aspx",
+        "https://www.cssz.gov.cz/web/cz/maximalni-vymerovaci-zaklad",
+        "https://www.cssz.gov.cz/web/cz/zmena-vyse-minimalnich-zaloh-osvc-v-roce-2024",
+        "https://www.vzp.cz/platci/informace/osvc/osvc-minimalni-vyse-zaloh"
+      ],
+      "rowCount": 104,
+      "underReviewRows": 0
+    },
+    {
+      "country": "norway",
+      "name": "Norway",
+      "currency": "NOK",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "norway/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/norway/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/norway/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+        "https://lovdata.no/dokument/NL/lov/2005-12-21-124",
+        "https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747",
+        "https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748",
+        "https://www.arbeidstilsynet.no/en/pay-and-engagement-of-employees/pay-and-minimum-rates-of-pay/minimum-wage/",
+        "https://www.nav.no/grunnbelopet",
+        "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/veiledning/arbeidsgiveravgift-og-finansskatt/ekstra-arbeidsgiveravgift",
+        "https://www.skatteetaten.no/bedrift-og-organisasjon/skatt/skattemelding-naringsdrivende/fradrag/inntekt-formue-gjeld/personinntekt-i-enkeltpersonforetak/",
+        "https://www.skatteetaten.no/person/til-fra-norge/til/jobbe/skattekort/kildeskatt-pa-lonn/",
+        "https://www.skatteetaten.no/satser/alminnelig-inntekt/",
+        "https://www.skatteetaten.no/satser/finnmarksfradraget/",
+        "https://www.skatteetaten.no/satser/merverdiavgift/",
+        "https://www.skatteetaten.no/satser/minstefradrag/",
+        "https://www.skatteetaten.no/satser/sarfradrag-for-store-sykdomsutgifter/",
+        "https://www.skatteetaten.no/satser/skjermingsrente-for-aksjer-og-enkeltpersonforetak/",
+        "https://www.skatteetaten.no/satser/trygdeavgift/",
+        "https://www.udi.no/en/want-to-apply/work-immigration/skilled-workers/self-employed-persons-with-a-company-abroad/",
+        "https://www.udi.no/en/want-to-apply/work-immigration/skilled-workers/self-employed-persons-with-a-company-in-norway/",
+        "https://www.udi.no/en/word-definitions/remote-work-in-norway/"
+      ],
+      "rowCount": 98,
+      "underReviewRows": 0
+    },
+    {
+      "country": "finland",
+      "name": "Finland",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [
+        {
+          "code": "uusimaa",
+          "name": "Uusimaa",
+          "slug": "uusimaa"
+        },
+        {
+          "code": "southwest-finland",
+          "name": "Southwest Finland",
+          "slug": "southwest-finland"
+        },
+        {
+          "code": "satakunta",
+          "name": "Satakunta",
+          "slug": "satakunta"
+        },
+        {
+          "code": "kanta-hame",
+          "name": "Kanta-Häme",
+          "slug": "kanta-hame"
+        },
+        {
+          "code": "pirkanmaa",
+          "name": "Pirkanmaa",
+          "slug": "pirkanmaa"
+        },
+        {
+          "code": "paijat-hame",
+          "name": "Päijät-Häme",
+          "slug": "paijat-hame"
+        },
+        {
+          "code": "kymenlaakso",
+          "name": "Kymenlaakso",
+          "slug": "kymenlaakso"
+        },
+        {
+          "code": "south-karelia",
+          "name": "South Karelia",
+          "slug": "south-karelia"
+        },
+        {
+          "code": "south-savo",
+          "name": "South Savo",
+          "slug": "south-savo"
+        },
+        {
+          "code": "north-savo",
+          "name": "North Savo",
+          "slug": "north-savo"
+        },
+        {
+          "code": "north-karelia",
+          "name": "North Karelia",
+          "slug": "north-karelia"
+        },
+        {
+          "code": "central-finland",
+          "name": "Central Finland",
+          "slug": "central-finland"
+        },
+        {
+          "code": "south-ostrobothnia",
+          "name": "South Ostrobothnia",
+          "slug": "south-ostrobothnia"
+        },
+        {
+          "code": "ostrobothnia",
+          "name": "Ostrobothnia",
+          "slug": "ostrobothnia"
+        },
+        {
+          "code": "central-ostrobothnia",
+          "name": "Central Ostrobothnia",
+          "slug": "central-ostrobothnia"
+        },
+        {
+          "code": "north-ostrobothnia",
+          "name": "North Ostrobothnia",
+          "slug": "north-ostrobothnia"
+        },
+        {
+          "code": "kainuu",
+          "name": "Kainuu",
+          "slug": "kainuu"
+        },
+        {
+          "code": "lapland",
+          "name": "Lapland",
+          "slug": "lapland"
+        },
+        {
+          "code": "aland",
+          "name": "Åland",
+          "slug": "aland"
+        }
+      ],
+      "files": [
+        "finland/2026.json",
+        "finland/2026/uusimaa.json",
+        "finland/2026/southwest-finland.json",
+        "finland/2026/satakunta.json",
+        "finland/2026/kanta-hame.json",
+        "finland/2026/pirkanmaa.json",
+        "finland/2026/paijat-hame.json",
+        "finland/2026/kymenlaakso.json",
+        "finland/2026/south-karelia.json",
+        "finland/2026/south-savo.json",
+        "finland/2026/north-savo.json",
+        "finland/2026/north-karelia.json",
+        "finland/2026/central-finland.json",
+        "finland/2026/south-ostrobothnia.json",
+        "finland/2026/ostrobothnia.json",
+        "finland/2026/central-ostrobothnia.json",
+        "finland/2026/north-ostrobothnia.json",
+        "finland/2026/kainuu.json",
+        "finland/2026/lapland.json",
+        "finland/2026/aland.json"
+      ],
+      "pageUrl": "https://calcbloc.com/finland/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/finland/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://www.eduskunta.fi/pdf/EV+120/2025",
+        "https://www.etk.fi/ajankohtaista/tyoelakemaksut-vuonna-2026/",
+        "https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/faqs-on-yel-insurance/",
+        "https://www.finlex.fi/fi/lainsaadanto/2001/55",
+        "https://www.finlex.fi/fi/lainsaadanto/2004/301",
+        "https://www.finlex.fi/fi/lainsaadanto/2023/652",
+        "https://www.startupinfinland.com/applying",
+        "https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/paying-unemployment-insurance-contributions",
+        "https://www.vero.fi/en/businesses-and-corporations/business-operations/foreign-business-in-finland/your-tax-handbook-in-finland/",
+        "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/taxation-of-self-employed-individuals/instructions-for-filing/",
+        "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/vat-for-small-business/",
+        "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/arriving_in_finland/work_in_finland/specific-instructions-for-different-occupations/key_employees_from_other_countrie/",
+        "https://www.vero.fi/henkiloasiakkaat/verokortti-ja-veroilmoitus/verokortti/veroprosentti-ja-tuloraja/veroperusteet/",
+        "https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/49038/verotettavan-tulon-laskeminen-henkiloverotuksessa9/",
+        "https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47363/verohallinnon-paatos-ennakonpidatysprosenttien-laskentaperusteista-palkkatuloa-varten-ja-ennakonkannossa-maarattavan-ennakkoveron-laskentaperusteista-vuodelle-2026/",
+        "https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47465/kuntien-ja-seurakuntien-tuloveroprosentit-vuonna-2026/",
+        "https://www.vero.fi/yritykset-ja-yhteisot/tietoa-yritysverotuksesta/yritys_tyonantajana/sosiaalivakuutusmaksut/"
+      ],
+      "rowCount": 124,
+      "underReviewRows": 0
+    },
+    {
+      "country": "slovenia",
+      "name": "Slovenia",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "slovenia/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/slovenia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/slovenia/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_na_dodano_vrednost/Opis/Davcni_zavezanci_in_identifikacija_za_namene_DDV.doc",
+        "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Dohodek_iz_dejavnosti/Opis/Brosura_o_dohodku_iz_dejavnosti.doc",
+        "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx",
+        "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Mednarodno_obdavcenje/Opis/Obdavcitev_tujcev_z_dovoljenjem_za_zacasno_prebivanje_za_digitalnega_nomada_po_ZDoh-2_in_mednarodnih_pogodbah.doc",
+        "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Opis/Brosura_o_placevanju_prispevkov_za_socialno_varnost.doc",
+        "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Opis/Obvezni_zdravstveni_prispevek_-_OZP.docx",
+        "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Opis/Pavsalni_prispevki_2026.docx",
+        "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_10_2026.xlsx",
+        "https://www.gov.si/en/news/2025-11-21-temporary-residence-permit-for-digital-nomads/",
+        "https://www.gov.si/novice/2025-11-24-novosti-pri-ugotavljanju-davcne-osnove-z-upostevanjem-normiranih-odhodkov-v-letu-2026/",
+        "https://www.gov.si/teme/minimalna-placa/"
+      ],
+      "rowCount": 112,
+      "underReviewRows": 0
+    },
+    {
+      "country": "romania",
+      "name": "Romania",
+      "currency": "RON",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "romania/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/romania/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/romania/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://igi.mai.gov.ro/wp-content/uploads/2026/04/ORDONANTA-DE-URGENTA-nr.-194-din-12-decembrie-2002.pdf",
+        "https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm",
+        "https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf",
+        "https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf",
+        "https://static.anaf.ro/static/10/Anaf/legislatie/OUG_156_2024.pdf",
+        "https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf",
+        "https://www.inspectiamuncii.ro/documents/521316/523496/20260407_COMUNICAT+PRESA+INFORMARE+ANGAJATORI+DIN+DOMENIUL+CONSTRUCTIILOR+-APRILIE+2026.pdf/11a0c4b0-f07a-4515-b18f-920a305473ab"
+      ],
+      "rowCount": 127,
+      "underReviewRows": 0
+    },
+    {
+      "country": "hungary",
+      "name": "Hungary",
+      "currency": "HUF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "hungary/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/hungary/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/hungary/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://kormanyhivatalok.hu/sites/default/files/2026-02/mennyi-is-2026-ban.pdf",
+        "https://nav.gov.hu/ado/szocialis_hozzajarulasi_ado/Csokken_a_szocialis_hozzajarulasi_ado_alapja_es_valtozik_az_egyeni_vallalkozok_bevallasi_gyakorisaga",
+        "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31.",
+        "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20",
+        "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+        "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16",
+        "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/73.-Szja-adoalap-kedvezmenyek-2026.-03.19",
+        "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/91.-informacios-fuzet---az-egeszsegugyi-szolgaltatasi-jarulek-2026.01.09",
+        "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/92.-Kisvallalati-ado-szabalyozasa-2026.-05.-18",
+        "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/94.-a-rehabilitacios-hozzajarulas-2026.-01.-12",
+        "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20",
+        "https://njt.jog.gov.hu/jogszabaly/1995-117-00-00",
+        "https://njt.jog.gov.hu/jogszabaly/2007-127-00-00",
+        "https://njt.jog.gov.hu/jogszabaly/2019-122-00-00",
+        "https://njt.jog.gov.hu/jogszabaly/2025-14-00-00",
+        "https://njt.jog.gov.hu/jogszabaly/2025-15-00-00",
+        "https://njt.jog.gov.hu/jogszabaly/2025-426-20-22",
+        "https://oif.gov.hu/tajekoztatok/feher-kartya-digitalis-nomad-tartozkodas"
+      ],
+      "rowCount": 75,
+      "underReviewRows": 0
+    },
+    {
+      "country": "slovakia",
+      "name": "Slovakia",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "slovakia/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/slovakia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/slovakia/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://employment.gov.sk/sk/socialne-poistenie-dochodkovy-system/socialne-poistenie/najvyznamnejsie-zmeny-socialnom-poisteni/zmeny-od-1-jula-2026.html",
+        "https://podpora.financnasprava.sk/214187-Nezdanite%C4%BEn%C3%A1-%C4%8Das%C5%A5-z%C3%A1kladu-dane-na-da%C5%88ovn%C3%ADka-za-rok-2026",
+        "https://podpora.financnasprava.sk/418585-V%C3%BDpo%C4%8Det-preddavkov-na-da%C5%88---sadzba-dane",
+        "https://podpora.financnasprava.sk/549090-Da%C5%88ov%C3%BD-bonus-na-vy%C5%BEivovan%C3%A9-die%C5%A5a-v-roku-2026",
+        "https://podpora.financnasprava.sk/982557-Nezdanite%C4%BEn%C3%A1-%C4%8Das%C5%A5-z%C3%A1kladu-dane-na-man%C5%BEelku-za-rok-2026",
+        "https://static.slov-lex.sk/static/SK/ZZ/2003/461/20260901.html",
+        "https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html",
+        "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+        "https://static.slov-lex.sk/static/SK/ZZ/2004/43/20260801.html",
+        "https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html",
+        "https://static.slov-lex.sk/static/SK/ZZ/2011/404/20261001.html",
+        "https://static.slov-lex.sk/static/SK/ZZ/2025/245/20250926.html",
+        "https://static.slov-lex.sk/static/SK/ZZ/2026/232/20260923.html",
+        "https://www.vszp.sk/platitelia/platenie-poistneho/oznamenia-zmeny/zmeny-od-01-01.2026/",
+        "https://www.vszp.sk/platitelia/platenie-poistneho/samostatne-zarobkovo-cinna-osoba/"
+      ],
+      "rowCount": 89,
+      "underReviewRows": 0
+    },
+    {
+      "country": "greece",
+      "name": "Greece",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "greece/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/greece/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/greece/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://api.et.gr/apiFEK/2/2026/1759/pdf",
+        "https://api.et.gr/apiLAW/1/2019/4646/pdf",
+        "https://api.et.gr/apiLAW/1/2022/4972/pdf",
+        "https://api.et.gr/apiLAW/1/2023/5038/pdf",
+        "https://api.et.gr/apiLAW/1/2023/5045/pdf",
+        "https://api.et.gr/apiLAW/1/2023/5073/pdf",
+        "https://api.et.gr/apiLAW/1/2025/5222/pdf",
+        "https://api.et.gr/apiLAW/1/2025/5246/pdf",
+        "https://api.et.gr/apiLAW/2/2025/62/pdf",
+        "https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-38-24122024",
+        "https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-42026",
+        "https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-62026"
+      ],
+      "rowCount": 139,
+      "underReviewRows": 0
+    }
+  ],
+  "pending": [
+    {
+      "country": "belgium",
+      "name": "Belgium",
+      "reason": "Held back from Batch A (owner, 2026-11-09): the federal income-tax scale and tax-free sum are under review until fin.belgium.be (taux d'imposition, revenus 2026 / exercice d'imposition 2027) is checked in a browser."
+    }
+  ]
+}
