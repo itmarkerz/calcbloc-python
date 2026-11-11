@@ -4,19 +4,19 @@
 [![Python versions](https://img.shields.io/pypi/pyversions/calcbloc.svg)](https://pypi.org/project/calcbloc/)
 [![Tests](https://github.com/itmarkerz/calcbloc-python/actions/workflows/tests.yml/badge.svg)](https://github.com/itmarkerz/calcbloc-python/actions/workflows/tests.yml)
 [![Code licence: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](https://github.com/itmarkerz/calcbloc-python/blob/main/LICENSE)
-[![Data licence: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-green.svg)](https://calcbloc.com/data)
+[![Data licence: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-green.svg)](https://calcbloc.com/data?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss)
 
 Official 2026 tax tables in Python: income tax brackets, social security and payroll contribution rates,
 thresholds and allowances for the US, UK, Canada, Australia, much of Europe and more. Every figure carries
 its official source and the date it was checked.
 
-CalcBloc is a product of [itmarkerz technologies](https://itmarkerz.co.in).
+CalcBloc is a product of [itmarkerz technologies](https://itmarkerz.co.in/?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss).
 
 `calcbloc` gives you two ways in:
 
-* **Offline tables.** The CalcBloc open dataset ([calcbloc.com/data](https://calcbloc.com/data)) ships inside the
+* **Offline tables.** The CalcBloc open dataset ([calcbloc.com/data](https://calcbloc.com/data?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss)) ships inside the
   package. Load a country's tax tables with no network, no API key and no rate limit.
-* **A typed API client.** `calcbloc.Client` wraps the [CalcBloc tax tables API](https://calcbloc.com/developers):
+* **A typed API client.** `calcbloc.Client` wraps the [CalcBloc tax tables API](https://calcbloc.com/developers?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss):
   the latest tables (JSON or CSV), plus take-home pay, employer cost and two-country salary comparisons
   computed by the same engines as the calculators on calcbloc.com.
 
@@ -208,12 +208,12 @@ calculation endpoints answer them with `400 unsupported_country`. `client.last_r
 | Free key | 5,000 | 60 | All, including net salary, employer cost and compare |
 
 Get a free key, instantly and without an email address, at
-[calcbloc.com/developers/keys](https://calcbloc.com/developers/keys). The client sends it in the `X-API-Key`
+[calcbloc.com/developers/keys](https://calcbloc.com/developers/keys?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss). The client sends it in the `X-API-Key`
 header; keys in the URL are refused by the API because URLs end up in logs. The calculation endpoints are
 meant to be called with a key: without one they answer `401 api_key_required`, unless keyless calculations
 are switched on at the anonymous limits (the current setting is shown in the
-[limits table](https://calcbloc.com/developers#limits)). For higher volumes or use without attribution, see
-[calcbloc.com/developers](https://calcbloc.com/developers).
+[limits table](https://calcbloc.com/developers?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss#limits)). For higher volumes or use without attribution, see
+[calcbloc.com/developers](https://calcbloc.com/developers?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss).
 
 ### Offline or API?
 
@@ -236,7 +236,7 @@ Upgrade the package to refresh the bundled snapshot, or call the API when you ne
   > Data by CalcBloc ([calcbloc.com/data](https://calcbloc.com/data))
 
 Each table carries an `attribution` block and a `pageUrl` for the matching tax tables page on calcbloc.com.
-API use is also covered by the [API terms](https://calcbloc.com/developers/terms).
+API use is also covered by the [API terms](https://calcbloc.com/developers/terms?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss).
 
 ## Country coverage
 
@@ -246,35 +246,35 @@ Bundled data generated 2026-11-11: **29 countries**, 213 tables (183 of them reg
 
 | Country | Code | Current tax year | Years bundled | Regional tables | Last verified | Tax tables page |
 |---|---|---|---|---|---|---|
-| United States | `us` | 2026 | 2026 | 51 | 2026-11-09 | [United States tax tables](https://calcbloc.com/us/tax-tables/2026) |
-| United Kingdom | `uk` | 2026-27 | 2026-27, 2025-26 | 2 | 2026-11-09 | [United Kingdom tax tables](https://calcbloc.com/uk/tax-tables/2026-27) |
-| Australia | `australia` | 2026-27 | 2026-27 | - | 2026-11-09 | [Australia tax tables](https://calcbloc.com/australia/tax-tables/2026-27) |
-| New Zealand | `new-zealand` | 2026-27 | 2026-27 | - | 2026-11-09 | [New Zealand tax tables](https://calcbloc.com/new-zealand/tax-tables/2026-27) |
-| Canada | `canada` | 2026 | 2026 | 13 | 2026-11-09 | [Canada tax tables](https://calcbloc.com/canada/tax-tables/2026) |
-| Ireland | `ireland` | 2026 | 2026 | - | 2026-11-06 | [Ireland tax tables](https://calcbloc.com/ireland/tax-tables/2026) |
-| India | `india` | 2026-27 | 2026-27 | - | 2026-11-11 | [India tax tables](https://calcbloc.com/india/tax-tables/2026-27) |
-| Germany | `germany` | 2026 | 2026 | - | 2026-11-09 | [Germany tax tables](https://calcbloc.com/germany/tax-tables/2026) |
-| Spain | `spain` | 2026 | 2026 | 21 | 2026-11-09 | [Spain tax tables](https://calcbloc.com/spain/tax-tables/2026) |
-| Netherlands | `netherlands` | 2026 | 2026 | - | 2026-11-09 | [Netherlands tax tables](https://calcbloc.com/netherlands/tax-tables/2026) |
-| France | `france` | 2026 | 2026 | - | 2026-11-09 | [France tax tables](https://calcbloc.com/france/tax-tables/2026) |
-| Singapore | `singapore` | 2026 | 2026 | - | 2026-11-09 | [Singapore tax tables](https://calcbloc.com/singapore/tax-tables/2026) |
-| United Arab Emirates | `uae` | 2026 | 2026 | - | 2026-11-09 | [United Arab Emirates tax tables](https://calcbloc.com/uae/tax-tables/2026) |
-| Italy | `italy` | 2026 | 2026 | 21 | 2026-11-09 | [Italy tax tables](https://calcbloc.com/italy/tax-tables/2026) |
-| Portugal | `portugal` | 2026 | 2026 | 2 | 2026-11-09 | [Portugal tax tables](https://calcbloc.com/portugal/tax-tables/2026) |
-| Switzerland | `switzerland` | 2026 | 2026 | 26 | 2026-11-09 | [Switzerland tax tables](https://calcbloc.com/switzerland/tax-tables/2026) |
-| Denmark | `denmark` | 2026 | 2026 | 5 | 2026-11-09 | [Denmark tax tables](https://calcbloc.com/denmark/tax-tables/2026) |
-| Sweden | `sweden` | 2026 | 2026 | 21 | 2026-11-10 | [Sweden tax tables](https://calcbloc.com/sweden/tax-tables/2026) |
-| Austria | `austria` | 2026 | 2026 | - | 2026-11-10 | [Austria tax tables](https://calcbloc.com/austria/tax-tables/2026) |
-| Poland | `poland` | 2026 | 2026 | - | 2026-11-10 | [Poland tax tables](https://calcbloc.com/poland/tax-tables/2026) |
-| Luxembourg | `luxembourg` | 2026 | 2026 | - | 2026-11-11 | [Luxembourg tax tables](https://calcbloc.com/luxembourg/tax-tables/2026) |
-| Czechia | `czechia` | 2026 | 2026 | - | 2026-11-11 | [Czechia tax tables](https://calcbloc.com/czechia/tax-tables/2026) |
-| Norway | `norway` | 2026 | 2026 | - | 2026-11-11 | [Norway tax tables](https://calcbloc.com/norway/tax-tables/2026) |
-| Finland | `finland` | 2026 | 2026 | 19 | 2026-11-11 | [Finland tax tables](https://calcbloc.com/finland/tax-tables/2026) |
-| Slovenia | `slovenia` | 2026 | 2026 | - | 2026-11-11 | [Slovenia tax tables](https://calcbloc.com/slovenia/tax-tables/2026) |
-| Romania | `romania` | 2026 | 2026 | - | 2026-11-11 | [Romania tax tables](https://calcbloc.com/romania/tax-tables/2026) |
-| Hungary | `hungary` | 2026 | 2026 | - | 2026-11-11 | [Hungary tax tables](https://calcbloc.com/hungary/tax-tables/2026) |
-| Slovakia | `slovakia` | 2026 | 2026 | - | 2026-11-11 | [Slovakia tax tables](https://calcbloc.com/slovakia/tax-tables/2026) |
-| Greece | `greece` | 2026 | 2026 | - | 2026-11-11 | [Greece tax tables](https://calcbloc.com/greece/tax-tables/2026) |
+| United States | `us` | 2026 | 2026 | 51 | 2026-11-09 | [United States tax tables](https://calcbloc.com/us/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| United Kingdom | `uk` | 2026-27 | 2026-27, 2025-26 | 2 | 2026-11-09 | [United Kingdom tax tables](https://calcbloc.com/uk/tax-tables/2026-27?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Australia | `australia` | 2026-27 | 2026-27 | - | 2026-11-09 | [Australia tax tables](https://calcbloc.com/australia/tax-tables/2026-27?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| New Zealand | `new-zealand` | 2026-27 | 2026-27 | - | 2026-11-09 | [New Zealand tax tables](https://calcbloc.com/new-zealand/tax-tables/2026-27?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Canada | `canada` | 2026 | 2026 | 13 | 2026-11-09 | [Canada tax tables](https://calcbloc.com/canada/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Ireland | `ireland` | 2026 | 2026 | - | 2026-11-06 | [Ireland tax tables](https://calcbloc.com/ireland/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| India | `india` | 2026-27 | 2026-27 | - | 2026-11-11 | [India tax tables](https://calcbloc.com/india/tax-tables/2026-27?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Germany | `germany` | 2026 | 2026 | - | 2026-11-09 | [Germany tax tables](https://calcbloc.com/germany/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Spain | `spain` | 2026 | 2026 | 21 | 2026-11-09 | [Spain tax tables](https://calcbloc.com/spain/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Netherlands | `netherlands` | 2026 | 2026 | - | 2026-11-09 | [Netherlands tax tables](https://calcbloc.com/netherlands/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| France | `france` | 2026 | 2026 | - | 2026-11-09 | [France tax tables](https://calcbloc.com/france/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Singapore | `singapore` | 2026 | 2026 | - | 2026-11-09 | [Singapore tax tables](https://calcbloc.com/singapore/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| United Arab Emirates | `uae` | 2026 | 2026 | - | 2026-11-09 | [United Arab Emirates tax tables](https://calcbloc.com/uae/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Italy | `italy` | 2026 | 2026 | 21 | 2026-11-09 | [Italy tax tables](https://calcbloc.com/italy/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Portugal | `portugal` | 2026 | 2026 | 2 | 2026-11-09 | [Portugal tax tables](https://calcbloc.com/portugal/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Switzerland | `switzerland` | 2026 | 2026 | 26 | 2026-11-09 | [Switzerland tax tables](https://calcbloc.com/switzerland/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Denmark | `denmark` | 2026 | 2026 | 5 | 2026-11-09 | [Denmark tax tables](https://calcbloc.com/denmark/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Sweden | `sweden` | 2026 | 2026 | 21 | 2026-11-10 | [Sweden tax tables](https://calcbloc.com/sweden/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Austria | `austria` | 2026 | 2026 | - | 2026-11-10 | [Austria tax tables](https://calcbloc.com/austria/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Poland | `poland` | 2026 | 2026 | - | 2026-11-10 | [Poland tax tables](https://calcbloc.com/poland/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Luxembourg | `luxembourg` | 2026 | 2026 | - | 2026-11-11 | [Luxembourg tax tables](https://calcbloc.com/luxembourg/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Czechia | `czechia` | 2026 | 2026 | - | 2026-11-11 | [Czechia tax tables](https://calcbloc.com/czechia/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Norway | `norway` | 2026 | 2026 | - | 2026-11-11 | [Norway tax tables](https://calcbloc.com/norway/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Finland | `finland` | 2026 | 2026 | 19 | 2026-11-11 | [Finland tax tables](https://calcbloc.com/finland/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Slovenia | `slovenia` | 2026 | 2026 | - | 2026-11-11 | [Slovenia tax tables](https://calcbloc.com/slovenia/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Romania | `romania` | 2026 | 2026 | - | 2026-11-11 | [Romania tax tables](https://calcbloc.com/romania/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Hungary | `hungary` | 2026 | 2026 | - | 2026-11-11 | [Hungary tax tables](https://calcbloc.com/hungary/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Slovakia | `slovakia` | 2026 | 2026 | - | 2026-11-11 | [Slovakia tax tables](https://calcbloc.com/slovakia/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Greece | `greece` | 2026 | 2026 | - | 2026-11-11 | [Greece tax tables](https://calcbloc.com/greece/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
 
 Coming later (tables under review, not yet published): Belgium.
 
@@ -312,17 +312,17 @@ country, year and region fits in under 1 MB.
 
 ## Links
 
-* Developer documentation: [calcbloc.com/developers](https://calcbloc.com/developers)
-* Open data and downloads: [calcbloc.com/data](https://calcbloc.com/data)
+* Developer documentation: [calcbloc.com/developers](https://calcbloc.com/developers?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss)
+* Open data and downloads: [calcbloc.com/data](https://calcbloc.com/data?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss)
 * OpenAPI 3.1 description: [calcbloc.com/api/openapi.json](https://calcbloc.com/api/openapi.json)
-* Calculators: [calcbloc.com](https://calcbloc.com)
+* Calculators: [calcbloc.com](https://calcbloc.com/?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss)
 * Changelog: [CHANGELOG.md](https://github.com/itmarkerz/calcbloc-python/blob/main/CHANGELOG.md)
 
 ## About
 
-[CalcBloc](https://calcbloc.com) is built and maintained by [itmarkerz technologies](https://itmarkerz.co.in),
+[CalcBloc](https://calcbloc.com/?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) is built and maintained by [itmarkerz technologies](https://itmarkerz.co.in/?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss),
 a web and mobile app development company in Kerala, India. The open data behind this package is at
-[calcbloc.com/data](https://calcbloc.com/data) and the API documentation at
-[calcbloc.com/developers](https://calcbloc.com/developers). The other CalcBloc packages (JavaScript, PHP, R,
+[calcbloc.com/data](https://calcbloc.com/data?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) and the API documentation at
+[calcbloc.com/developers](https://calcbloc.com/developers?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss). The other CalcBloc packages (JavaScript, PHP, R,
 Google Sheets, the MCP server and the dataset itself) are in the
 [itmarkerz GitHub organization](https://github.com/itmarkerz).

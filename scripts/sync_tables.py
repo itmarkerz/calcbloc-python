@@ -35,6 +35,13 @@ DEFAULT_SOURCE = REPO.parent / "calcbloc-data" / "tables"
 DEST = REPO / "src" / "calcbloc" / "data" / "tables"
 README = REPO / "README.md"
 START, END = "<!-- coverage:start -->", "<!-- coverage:end -->"
+# Referral tag for the README's links to calcbloc.com (the bundled pageUrl values stay plain).
+README_UTM = "utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss"
+
+
+def readme_link(url: str) -> str:
+    base, sep, fragment = url.partition("#")
+    return f"{base}{'&' if '?' in base else '?'}{README_UTM}{sep}{fragment}"
 
 
 def fail(msg: str) -> None:
@@ -121,7 +128,7 @@ def coverage_markdown(manifest: Dict[str, Any]) -> str:
         n_regions = len({f.split("/")[2] for f in c["files"] if f.count("/") == 2})
         lines.append(
             f"| {c['name']} | `{c['country']}` | {c['current_year']} | {', '.join(c['years'])} | "
-            f"{n_regions or '-'} | {c.get('lastVerified', '-')} | [{c['name']} tax tables]({c['pageUrl']}) |"
+            f"{n_regions or '-'} | {c.get('lastVerified', '-')} | [{c['name']} tax tables]({readme_link(c['pageUrl'])}) |"
         )
     pending = manifest.get("pending") or []
     if pending:

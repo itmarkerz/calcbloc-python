@@ -52,9 +52,9 @@ dependencies = []
 test = ["pytest>=7"]
 
 [project.urls]
-Homepage = "https://calcbloc.com"
-Documentation = "https://calcbloc.com/developers"
-Data = "https://calcbloc.com/data"
+Homepage = "https://calcbloc.com/?utm_source=calcbloc-python&utm_medium=package&utm_campaign=itmarkerz-oss"
+Documentation = "https://calcbloc.com/developers?utm_source=calcbloc-python&utm_medium=package&utm_campaign=itmarkerz-oss"
+Data = "https://calcbloc.com/data?utm_source=calcbloc-python&utm_medium=package&utm_campaign=itmarkerz-oss"
 Source = "https://github.com/itmarkerz/calcbloc-python"
 Issues = "https://github.com/itmarkerz/calcbloc-python/issues"
 Changelog = "https://github.com/itmarkerz/calcbloc-python/blob/main/CHANGELOG.md"
