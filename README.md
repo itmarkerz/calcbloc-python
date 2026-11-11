@@ -10,6 +10,8 @@ Official 2026 tax tables in Python: income tax brackets, social security and pay
 thresholds and allowances for the US, UK, Canada, Australia, much of Europe and more. Every figure carries
 its official source and the date it was checked.
 
+CalcBloc is a product of [itmarkerz technologies](https://itmarkerz.co.in).
+
 `calcbloc` gives you two ways in:
 
 * **Offline tables.** The CalcBloc open dataset ([calcbloc.com/data](https://calcbloc.com/data)) ships inside the
@@ -315,3 +317,12 @@ country, year and region fits in under 1 MB.
 * OpenAPI 3.1 description: [calcbloc.com/api/openapi.json](https://calcbloc.com/api/openapi.json)
 * Calculators: [calcbloc.com](https://calcbloc.com)
 * Changelog: [CHANGELOG.md](https://github.com/itmarkerz/calcbloc-python/blob/main/CHANGELOG.md)
+
+## About
+
+[CalcBloc](https://calcbloc.com) is built and maintained by [itmarkerz technologies](https://itmarkerz.co.in),
+a web and mobile app development company in Kerala, India. The open data behind this package is at
+[calcbloc.com/data](https://calcbloc.com/data) and the API documentation at
+[calcbloc.com/developers](https://calcbloc.com/developers). The other CalcBloc packages (JavaScript, PHP, R,
+Google Sheets, the MCP server and the dataset itself) are in the
+[itmarkerz GitHub organization](https://github.com/itmarkerz).
