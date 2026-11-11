@@ -174,6 +174,41 @@ def test_429_is_rate_limit_error() -> None:
     assert (err.status, err.code, err.retry_after, err.limit, err.remaining, err.reset) == (429, "rate_limited", 42, 50, 0, 7200)
     assert err.docs == "https://calcbloc.com/developers#limits"
     assert isinstance(err, CalcBlocError)
+    # With a key the API's own message for the key's limit is kept, without the key prompt.
+    assert err.message == "Too many requests this minute (limit 5)."
+    assert "developers/keys" not in str(err)
+
+
+def test_429_without_key_asks_for_a_free_key(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv("CALCBLOC_API_KEY", raising=False)
+    headers = {"Retry-After": "36000", "X-RateLimit-Limit": "50", "X-RateLimit-Remaining": "0", "X-RateLimit-Reset": "36000"}
+    c, t = make((429, headers, error_body("rate_limited", "Daily limit of 50 requests reached.", "https://calcbloc.com/developers#limits")), api_key=None)
+    with pytest.raises(RateLimitError) as e:
+        c.net_salary("uk", 30_000)
+    assert "X-API-Key" not in t.calls[0]["headers"]
+    msg = e.value.message
+    assert msg.startswith("The free allowance of 50 requests a day without a key is used up. Add your free API key (5,000 requests a day): ")
+    assert "https://calcbloc.com/developers/keys?utm_source=calcbloc-python&utm_medium=app&utm_campaign=itmarkerz-oss" in msg
+    assert 'Client(api_key="...")' in msg and "CALCBLOC_API_KEY" in msg
+    assert (e.value.status, e.value.code, e.value.retry_after, e.value.remaining) == (429, "rate_limited", 36000, 0)
+
+
+def test_429_without_key_per_minute(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv("CALCBLOC_API_KEY", raising=False)
+    c, _ = make((429, {"Retry-After": "20"}, error_body("rate_limited", "Too many requests this minute (limit 5).")), api_key=None)
+    with pytest.raises(RateLimitError) as e:
+        c.countries()
+    assert e.value.message.startswith("The free allowance without a key (5 requests a minute, 50 a day) is used up for this minute.")
+    assert "https://calcbloc.com/developers/keys?utm_source=calcbloc-python&utm_medium=app&utm_campaign=itmarkerz-oss" in e.value.message
+
+
+def test_429_with_key_from_environment_keeps_keyed_message(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("CALCBLOC_API_KEY", "env-key")
+    c, t = make((429, {"Retry-After": "600"}, error_body("rate_limited", "Daily limit of 5000 requests reached.")), api_key=None)
+    with pytest.raises(RateLimitError) as e:
+        c.countries()
+    assert t.calls[0]["headers"]["X-API-Key"] == "env-key"
+    assert e.value.message == "Daily limit of 5000 requests reached."
 
 
 def test_404_unsupported_year() -> None:

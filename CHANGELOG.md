@@ -20,6 +20,8 @@ First release.
 - `calcbloc.Client`: typed client for the CalcBloc API v1 (`countries`, `tax_tables` as JSON or CSV,
   `net_salary`, `employer_cost`, `compare`, `openapi`), standard library only, with typed errors
   (`CalcBlocError`, `AuthenticationError`, `RateLimitError`, `NetworkError`) and rate-limit headers.
+  Works without a key (50 requests a day); the API key is read from `Client(api_key=...)` or
+  `CALCBLOC_API_KEY`, and a 429 without a key says the free allowance is used up and links to a free key.
 - Tests against official worked examples and rate schedules: Revenue (Ireland), GOV.UK, IRAS (Singapore),
   IRS (United States) and Inland Revenue (New Zealand).
 - `scripts/sync_tables.py` to copy and validate the tables from the `calcbloc-data` repository.

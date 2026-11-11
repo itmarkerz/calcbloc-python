@@ -164,12 +164,12 @@ For a complete take-home pay figure, use the API's `net-salary` endpoint.
 ```python
 from calcbloc import Client
 
-client = Client()                                   # reference data works without a key
+client = Client()                                   # no key needed: 50 requests a day
 table = client.tax_tables("canada", "latest", region="on")
 csv_text = client.tax_tables("uk", "2026-27", format="csv")
 countries = client.countries()                      # endpoints and parameters per country
 
-client = Client(api_key="your-key")                 # or set CALCBLOC_API_KEY
+client = Client(api_key="your-key")                 # free key: 5,000 a day (or set CALCBLOC_API_KEY)
 pay = client.net_salary("uk", 45_000, region="scotland", pension_pct=5)
 cost = client.employer_cost("us", 85_000, region="tx", health_per_month=600)
 both = client.compare("uk", "ireland", 60_000, currency="GBP")
@@ -200,26 +200,32 @@ calculation endpoints answer them with `400 unsupported_country`. `client.last_r
 `X-RateLimit-*` headers of the last response. Pass `transport=` to `Client` to plug in your own HTTP layer
 (proxy, retries, caching or tests).
 
-### API keys and rate limits
+### Free use and API keys
 
-| Access | Per day | Per minute | Endpoints |
-|---|---|---|---|
-| No key (per IP address) | 50 | 5 | Countries and tax tables |
-| Free key | 5,000 | 60 | All, including net salary, employer cost and compare |
+* **Offline tables need no key and no network.** `calcbloc.tables` and `tax_from_bands` read the data
+  bundled in the package.
+* **API calls work without a key** for 50 requests a day and 5 a minute per IP address, on every endpoint.
+* **Add a free API key for 5,000 requests a day** (60 a minute). Get one instantly at
+  [calcbloc.com/developers/keys](https://calcbloc.com/developers/keys?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) (enter your email address; the key is shown once).
+* **Set it** with `Client(api_key="cb_...")`, or in the `CALCBLOC_API_KEY` environment variable, which
+  `Client()` reads by default. The client sends it in the `X-API-Key` header; keys in the URL are refused by
+  the API because URLs end up in logs.
 
-Get a free key, instantly and without an email address, at
-[calcbloc.com/developers/keys](https://calcbloc.com/developers/keys?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss). The client sends it in the `X-API-Key`
-header; keys in the URL are refused by the API because URLs end up in logs. The calculation endpoints are
-meant to be called with a key: without one they answer `401 api_key_required`, unless keyless calculations
-are switched on at the anonymous limits (the current setting is shown in the
-[limits table](https://calcbloc.com/developers?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss#limits)). For higher volumes or use without attribution, see
+| Access | Per day | Per minute |
+|---|---|---|
+| No key (per IP address) | 50 | 5 |
+| Free key | 5,000 | 60 |
+
+When the free allowance without a key is used up, the client raises `RateLimitError` with a message that
+says so, links to the keys page and shows how to set the key. With a key, the message gives that key's limit.
+For higher volumes or use without attribution, see
 [calcbloc.com/developers](https://calcbloc.com/developers?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss).
 
 ### Offline or API?
 
 | | Offline tables | API |
 |---|---|---|
-| Network, key, limits | None | HTTPS; free key for calculations; limits above |
+| Network, key, limits | None | HTTPS; 50 requests a day without a key, 5,000 with a free key |
 | Tax tables | Snapshot dated `tables.data_date()` | Always the latest published figures |
 | CSV download | No (JSON) | `format="csv"` |
 | Take-home pay, employer cost, compare | No (only `tax_from_bands` on single sections) | Yes |

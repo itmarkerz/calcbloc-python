@@ -1,13 +1,13 @@
 """Typed client for the CalcBloc API (https://calcbloc.com/developers).
 
 Uses only the Python standard library (:mod:`urllib.request`). All endpoints are ``GET`` requests under
-``/api/v1``. Reference data (``countries``, ``tax-tables``) works without a key at the anonymous limits;
-the calculation endpoints (``net-salary``, ``employer-cost``, ``compare``) need a free API key, sent in
-the ``X-API-Key`` header.
+``/api/v1``. Every endpoint works without a key for 50 requests a day (5 a minute) per IP address; a free API
+key, sent in the ``X-API-Key`` header, raises that to 5,000 a day (60 a minute). When the free allowance
+without a key is used up, :class:`RateLimitError` says so and links to the keys page.
 
 Example:
     >>> from calcbloc import Client
-    >>> client = Client(api_key="cb_live_...")          # or Client() for reference data only
+    >>> client = Client(api_key="cb_live_...")          # or Client(): no key, or CALCBLOC_API_KEY
     >>> table = client.tax_tables("canada", region="on")
     >>> pay = client.net_salary("uk", 45_000, region="scotland", pension_pct=5)
     >>> pay["summary"]["netAnnual"]
@@ -33,6 +33,8 @@ __all__ = ["Client", "Response", "Transport", "DEFAULT_BASE_URL", "DEFAULT_TIMEO
 DEFAULT_BASE_URL = "https://calcbloc.com"
 DEFAULT_TIMEOUT = 30.0
 API_KEY_ENV = "CALCBLOC_API_KEY"
+KEYS_URL = "https://calcbloc.com/developers/keys?utm_source=calcbloc-python&utm_medium=app&utm_campaign=itmarkerz-oss"
+"""Where to get a free API key (shown in the error raised when the free allowance without a key is used up)."""
 
 Response = Tuple[int, Mapping[str, str], bytes]
 """What a transport returns: ``(status, headers, body)``. Header names are matched case-insensitively."""
@@ -47,6 +49,20 @@ or to test without a network.
 ParamValue = Union[str, int, float, bool, None]
 
 _SEGMENT = re.compile(r"^[A-Za-z0-9-]{1,40}$")
+
+
+def _no_key_limit_message(api_message: str, retry_after: Optional[int]) -> str:
+    """The 429 message without a key: the free allowance is used up; add a free key and how to set it."""
+    per_minute = "minute" in api_message.lower() and (retry_after is None or retry_after <= 60)
+    used_up = (
+        "The free allowance without a key (5 requests a minute, 50 a day) is used up for this minute."
+        if per_minute
+        else "The free allowance of 50 requests a day without a key is used up."
+    )
+    return (
+        f"{used_up} Add your free API key (5,000 requests a day): {KEYS_URL} "
+        f'(set it with Client(api_key="...") or the {API_KEY_ENV} environment variable).'
+    )
 
 
 def urllib_transport(url: str, headers: Mapping[str, str], timeout: float) -> Response:
@@ -99,8 +115,8 @@ class Client:
 
     Args:
         api_key: Your API key (free at https://calcbloc.com/developers/keys). Defaults to the
-            ``CALCBLOC_API_KEY`` environment variable. Without a key, ``countries()`` and ``tax_tables()``
-            work at the anonymous limits; calculation endpoints may refuse with ``api_key_required``.
+            ``CALCBLOC_API_KEY`` environment variable. Optional: without a key every endpoint works for
+            50 requests a day and 5 a minute per IP address; a free key allows 5,000 a day and 60 a minute.
         base_url: Server to call. Defaults to ``https://calcbloc.com``.
         timeout: Seconds to wait for a response.
         user_agent: Overrides the ``User-Agent`` header.
@@ -173,9 +189,10 @@ class Client:
             code, message, docs = "http_error", f"HTTP {status} from {self.base_url} (not a CalcBloc API error body).", None
         kwargs: Dict[str, Any] = {"code": code, "status": status, "docs": docs if isinstance(docs, str) else None, "body": payload}
         if status == 429 or code == "rate_limited":
+            retry_after = _int_header(headers, "Retry-After")
             return RateLimitError(
-                message,
-                retry_after=_int_header(headers, "Retry-After"),
+                message if self.api_key else _no_key_limit_message(message, retry_after),
+                retry_after=retry_after,
                 limit=_int_header(headers, "X-RateLimit-Limit"),
                 remaining=_int_header(headers, "X-RateLimit-Remaining"),
                 reset=_int_header(headers, "X-RateLimit-Reset"),

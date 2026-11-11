@@ -61,6 +61,10 @@ class AuthenticationError(CalcBlocError):
 class RateLimitError(CalcBlocError):
     """429 ``rate_limited``: the per-minute or daily limit was reached.
 
+    Without an API key the message says the free allowance (50 requests a day, 5 a minute) is used up and
+    links to https://calcbloc.com/developers/keys for a free key (5,000 a day), set with
+    ``Client(api_key=...)`` or ``CALCBLOC_API_KEY``. With a key it is the API's message for that key's limit.
+
     Attributes:
         retry_after: Seconds to wait before retrying (from the ``Retry-After`` header), if sent.
         limit: Requests allowed per day for this key or address (``X-RateLimit-Limit``), if sent.
