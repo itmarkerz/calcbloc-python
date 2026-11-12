@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11",
+  "generatedAt": "2026-11-12",
   "source": "https://calcbloc.com/data",
   "licence": "CC BY 4.0",
   "credit": "Data by CalcBloc (calcbloc.com/data)",
@@ -2412,6 +2412,406 @@
       ],
       "rowCount": 139,
       "underReviewRows": 0
+    },
+    {
+      "country": "latvia",
+      "name": "Latvia",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "latvia/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/latvia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/latvia/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://likumi.lv/ta/id/215302",
+        "https://likumi.lv/ta/id/253451",
+        "https://likumi.lv/ta/id/278067",
+        "https://likumi.lv/ta/id/319695",
+        "https://likumi.lv/ta/id/364203",
+        "https://likumi.lv/ta/id/45466-par-valsts-socialo-apdrosinasanu",
+        "https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli",
+        "https://www.pmlp.gov.lv/lv/ilgtermina-vizas-sanemsana-attalinata-darba-veiksanai",
+        "https://www.vid.gov.lv/lv/iedzivotaju-ienakuma-nodokla-likmes",
+        "https://www.vid.gov.lv/lv/mikrouznemumu-nodoklis",
+        "https://www.vid.gov.lv/lv/pasnodarbinata-socialas-apdrosinasanas-iemaksas",
+        "https://www.vid.gov.lv/lv/solidaritates-nodoklis"
+      ],
+      "rowCount": 77,
+      "underReviewRows": 0
+    },
+    {
+      "country": "croatia",
+      "name": "Croatia",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [
+        {
+          "code": "zagreb-county",
+          "name": "Zagreb County",
+          "slug": "zagreb-county"
+        },
+        {
+          "code": "krapina-zagorje",
+          "name": "Krapina-Zagorje County",
+          "slug": "krapina-zagorje"
+        },
+        {
+          "code": "sisak-moslavina",
+          "name": "Sisak-Moslavina County",
+          "slug": "sisak-moslavina"
+        },
+        {
+          "code": "karlovac",
+          "name": "Karlovac County",
+          "slug": "karlovac"
+        },
+        {
+          "code": "varazdin",
+          "name": "Varaždin County",
+          "slug": "varazdin"
+        },
+        {
+          "code": "koprivnica-krizevci",
+          "name": "Koprivnica-Križevci County",
+          "slug": "koprivnica-krizevci"
+        },
+        {
+          "code": "bjelovar-bilogora",
+          "name": "Bjelovar-Bilogora County",
+          "slug": "bjelovar-bilogora"
+        },
+        {
+          "code": "primorje-gorski-kotar",
+          "name": "Primorje-Gorski Kotar County",
+          "slug": "primorje-gorski-kotar"
+        },
+        {
+          "code": "lika-senj",
+          "name": "Lika-Senj County",
+          "slug": "lika-senj"
+        },
+        {
+          "code": "virovitica-podravina",
+          "name": "Virovitica-Podravina County",
+          "slug": "virovitica-podravina"
+        },
+        {
+          "code": "pozega-slavonia",
+          "name": "Požega-Slavonia County",
+          "slug": "pozega-slavonia"
+        },
+        {
+          "code": "brod-posavina",
+          "name": "Brod-Posavina County",
+          "slug": "brod-posavina"
+        },
+        {
+          "code": "zadar",
+          "name": "Zadar County",
+          "slug": "zadar"
+        },
+        {
+          "code": "osijek-baranja",
+          "name": "Osijek-Baranja County",
+          "slug": "osijek-baranja"
+        },
+        {
+          "code": "sibenik-knin",
+          "name": "Šibenik-Knin County",
+          "slug": "sibenik-knin"
+        },
+        {
+          "code": "vukovar-srijem",
+          "name": "Vukovar-Srijem County",
+          "slug": "vukovar-srijem"
+        },
+        {
+          "code": "split-dalmatia",
+          "name": "Split-Dalmatia County",
+          "slug": "split-dalmatia"
+        },
+        {
+          "code": "istria",
+          "name": "Istria County",
+          "slug": "istria"
+        },
+        {
+          "code": "dubrovnik-neretva",
+          "name": "Dubrovnik-Neretva County",
+          "slug": "dubrovnik-neretva"
+        },
+        {
+          "code": "medimurje",
+          "name": "Međimurje County",
+          "slug": "medimurje"
+        },
+        {
+          "code": "city-of-zagreb",
+          "name": "City of Zagreb",
+          "slug": "city-of-zagreb"
+        }
+      ],
+      "files": [
+        "croatia/2026.json",
+        "croatia/2026/zagreb-county.json",
+        "croatia/2026/krapina-zagorje.json",
+        "croatia/2026/sisak-moslavina.json",
+        "croatia/2026/karlovac.json",
+        "croatia/2026/varazdin.json",
+        "croatia/2026/koprivnica-krizevci.json",
+        "croatia/2026/bjelovar-bilogora.json",
+        "croatia/2026/primorje-gorski-kotar.json",
+        "croatia/2026/lika-senj.json",
+        "croatia/2026/virovitica-podravina.json",
+        "croatia/2026/pozega-slavonia.json",
+        "croatia/2026/brod-posavina.json",
+        "croatia/2026/zadar.json",
+        "croatia/2026/osijek-baranja.json",
+        "croatia/2026/sibenik-knin.json",
+        "croatia/2026/vukovar-srijem.json",
+        "croatia/2026/split-dalmatia.json",
+        "croatia/2026/istria.json",
+        "croatia/2026/dubrovnik-neretva.json",
+        "croatia/2026/medimurje.json",
+        "croatia/2026/city-of-zagreb.json"
+      ],
+      "pageUrl": "https://calcbloc.com/croatia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/croatia/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://demografijaimladi.gov.hr/UserDocsImages//Direktorij%202/Slike%20od%2013.2024/Dokumenti//Popis%20jedinica%20lokalne%20samouprave.pdf",
+        "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "https://narodne-novine.nn.hr/clanci/sluzbeni/2019_11_110_2212.html",
+        "https://narodne-novine.nn.hr/clanci/sluzbeni/2020_12_138_2625.html",
+        "https://narodne-novine.nn.hr/clanci/sluzbeni/2023_10_114_1611.html",
+        "https://narodne-novine.nn.hr/clanci/sluzbeni/2024_12_152_2505.html",
+        "https://narodne-novine.nn.hr/clanci/sluzbeni/2025_10_132_1931.html",
+        "https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html",
+        "https://narodne-novine.nn.hr/clanci/sluzbeni/2026_10_124_1481.html",
+        "https://porezna-uprava.gov.hr/UserDocsImages/Portal_porezne_konkurentnosti/Odluke_JLS/Porezne%20stope%20godi%C5%A1njeg%20poreza%20na%20dohodak/Tablica%20poreznih%20stopa%20godi%C5%A1njeg%20poreza%20na%20dohodak%20za%202026%20godinu.xlsx",
+        "https://porezna-uprava.gov.hr/hr/doprinosi/4585",
+        "https://porezna-uprava.gov.hr/hr/obrtnici-pausalisti/4564",
+        "https://porezna-uprava.gov.hr/hr/osobni-odbitak-ili-neoporezivi-dio-place/4677",
+        "https://porezna-uprava.gov.hr/hr/pdv-3938/3938",
+        "https://porezna-uprava.gov.hr/hr/porezne-stope-godisnjeg-poreza-na-dohodak/4764",
+        "https://porezna-uprava.gov.hr/hr/posebne-olaksice/4669",
+        "https://sabor.hr/sites/default/files/uploads/sabor/2024-12-05/200202/PZ_80.pdf"
+      ],
+      "rowCount": 159,
+      "underReviewRows": 0
+    },
+    {
+      "country": "estonia",
+      "name": "Estonia",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "estonia/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/estonia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/estonia/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://emta.ee/ariklient/maksud-ja-tasumine/kaibemaks/kaibemaksukohustuslasena-registreerimine/maksukohustuslasena-registreerimise-kohustus",
+        "https://emta.ee/ariklient/maksud-ja-tasumine/tulumaks-ja-sotsiaalmaks/maksumaarad",
+        "https://emta.ee/ariklient/maksud-ja-tasumine/tulumaks-ja-sotsiaalmaks/sotsiaalmaks",
+        "https://emta.ee/ariklient/registreerimine-ettevotlus/ettevotjale/fuusilisest-isikust-ettevotjale-fie/kohustuslik-kogumispensioni-makse",
+        "https://emta.ee/ariklient/registreerimine-ettevotlus/mitteresidendile-e-residendile/residentsuse-maaramine",
+        "https://emta.ee/eraklient/maksud-ja-tasumine/maksusoodustused/maksuvaba-tulu-arvestamine",
+        "https://emta.ee/eraklient/maksud-ja-tasumine/maksustatavad-tulud/ettevotluskonto",
+        "https://emta.ee/uudised/maksumuudatused-2026",
+        "https://www.e-resident.gov.ee/blog/posts/responsibilities-of-e-residents/",
+        "https://www.emta.ee/ariklient/registreerimine-ettevotlus/ettevotjale/fuusilisest-isikust-ettevotjale-fie/sotsiaalmaks",
+        "https://www.pensionikeskus.ee/en/ii-pillar/contributions/rejoining-the-second-pillar-after-a-5-year-break/",
+        "https://www.riigiteataja.ee/akt/116102026014",
+        "https://www.riigiteataja.ee/akt/119052026005",
+        "https://www.riigiteataja.ee/akt/121122024026",
+        "https://www.riigiteataja.ee/akt/124032026005"
+      ],
+      "rowCount": 67,
+      "underReviewRows": 0
+    },
+    {
+      "country": "bulgaria",
+      "name": "Bulgaria",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "bulgaria/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/bulgaria/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/bulgaria/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://dv.parliament.bg/DVWeb/fileUploadShowing.jsp?idFileAtt=753462&allowCache=true&openDirectly=false",
+        "https://dv.parliament.bg/DVWeb/fileUploadShowing.jsp?idFileAtt=789780&allowCache=true&openDirectly=false",
+        "https://dv.parliament.bg/DVWeb/fileUploadShowing.jsp?idFileAtt=799443&allowCache=true&openDirectly=false",
+        "https://dv.parliament.bg/DVWeb/fileUploadShowing.jsp?idFileAtt=845985&allowCache=true&openDirectly=false",
+        "https://dv.parliament.bg/DVWeb/fileUploadShowing.jsp?idFileAtt=847364&allowCache=true&openDirectly=false",
+        "https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=4611",
+        "https://evroto.bg/bg/euro/citizens/faq",
+        "https://www.nssi.bg/samoosiguryavashti-se-lica/osiguriavane-samoosiguriavashti-lica/",
+        "https://www.nssi.bg/wp-content/uploads/SIC_2019.pdf"
+      ],
+      "rowCount": 66,
+      "underReviewRows": 3
+    },
+    {
+      "country": "lithuania",
+      "name": "Lithuania",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "lithuania/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/lithuania/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/lithuania/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://e-seimas.lrs.lt/rs/actualedition/5395de427bd511e6a0f68fd135e6f40c/yhvdFxZyWj/",
+        "https://e-seimas.lrs.lt/rs/actualedition/TAIS.1327/bxoRMJvqWR/",
+        "https://e-seimas.lrs.lt/rs/actualedition/TAIS.163423/rGwdIQGCEj/",
+        "https://e-seimas.lrs.lt/rs/actualedition/TAIS.171369/QTlvfEvkKY/",
+        "https://e-seimas.lrs.lt/rs/actualedition/TAIS.215829/bAAsfWCngt/",
+        "https://e-seimas.lrs.lt/rs/actualedition/TAIS.232378/IOHiRhMlaI/",
+        "https://e-seimas.lrs.lt/rs/actualedition/TAIS.28356/vdUTTeWmTx/",
+        "https://www.lrs.lt/tais-portal/dokpaieska.showdoc_l?p_id=1934801",
+        "https://www.lrs.lt/tais-portal/dokpaieska.showdoc_l?p_id=1951583"
+      ],
+      "rowCount": 80,
+      "underReviewRows": 0
+    },
+    {
+      "country": "malta",
+      "name": "Malta",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "malta/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/malta/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/malta/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://dier.gov.mt/servizzi/kundizzjonijiet-tal-impieg/pagi/bonus-u-allowance-ta-kull-gimgha/",
+        "https://legislation.mt/eli/act/2026/3/eng",
+        "https://legislation.mt/eli/cap/123/eng",
+        "https://legislation.mt/eli/cap/406/eng",
+        "https://legislation.mt/eli/ln/2025/289/eng",
+        "https://legislation.mt/eli/ln/2025/290/eng",
+        "https://legislation.mt/eli/ln/2026/20/eng",
+        "https://legislation.mt/eli/sl/123.200/eng",
+        "https://legislation.mt/eli/sl/123.210/eng",
+        "https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_11",
+        "https://mtca.gov.mt/docs/default-source/documents/legislative-developments/2026/overview-of-recently-published-legal-notices-january-to-june-2026-memo.pdf?sfvrsn=1191b20d_1",
+        "https://mtca.gov.mt/docs/default-source/documents/mtca-guidelines-on-the-remittance-under-the-income-tax.pdf?sfvrsn=d2f39d05_1",
+        "https://mtca.gov.mt/personal-tax/individual/special-schemes",
+        "https://mtca.gov.mt/personal-tax/legal-and-technical/faqs/tax-on-income-from-part-time-work",
+        "https://mtca.gov.mt/personal-tax/tax-rates/returned-migrants",
+        "https://mtca.gov.mt/personal-tax/tax-rates/tax-ratesindividuals/2026",
+        "https://mtca.gov.mt/personal-tax/tax-rates/tax-ratesindividuals/2027",
+        "https://mtca.gov.mt/personal-tax/tax-rates/taxratesfornonresident",
+        "https://nomad.residencymalta.gov.mt/new-faqs/",
+        "https://socialsecurity.gov.mt/en/information-and-applications-for-benefits-and-services/social-security-contributions/social-security-contributions-class-1-2026/",
+        "https://socialsecurity.gov.mt/en/information-and-applications-for-benefits-and-services/social-security-contributions/social-security-contributions-class-2-2026/"
+      ],
+      "rowCount": 105,
+      "underReviewRows": 0
+    },
+    {
+      "country": "cyprus",
+      "name": "Cyprus",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "cyprus/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/cyprus/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/cyprus/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://www.cylaw.org/KDP/data/2025_1_427.pdf",
+        "https://www.gov.cy/en/migration/announcement-by-the-deputy-ministry-of-migration-and-international-protection-on-cyprus-digital-nomad-visa-scheme/",
+        "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+        "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+        "https://www.gov.cy/media/sites/167/2026/05/%CE%A6%CE%BF%CF%81%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CE%BA%CE%AE-%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-2026-%CF%86%CF%85%CF%83%CE%B9%CE%BA%CE%AC-%CF%80%CF%81%CF%8C%CF%83%CF%89%CF%80%CE%B1-11.05.2026.pdf",
+        "https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/",
+        "https://www.gov.cy/mof-tax/documents/forologiki-dilosi-eisodimatos-atomoy/apallagi-50-gia-proti-ergodotisi-sti-dimokratia-arthra-8-23-kai-8-23a-toy-peri-forologias-toy-eisodimatos-nomoy/",
+        "https://www.gov.cy/mof-tax/documents/forologiki-dilosi-eisodimatos-atomoy/ex-apostaseos-ergasia-se-ergodoti-ektos-tis-dimokratias-i-kai-parochi-ypiresion-ektos-tis-dimokratias/",
+        "https://www.gov.cy/mof-tax/documents/geniko-systima-ygeias-gesy/",
+        "https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/",
+        "https://www.mip.gov.cy/dmmip/md.nsf/All/BF9908B541BFF7D3C22587EA003CD306?OpenDocument",
+        "https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/1AFCD6556B9763F3C2258D6500224FE1?OpenDocument",
+        "https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/551C82BEE69E2FC9C2257A170034B0EC?OpenDocument",
+        "https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/9AD159715525E49CC22584D90030E8FF?OpenDocument"
+      ],
+      "rowCount": 114,
+      "underReviewRows": 4
+    },
+    {
+      "country": "iceland",
+      "name": "Iceland",
+      "currency": "ISK",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "iceland/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/iceland/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/iceland/2026",
+      "lastVerified": "2026-11-11",
+      "sourceUrls": [
+        "https://island.is/adstod/mannaudstorg/laun-og-kjaramal/lifeyrismal",
+        "https://island.is/adstod/mannaudstorg/laun-og-kjaramal/sereignarsparnadur",
+        "https://island.is/en/salary",
+        "https://island.is/en/short-term-residence-permit",
+        "https://island.is/s/utlendingastofnun/frett/vegabrefsaritanir-faerast-til-utanrikisraduneytisins",
+        "https://samband-islenskra-sveitarfelaga.cdn.prismic.io/samband-islenskra-sveitarfelaga/aVuhgXNYClf9oyAY_%C3%9Atsvarspr%C3%B3sentur_net.xls",
+        "https://www.althingi.is/lagas/nuna/1971088.html",
+        "https://www.samband.is/tekjustofnar",
+        "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+        "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+        "https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skattskylda-og-skattprosentur/",
+        "https://www.skatturinn.is/einstaklingar/skattskylda/erlendir-serfraedingar/",
+        "https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026/",
+        "https://www.skatturinn.is/helstutolur",
+        "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/",
+        "https://www.stjornarradid.is/verkefni/almannatryggingar-og-lifeyrir/lifeyrismal/lifeyrissjodir/"
+      ],
+      "rowCount": 152,
+      "underReviewRows": 16
     }
   ],
   "pending": [

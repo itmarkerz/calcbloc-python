@@ -250,7 +250,7 @@ API use is also covered by the [API terms](https://calcbloc.com/developers/terms
 
 <!-- coverage:start -->
 
-Bundled data generated 2026-11-11: **29 countries**, 213 tables (183 of them regional). This table is generated from `manifest.json` by `scripts/sync_tables.py`.
+Bundled data generated 2026-11-12: **37 countries**, 242 tables (204 of them regional). This table is generated from `manifest.json` by `scripts/sync_tables.py`.
 
 | Country | Code | Current tax year | Years bundled | Regional tables | Last verified | Tax tables page |
 |---|---|---|---|---|---|---|
@@ -283,6 +283,14 @@ Bundled data generated 2026-11-11: **29 countries**, 213 tables (183 of them reg
 | Hungary | `hungary` | 2026 | 2026 | - | 2026-11-11 | [Hungary tax tables](https://calcbloc.com/hungary/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
 | Slovakia | `slovakia` | 2026 | 2026 | - | 2026-11-11 | [Slovakia tax tables](https://calcbloc.com/slovakia/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
 | Greece | `greece` | 2026 | 2026 | - | 2026-11-11 | [Greece tax tables](https://calcbloc.com/greece/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Latvia | `latvia` | 2026 | 2026 | - | 2026-11-11 | [Latvia tax tables](https://calcbloc.com/latvia/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Croatia | `croatia` | 2026 | 2026 | 21 | 2026-11-11 | [Croatia tax tables](https://calcbloc.com/croatia/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Estonia | `estonia` | 2026 | 2026 | - | 2026-11-11 | [Estonia tax tables](https://calcbloc.com/estonia/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Bulgaria | `bulgaria` | 2026 | 2026 | - | 2026-11-11 | [Bulgaria tax tables](https://calcbloc.com/bulgaria/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Lithuania | `lithuania` | 2026 | 2026 | - | 2026-11-11 | [Lithuania tax tables](https://calcbloc.com/lithuania/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Malta | `malta` | 2026 | 2026 | - | 2026-11-11 | [Malta tax tables](https://calcbloc.com/malta/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Cyprus | `cyprus` | 2026 | 2026 | - | 2026-11-11 | [Cyprus tax tables](https://calcbloc.com/cyprus/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
+| Iceland | `iceland` | 2026 | 2026 | - | 2026-11-11 | [Iceland tax tables](https://calcbloc.com/iceland/tax-tables/2026?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) |
 
 Coming later (tables under review, not yet published): Belgium.
 
