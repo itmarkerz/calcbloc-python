@@ -251,10 +251,10 @@ class Client:
         data: Dict[str, Any] = self._json("/api/openapi.json")
         return data
 
-    # ------------------------------------------------------------------ calculations (API key)
+    # ------------------------------------------------------------------ calculations
 
     def net_salary(self, country: str, salary: float, *, region: Optional[str] = None, year: Optional[str] = None, **params: ParamValue) -> CalculationResponse:
-        """``GET /api/v1/net-salary``: take-home pay for an annual salary (needs an API key).
+        """``GET /api/v1/net-salary``: take-home pay for an annual salary (no key needed for 50 a day).
 
         Args:
             country: Country code with a take-home engine (see ``countries()``; ``tables_only`` countries
@@ -271,7 +271,7 @@ class Client:
         return data
 
     def employer_cost(self, country: str, salary: float, *, region: Optional[str] = None, year: Optional[str] = None, **params: ParamValue) -> CalculationResponse:
-        """``GET /api/v1/employer-cost``: total cost of employing someone on ``salary`` (needs an API key).
+        """``GET /api/v1/employer-cost``: total cost of employing someone on ``salary`` (no key needed for 50 a day).
 
         Takes the same arguments as :meth:`net_salary`; the country-specific parameters differ (for example
         ``health_per_month`` for the US or ``ni_category`` for the UK). ``countries()`` lists them.
@@ -291,7 +291,7 @@ class Client:
         ca_province: Optional[str] = None,
         in_state: Optional[str] = None,
     ) -> CompareResponse:
-        """``GET /api/v1/compare``: the same salary in two countries (needs an API key).
+        """``GET /api/v1/compare``: the same salary in two countries (no key needed for 50 a day).
 
         The salary is converted at the European Central Bank reference rate and each country's take-home
         engine is run, as on https://calcbloc.com/compare/salary.
