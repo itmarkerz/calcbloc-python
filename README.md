@@ -189,7 +189,7 @@ try:
     Client(api_key="your-key").net_salary("norway", 600_000)
 except RateLimitError as e:
     print("retry in", e.retry_after, "seconds")
-except AuthenticationError as e:          # api_key_required or invalid_key (401)
+except AuthenticationError as e:          # invalid_key (401): the key is wrong or revoked
     print(e.code)
 except CalcBlocError as e:
     print(e.status, e.code, e.message)    # 400 unsupported_country: Norway has tax tables only

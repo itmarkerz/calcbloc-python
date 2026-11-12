@@ -55,7 +55,11 @@ class CalcBlocError(Exception):
 
 
 class AuthenticationError(CalcBlocError):
-    """401: the endpoint needs an API key (``api_key_required``) or the key is not valid (``invalid_key``)."""
+    """401: the API key is not valid or has been revoked (``invalid_key``).
+
+    Every endpoint works without a key for 50 requests a day, so ``api_key_required`` is only sent if the API
+    has switched keyless access off.
+    """
 
 
 class RateLimitError(CalcBlocError):
