@@ -11,8 +11,8 @@ First release.
 
 ### Added
 
-- `calcbloc.tables`: offline tax tables bundled with the package (data generated 2026-11-12): 37 countries,
-  242 tables including every regional table, in the shape of the API's `/api/v1/tax-tables` response.
+- `calcbloc.tables`: offline tax tables bundled with the package (data generated 2026-11-13): 41 countries,
+  246 tables including every regional table, in the shape of the API's `/api/v1/tax-tables` response.
   `load()`, `list_countries()`, `years()`, `regions()`, `country_info()`, `manifest()`, `section()`,
   `bundled_files()` and `data_date()`.
 - `tax_from_bands()`, `band_breakdown()` and `marginal_rate()`: band arithmetic on a `"bands"` section, done in
