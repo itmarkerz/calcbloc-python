@@ -121,14 +121,15 @@ def coverage_markdown(manifest: Dict[str, Any]) -> str:
         f"{sum(len(c['files']) for c in countries)} tables ({regional} of them regional). "
         "This table is generated from `manifest.json` by `scripts/sync_tables.py`.",
         "",
-        "| Country | Code | Current tax year | Years bundled | Regional tables | Last verified | Tax tables page |",
+        "| Country | Code | Current tax year | Years bundled | Regional tables | Last checked | Tax tables page |",
         "|---|---|---|---|---|---|---|",
     ]
     for c in countries:
         n_regions = len({f.split("/")[2] for f in c["files"] if f.count("/") == 2})
+        page = readme_link(c["pageUrl"])
         lines.append(
-            f"| {c['name']} | `{c['country']}` | {c['current_year']} | {', '.join(c['years'])} | "
-            f"{n_regions or '-'} | {c.get('lastVerified', '-')} | [{c['name']} tax tables]({readme_link(c['pageUrl'])}) |"
+            f"| [{c['name']}]({page}) | `{c['country']}` | {c['current_year']} | {', '.join(c['years'])} | "
+            f"{n_regions or '-'} | {c.get('lastVerified', '-')} | [{c['name']} tax tables]({page}) |"
         )
     pending = manifest.get("pending") or []
     if pending:
