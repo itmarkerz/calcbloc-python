@@ -8,6 +8,7 @@ import pytest
 
 import calcbloc
 from calcbloc import TableNotFoundError, tables
+from calcbloc._country_codes import COUNTRY_CODES, norm_key, resolve_country_key
 
 
 def test_manifest_has_countries_and_metadata() -> None:
@@ -101,6 +102,41 @@ def test_unknown_country() -> None:
     assert e.value.code == "unsupported_country"
     assert isinstance(e.value, LookupError) and isinstance(e.value, calcbloc.CalcBlocError)
     assert tables.list_countries()[0] in e.value.message
+
+
+@pytest.mark.parametrize("country", tables.list_countries())
+def test_every_country_by_short_code_iso_code_and_name(country: str) -> None:
+    short, iso, name, _ = COUNTRY_CODES[country]
+    manifest_name = tables.country_info(country)["name"]
+    for ident in (short, short.upper(), iso, iso.lower(), name, name.upper(), manifest_name, country, country.upper()):
+        assert tables.country_info(ident)["country"] == country, ident
+
+
+def test_new_zealand_uk_and_germany_by_any_identifier() -> None:
+    nz = tables.load("new-zealand")
+    for ident in ("nz", "NZ", "New Zealand", "new zealand", " NEW-ZEALAND "):
+        assert tables.load(ident) == nz, ident
+    assert tables.load("gb") == tables.load("uk")
+    assert tables.load("GB", "2025-26", region="scotland") == tables.load("uk", "2025-26", region="scotland")
+    assert tables.load("de") == tables.load("germany")
+    assert tables.years("Germany") == tables.years("germany")
+    assert tables.regions("ch") == tables.regions("switzerland")
+
+
+@pytest.mark.parametrize("ident", ["atlantis", "xx", "", "New Atlantis"])
+def test_unknown_identifiers_still_raise(ident: str) -> None:
+    with pytest.raises(TableNotFoundError) as e:
+        tables.load(ident)
+    assert e.value.code == "unsupported_country"
+
+
+def test_normalisation_matches_the_api() -> None:
+    assert norm_key(" Türkiye ") == "turkiye"
+    assert norm_key("New_Zealand") == "new-zealand"
+    assert resolve_country_key("Türkiye") == "turkey"
+    assert resolve_country_key("czech.republic") == "czechia"
+    assert resolve_country_key("United Arab Emirates") == "uae"
+    assert resolve_country_key("atlantis") is None
 
 
 def test_unknown_year() -> None:

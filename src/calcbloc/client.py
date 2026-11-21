@@ -25,6 +25,7 @@ import urllib.parse
 import urllib.request
 from typing import Any, Callable, Dict, Literal, Mapping, Optional, Tuple, Union, overload
 
+from ._country_codes import resolve_country_key
 from ._version import __version__
 from .errors import AuthenticationError, CalcBlocError, NetworkError, RateLimitError
 from .types import CalculationResponse, CompareResponse, CountriesResponse, RateLimit, TaxTable
@@ -241,15 +242,17 @@ class Client:
         """``GET /api/v1/tax-tables/{country}/{year}``: the official tax tables for a country and tax year.
 
         Args:
-            country: Short code such as ``"us"``, ``"uk"``, ``"nz"`` or ``"de"``, or the older key
-                (``"new-zealand"``, ``"germany"``).
+            country: Short code such as ``"us"``, ``"uk"``, ``"nz"`` or ``"de"``, ISO code (``"NZ"``), English
+                name (``"New Zealand"``) or the older key (``"new-zealand"``); the client sends the key.
             year: A tax year from ``years_available`` (``"2026"``, ``"2026-27"``) or ``"latest"`` (default).
             region: Optional region code (US state ``"ca"``, Canadian province ``"on"``, ``"scotland"``...).
             format: ``"json"`` (default) returns a dict; ``"csv"`` returns the CSV text (one row per band or value).
         """
         if format not in ("json", "csv"):
             raise ValueError('format must be "json" or "csv"')
-        path = f"/api/v1/tax-tables/{_segment(country, 'country').lower()}/{_segment(str(year), 'year')}"
+        # Short codes ("nz"), ISO codes ("NZ") and English names ("New Zealand") become the key ("new-zealand").
+        key = resolve_country_key(str(country)) or country
+        path = f"/api/v1/tax-tables/{_segment(key, 'country').lower()}/{_segment(str(year), 'year')}"
         params: Dict[str, ParamValue] = {"region": region}
         if format == "csv":
             params["format"] = "csv"

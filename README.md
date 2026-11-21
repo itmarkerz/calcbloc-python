@@ -127,6 +127,7 @@ tables.list_countries()              # ['us', 'uk', 'australia', ...] from the b
 tables.years("uk")                   # ['2026-27', '2025-26'], current year first
 tables.regions("canada")             # [{'code': 'ab', 'name': 'Alberta', 'slug': 'alberta'}, ...]
 tables.load("uk")                    # current tax year
+tables.load("nz")                    # short code, ISO code ("NZ") or name ("New Zealand") work too
 tables.load("uk", "2025-26", region="scotland")
 tables.load("us", 2026, region="california")   # region by code or slug
 tables.manifest()                    # countries, years, regions, page and API URLs, sources
@@ -179,8 +180,8 @@ both = client.compare("uk", "ie", 60_000, currency="GBP")
 
 In API calls, countries are given by their short code: ISO 3166-1 alpha-2 in lower case, with the UK as `uk`
 (`gb` also works), such as `nz`, `de` or `ae`. English names and the older keys (`new-zealand`, `germany`)
-still work, and responses carry the older key in `country`. The offline `calcbloc.tables` loader uses the
-older keys listed in the coverage table.
+still work, and responses carry the older key in `country`. The offline `calcbloc.tables` loader accepts the
+same identifiers.
 
 Country-specific parameters are passed as keyword arguments by their API names (`filing_status`,
 `pension_pct`, `student_loan`...); `client.countries()` and the

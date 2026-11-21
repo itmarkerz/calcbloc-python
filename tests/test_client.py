@@ -83,6 +83,22 @@ def test_tax_tables_defaults_to_latest() -> None:
     assert t.calls[0]["query"] == {}
 
 
+def test_tax_tables_maps_short_codes_iso_codes_and_names_to_the_key() -> None:
+    ids = ["nz", "NZ", "New Zealand", "new-zealand", "gb", "de"]
+    c, t = make(*[(200, {}, {}) for _ in ids], (200, {}, {}), api_key=None)
+    for country in ids:
+        c.tax_tables(country)
+    assert [call["path"] for call in t.calls] == ["/api/v1/tax-tables/new-zealand/latest"] * 4 + [
+        "/api/v1/tax-tables/uk/latest",
+        "/api/v1/tax-tables/germany/latest",
+    ]
+    # Unknown plain ids are sent as given (the API answers 404); anything else is still refused locally.
+    c.tax_tables("atlantis")
+    assert t.calls[-1]["path"] == "/api/v1/tax-tables/atlantis/latest"
+    with pytest.raises(ValueError):
+        c.tax_tables("New Atlantis")
+
+
 def test_tax_tables_year_region() -> None:
     c, t = make((200, {}, {"country": "us", "year": "2026"}))
     c.tax_tables("us", 2026, region="ca")

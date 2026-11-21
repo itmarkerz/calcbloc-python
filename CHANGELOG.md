@@ -25,6 +25,10 @@ For CalcBloc API 1.7.
 
 ### Added
 
+- Countries can be given by short code (`nz`; `gb` or `uk` for the UK), ISO code (`NZ`) or English name
+  (`New Zealand`), case-insensitively, as well as by the existing code (`new-zealand`): in `tables.load()`,
+  `country_info()`, `years()` and `regions()`, and in `Client.tax_tables()`, which maps them to the code
+  before building the request path. The table mirrors the API's own (`calcbloc/_country_codes.py`).
 - Types: `short_code` and `iso_code` on `CountryInfo`, `labels` and `aliases` on `CountryParameter`, and the
   `coverage` object (`Coverage`) on `CountriesResponse`.
 
@@ -43,7 +47,7 @@ First release.
 - `calcbloc.Client`: typed client for the CalcBloc API v1 (`countries`, `tax_tables` as JSON or CSV,
   `net_salary`, `employer_cost`, `compare`, `openapi`), standard library only, with typed errors
   (`CalcBlocError`, `AuthenticationError`, `RateLimitError`, `NetworkError`) and rate-limit headers.
-  Works without a key (50 requests a day); the API key is read from `Client(api_key=...)` or
+  Works without a key, within the keyless allowance; the API key is read from `Client(api_key=...)` or
   `CALCBLOC_API_KEY`, and a 429 without a key says the free allowance is used up and links to a free key.
 - Tests against official worked examples and rate schedules: Revenue (Ireland), GOV.UK, IRAS (Singapore),
   IRS (United States) and Inland Revenue (New Zealand).
