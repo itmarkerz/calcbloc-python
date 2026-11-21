@@ -164,21 +164,34 @@ For a complete take-home pay figure, use the API's `net-salary` endpoint.
 ```python
 from calcbloc import Client
 
-client = Client()                                   # no key needed: 50 requests a day
-table = client.tax_tables("canada", "latest", region="on")
+client = Client()                                   # no key needed: 300 requests a day, 20 a minute
+table = client.tax_tables("ca", "latest", region="on")   # Canada; "canada" works too
 csv_text = client.tax_tables("uk", "2026-27", format="csv")
 countries = client.countries()                      # endpoints and parameters per country
 
 client = Client(api_key="your-key")                 # free key: 5,000 a day (or set CALCBLOC_API_KEY)
 pay = client.net_salary("uk", 45_000, region="scotland", pension_pct=5)
+us_pay = client.net_salary("us", 120_000, region="ca", filing_status="mfj")
+nz_pay = client.net_salary("nz", 80_000)            # New Zealand; "new-zealand" works too
 cost = client.employer_cost("us", 85_000, region="tx", health_per_month=600)
-both = client.compare("uk", "ireland", 60_000, currency="GBP")
+both = client.compare("uk", "ie", 60_000, currency="GBP")
 ```
+
+In API calls, countries are given by their short code: ISO 3166-1 alpha-2 in lower case, with the UK as `uk`
+(`gb` also works), such as `nz`, `de` or `ae`. English names and the older keys (`new-zealand`, `germany`)
+still work, and responses carry the older key in `country`. The offline `calcbloc.tables` loader uses the
+older keys listed in the coverage table.
 
 Country-specific parameters are passed as keyword arguments by their API names (`filing_status`,
 `pension_pct`, `student_loan`...); `client.countries()` and the
 [OpenAPI file](https://calcbloc.com/api/openapi.json) list them, with allowed values and defaults. Unknown
-parameters are refused by the API, so typos never pass silently.
+parameters are refused by the API, so typos never pass silently. The US `filing_status` values are `single`,
+`mfj` and `hoh` (common spellings such as `married` are accepted as `mfj`). `region` is required for
+take-home pay in the US and Canada and for employer cost in the US, Australia and Canada; without it the API
+answers `400 missing_parameter` with the valid codes.
+
+Not supported yet: equity compensation (RSUs, stock options), bonus and supplemental withholding, and
+cross-border withholding.
 
 Errors raise typed exceptions built from the API's `{"error": {"code", "message", "docs"}}` body:
 
@@ -204,7 +217,8 @@ calculation endpoints answer them with `400 unsupported_country`. `client.last_r
 
 * **Offline tables need no key and no network.** `calcbloc.tables` and `tax_from_bands` read the data
   bundled in the package.
-* **API calls work without a key** for 50 requests a day and 5 a minute per IP address, on every endpoint.
+* **API calls work without a key** for 300 requests a day and 20 a minute per IP address (see
+  [calcbloc.com/developers#limits](https://calcbloc.com/developers?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss#limits)), on every endpoint.
 * **Add a free API key for 5,000 requests a day** (60 a minute). Get one instantly at
   [calcbloc.com/developers/keys](https://calcbloc.com/developers/keys?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss) (enter your email address; the key is shown once).
 * **Set it** with `Client(api_key="cb_...")`, or in the `CALCBLOC_API_KEY` environment variable, which
@@ -213,11 +227,13 @@ calculation endpoints answer them with `400 unsupported_country`. `client.last_r
 
 | Access | Per day | Per minute |
 |---|---|---|
-| No key (per IP address) | 50 | 5 |
+| No key (per IP address) | 300 | 20 |
 | Free key | 5,000 | 60 |
 
-When the free allowance without a key is used up, the client raises `RateLimitError` with a message that
-says so, links to the keys page and shows how to set the key. With a key, the message gives that key's limit.
+Every response carries `X-RateLimit-Limit` (the daily limit) and `X-RateLimit-Remaining`. When the free
+allowance without a key is used up, the client raises `RateLimitError` with a message that says so (quoting
+the daily limit the API last reported), links to the keys page and shows how to set the key. With a key, the
+message gives that key's limit.
 For higher volumes or use without attribution, see
 [calcbloc.com/developers](https://calcbloc.com/developers?utm_source=calcbloc-python&utm_medium=readme&utm_campaign=itmarkerz-oss).
 
@@ -225,7 +241,7 @@ For higher volumes or use without attribution, see
 
 | | Offline tables | API |
 |---|---|---|
-| Network, key, limits | None | HTTPS; 50 requests a day without a key, 5,000 with a free key |
+| Network, key, limits | None | HTTPS; 300 requests a day and 20 a minute per IP address without a key, 5,000 a day with a free key |
 | Tax tables | Snapshot dated `tables.data_date()` | Always the latest published figures |
 | CSV download | No (JSON) | `format="csv"` |
 | Take-home pay, employer cost, compare | No (only `tax_from_bands` on single sections) | Yes |

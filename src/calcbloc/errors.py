@@ -57,17 +57,19 @@ class CalcBlocError(Exception):
 class AuthenticationError(CalcBlocError):
     """401: the API key is not valid or has been revoked (``invalid_key``).
 
-    Every endpoint works without a key for 50 requests a day, so ``api_key_required`` is only sent if the API
-    has switched keyless access off.
+    Every endpoint works without a key (within the free allowance, see https://calcbloc.com/developers#limits),
+    so ``api_key_required`` is only sent if the API has switched keyless access off.
     """
 
 
 class RateLimitError(CalcBlocError):
     """429 ``rate_limited``: the per-minute or daily limit was reached.
 
-    Without an API key the message says the free allowance (50 requests a day, 5 a minute) is used up and
-    links to https://calcbloc.com/developers/keys for a free key (5,000 a day), set with
-    ``Client(api_key=...)`` or ``CALCBLOC_API_KEY``. With a key it is the API's message for that key's limit.
+    Without an API key the message says the free daily or per-minute allowance is used up (quoting the daily
+    limit the API reported in ``X-RateLimit-Limit``, when known) and links to
+    https://calcbloc.com/developers/keys for a free email-only key, set with ``Client(api_key=...)`` or
+    ``CALCBLOC_API_KEY``. With a key it is the API's message for that key's limit. Limits:
+    https://calcbloc.com/developers#limits.
 
     Attributes:
         retry_after: Seconds to wait before retrying (from the ``Retry-After`` header), if sent.
