@@ -13,6 +13,7 @@ Example:
     >>> uk["year"], uk["currency"]
     ('2026-27', 'GBP')
     >>> scotland = tables.load("uk", "2026-27", region="scotland")
+    >>> nz = tables.load("nz")                  # or "NZ", "New Zealand", "new-zealand"
 
 Data licence: CC BY 4.0. Credit "Data by CalcBloc (calcbloc.com/data)" wherever you show the figures.
 """
@@ -26,6 +27,7 @@ from functools import lru_cache
 from importlib import resources
 from typing import Any, List, Optional, Union
 
+from ._country_codes import resolve_country_key
 from .errors import TableNotFoundError
 from .types import Manifest, ManifestCountry, ManifestRegion, Section, TaxTable
 
@@ -88,8 +90,10 @@ def list_countries() -> List[str]:
 
 
 def _country(country: str) -> ManifestCountry:
-    code = str(country).strip().lower()
-    for c in _manifest().get("countries", []):
+    entries = _manifest().get("countries", [])
+    names = {c["country"]: c.get("name", "") for c in entries}
+    code = resolve_country_key(str(country), names) or str(country).strip().lower()
+    for c in entries:
         if c["country"] == code:
             return c
     raise TableNotFoundError(
@@ -145,7 +149,10 @@ def load(country: str, year: Optional[Union[str, int]] = None, region: Optional[
     """Load a bundled tax table.
 
     Args:
-        country: Country code as listed by :func:`list_countries` (case-insensitive), e.g. ``"uk"``.
+        country: Country code as listed by :func:`list_countries` (``"uk"``, ``"new-zealand"``), its short code
+            (``"nz"``; ``"gb"`` or ``"uk"`` for the UK), its ISO code (``"NZ"``) or its English name
+            (``"New Zealand"``), case-insensitively. The same identifiers work in :func:`country_info`,
+            :func:`years` and :func:`regions`.
         year: A tax year from :func:`years` (``"2026"``, ``"2026-27"``; an int such as ``2026`` also works),
             or ``None``/``"latest"`` for the country's current tax year.
         region: Optional region code or slug (``"ca"`` or ``"california"``, ``"scotland"``, ``"zh"``). A regional

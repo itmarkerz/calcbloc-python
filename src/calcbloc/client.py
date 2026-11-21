@@ -1,9 +1,10 @@
 """Typed client for the CalcBloc API (https://calcbloc.com/developers).
 
 Uses only the Python standard library (:mod:`urllib.request`). All endpoints are ``GET`` requests under
-``/api/v1``. Every endpoint works without a key for 50 requests a day (5 a minute) per IP address; a free API
-key, sent in the ``X-API-Key`` header, raises that to 5,000 a day (60 a minute). When the free allowance
-without a key is used up, :class:`RateLimitError` says so and links to the keys page.
+``/api/v1``. Every endpoint works without a key within a free daily and per-minute allowance per IP address;
+a free API key (email only), sent in the ``X-API-Key`` header, allows much more. The current limits are listed
+at https://calcbloc.com/developers#limits. When the free allowance without a key is used up,
+:class:`RateLimitError` says so and links to the keys page.
 
 Example:
     >>> from calcbloc import Client
@@ -24,6 +25,7 @@ import urllib.parse
 import urllib.request
 from typing import Any, Callable, Dict, Literal, Mapping, Optional, Tuple, Union, overload
 
+from ._country_codes import resolve_country_key
 from ._version import __version__
 from .errors import AuthenticationError, CalcBlocError, NetworkError, RateLimitError
 from .types import CalculationResponse, CompareResponse, CountriesResponse, RateLimit, TaxTable
@@ -51,17 +53,22 @@ ParamValue = Union[str, int, float, bool, None]
 _SEGMENT = re.compile(r"^[A-Za-z0-9-]{1,40}$")
 
 
-def _no_key_limit_message(api_message: str, retry_after: Optional[int]) -> str:
-    """The 429 message without a key: the free allowance is used up; add a free key and how to set it."""
+def _no_key_limit_message(api_message: str, retry_after: Optional[int], daily_limit: Optional[int] = None) -> str:
+    """The 429 message without a key: the free allowance is used up; add a free key and how to set it.
+
+    Limits are not typed in here: the daily figure is quoted only when the API has reported it in
+    ``X-RateLimit-Limit``.
+    """
     per_minute = "minute" in api_message.lower() and (retry_after is None or retry_after <= 60)
+    per_day = f" ({daily_limit:,} requests a day)" if daily_limit else ""
     used_up = (
-        "The free allowance without a key (5 requests a minute, 50 a day) is used up for this minute."
+        "The free per-minute allowance without a key is used up for this minute."
         if per_minute
-        else "The free allowance of 50 requests a day without a key is used up."
+        else f"The free daily allowance without a key{per_day} is used up."
     )
     return (
-        f"{used_up} Add your free API key (5,000 requests a day): {KEYS_URL} "
-        f'(set it with Client(api_key="...") or the {API_KEY_ENV} environment variable).'
+        f"{used_up} Get a free API key (email only, much higher limits): {KEYS_URL} "
+        f'and set it with Client(api_key="...") or the {API_KEY_ENV} environment variable.'
     )
 
 
@@ -115,8 +122,9 @@ class Client:
 
     Args:
         api_key: Your API key (free at https://calcbloc.com/developers/keys). Defaults to the
-            ``CALCBLOC_API_KEY`` environment variable. Optional: without a key every endpoint works for
-            50 requests a day and 5 a minute per IP address; a free key allows 5,000 a day and 60 a minute.
+            ``CALCBLOC_API_KEY`` environment variable. Optional: without a key every endpoint works within a
+            free daily and per-minute allowance per IP address; a free key allows much more. Limits:
+            https://calcbloc.com/developers#limits.
         base_url: Server to call. Defaults to ``https://calcbloc.com``.
         timeout: Seconds to wait for a response.
         user_agent: Overrides the ``User-Agent`` header.
@@ -142,6 +150,8 @@ class Client:
         self.user_agent = user_agent or f"calcbloc-python/{__version__} (+https://github.com/itmarkerz/calcbloc-python)"
         self._transport: Transport = transport or urllib_transport
         self.last_rate_limit: Optional[RateLimit] = None
+        # The daily request limit the API last reported (X-RateLimit-Limit), quoted in the keyless 429 message.
+        self._daily_limit: Optional[int] = None
 
     def __repr__(self) -> str:
         return f"Client(base_url={self.base_url!r}, api_key={'set' if self.api_key else None})"
@@ -169,6 +179,8 @@ class Client:
         )
         if limit is not None or remaining is not None or reset is not None:
             self.last_rate_limit = RateLimit(limit=limit, remaining=remaining, reset=reset)
+        if limit is not None and limit > 0:
+            self._daily_limit = limit
         if status >= 400:
             raise self._error(status, resp_headers, body)
         return resp_headers, body
@@ -191,7 +203,7 @@ class Client:
         if status == 429 or code == "rate_limited":
             retry_after = _int_header(headers, "Retry-After")
             return RateLimitError(
-                message if self.api_key else _no_key_limit_message(message, retry_after),
+                message if self.api_key else _no_key_limit_message(message, retry_after, self._daily_limit),
                 retry_after=retry_after,
                 limit=_int_header(headers, "X-RateLimit-Limit"),
                 remaining=_int_header(headers, "X-RateLimit-Remaining"),
@@ -230,14 +242,17 @@ class Client:
         """``GET /api/v1/tax-tables/{country}/{year}``: the official tax tables for a country and tax year.
 
         Args:
-            country: Country code, e.g. ``"us"``, ``"uk"``, ``"germany"``.
+            country: Short code such as ``"us"``, ``"uk"``, ``"nz"`` or ``"de"``, ISO code (``"NZ"``), English
+                name (``"New Zealand"``) or the older key (``"new-zealand"``); the client sends the key.
             year: A tax year from ``years_available`` (``"2026"``, ``"2026-27"``) or ``"latest"`` (default).
             region: Optional region code (US state ``"ca"``, Canadian province ``"on"``, ``"scotland"``...).
             format: ``"json"`` (default) returns a dict; ``"csv"`` returns the CSV text (one row per band or value).
         """
         if format not in ("json", "csv"):
             raise ValueError('format must be "json" or "csv"')
-        path = f"/api/v1/tax-tables/{_segment(country, 'country').lower()}/{_segment(str(year), 'year')}"
+        # Short codes ("nz"), ISO codes ("NZ") and English names ("New Zealand") become the key ("new-zealand").
+        key = resolve_country_key(str(country)) or country
+        path = f"/api/v1/tax-tables/{_segment(key, 'country').lower()}/{_segment(str(year), 'year')}"
         params: Dict[str, ParamValue] = {"region": region}
         if format == "csv":
             params["format"] = "csv"
@@ -254,16 +269,20 @@ class Client:
     # ------------------------------------------------------------------ calculations
 
     def net_salary(self, country: str, salary: float, *, region: Optional[str] = None, year: Optional[str] = None, **params: ParamValue) -> CalculationResponse:
-        """``GET /api/v1/net-salary``: take-home pay for an annual salary (no key needed for 50 a day).
+        """``GET /api/v1/net-salary``: take-home pay for an annual salary (works without a key).
 
         Args:
-            country: Country code with a take-home engine (see ``countries()``; ``tables_only`` countries
-                are refused with ``unsupported_country``).
+            country: Country with a take-home engine (see ``countries()``; ``tables_only`` countries
+                are refused with ``unsupported_country``): a short code such as ``"us"``, ``"uk"`` or ``"nz"``
+                (ISO 3166-1 alpha-2 in lower case, the UK as ``"uk"`` or ``"gb"``), an English name, or the
+                older key (``"new-zealand"``). Responses carry the older key in ``country``.
             salary: Annual gross salary in the country's currency (India: annual CTC).
-            region: Region where the country needs one (US: state code, required; UK: ``england``,
-                ``scotland`` or ``wales``; Canada: province).
+            region: Region where the country needs one (US: state code, required; Canada: province, required;
+                UK: ``england``, ``scotland`` or ``wales``). A missing required region is refused with
+                ``400 missing_parameter``, listing the valid codes.
             year: ``"latest"`` or the current tax year; calculations use the current year only.
-            **params: Country-specific parameters by their API names, e.g. ``filing_status="single"`` (US),
+            **params: Country-specific parameters by their API names, e.g. ``filing_status="mfj"`` (US:
+                ``single``, ``mfj`` or ``hoh``; spellings such as ``married`` are accepted as ``mfj``),
                 ``pension_pct=5`` (UK), ``student_loan="plan2"``. Booleans are sent as ``true``/``false``.
                 Unknown names are rejected by the API with ``400 unknown_parameter``.
         """
@@ -271,10 +290,11 @@ class Client:
         return data
 
     def employer_cost(self, country: str, salary: float, *, region: Optional[str] = None, year: Optional[str] = None, **params: ParamValue) -> CalculationResponse:
-        """``GET /api/v1/employer-cost``: total cost of employing someone on ``salary`` (no key needed for 50 a day).
+        """``GET /api/v1/employer-cost``: total cost of employing someone on ``salary`` (works without a key).
 
         Takes the same arguments as :meth:`net_salary`; the country-specific parameters differ (for example
-        ``health_per_month`` for the US or ``ni_category`` for the UK). ``countries()`` lists them.
+        ``health_per_month`` for the US or ``ni_category`` for the UK). ``countries()`` lists them. ``region``
+        is required for the US, Australia and Canada.
         """
         data: CalculationResponse = self._json("/api/v1/employer-cost", {"country": country, "salary": salary, "region": region, "year": year, **params})
         return data
@@ -291,7 +311,7 @@ class Client:
         ca_province: Optional[str] = None,
         in_state: Optional[str] = None,
     ) -> CompareResponse:
-        """``GET /api/v1/compare``: the same salary in two countries (no key needed for 50 a day).
+        """``GET /api/v1/compare``: the same salary in two countries (works without a key).
 
         The salary is converted at the European Central Bank reference rate and each country's take-home
         engine is run, as on https://calcbloc.com/compare/salary.

@@ -40,6 +40,7 @@ __all__ = [
     "CountryCalcEndpoint",
     "CountryTablesEndpoint",
     "CountryInfo",
+    "Coverage",
     "CountriesResponse",
     "CalculationResponse",
     "CompareSide",
@@ -254,6 +255,10 @@ class CountryParameter(TypedDict, total=False):
     max: float
     default: Union[str, int, float, bool]
     unit: str
+    labels: Dict[str, str]
+    """API 1.7+: display name of each enum value (``"ca"`` -> ``"California"``)."""
+    aliases: Dict[str, str]
+    """API 1.7+: accepted spellings of enum values -> canonical value (``"married"`` -> ``"mfj"``)."""
     description: str
 
 
@@ -278,6 +283,11 @@ class CountryInfo(TypedDict, total=False):
     """One entry of ``GET /api/v1/countries``."""
 
     code: str
+    """Country key used in responses and URLs, e.g. ``"uk"``, ``"new-zealand"``."""
+    short_code: str
+    """API 1.7+: short code accepted as ``country`` (ISO 3166-1 alpha-2 in lower case; the UK is ``"uk"``)."""
+    iso_code: str
+    """API 1.7+: ISO 3166-1 alpha-2 code, e.g. ``"NZ"``."""
     name: str
     currency: str
     years: List[str]
@@ -288,8 +298,31 @@ class CountryInfo(TypedDict, total=False):
     endpoints: Dict[str, Any]
 
 
+class Coverage(TypedDict, total=False):
+    """API 1.7+: the ``coverage`` object of ``GET /api/v1/countries``, counted by the API itself.
+
+    Country lists use short codes. ``region_required`` maps ``"net-salary"`` and ``"employer-cost"`` to the
+    countries where ``region`` must be given.
+    """
+
+    tax_tables: int
+    net_salary: int
+    employer_cost: int
+    compare: int
+    tables_only: int
+    net_salary_countries: List[str]
+    employer_cost_countries: List[str]
+    compare_countries: List[str]
+    region_required: Dict[str, List[str]]
+    region_optional: Dict[str, List[str]]
+    not_supported: str
+    summary: str
+
+
 class CountriesResponse(TypedDict, total=False):
     countries: List[CountryInfo]
+    coverage: Coverage
+    """API 1.7+."""
     attribution: ApiAttribution
 
 

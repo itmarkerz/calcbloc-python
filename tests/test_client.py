@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import io
 import json
+import re
 import urllib.error
 import urllib.parse
 from typing import Any, Dict, List, Mapping, Optional, Tuple
@@ -82,6 +83,22 @@ def test_tax_tables_defaults_to_latest() -> None:
     assert t.calls[0]["query"] == {}
 
 
+def test_tax_tables_maps_short_codes_iso_codes_and_names_to_the_key() -> None:
+    ids = ["nz", "NZ", "New Zealand", "new-zealand", "gb", "de"]
+    c, t = make(*[(200, {}, {}) for _ in ids], (200, {}, {}), api_key=None)
+    for country in ids:
+        c.tax_tables(country)
+    assert [call["path"] for call in t.calls] == ["/api/v1/tax-tables/new-zealand/latest"] * 4 + [
+        "/api/v1/tax-tables/uk/latest",
+        "/api/v1/tax-tables/germany/latest",
+    ]
+    # Unknown plain ids are sent as given (the API answers 404); anything else is still refused locally.
+    c.tax_tables("atlantis")
+    assert t.calls[-1]["path"] == "/api/v1/tax-tables/atlantis/latest"
+    with pytest.raises(ValueError):
+        c.tax_tables("New Atlantis")
+
+
 def test_tax_tables_year_region() -> None:
     c, t = make((200, {}, {"country": "us", "year": "2026"}))
     c.tax_tables("us", 2026, region="ca")
@@ -136,10 +153,10 @@ def test_key_in_query_is_refused_locally() -> None:
 
 
 def test_rate_limit_headers_are_recorded() -> None:
-    c, _ = make((200, {"x-ratelimit-limit": "50", "x-ratelimit-remaining": "12", "x-ratelimit-reset": "999"}, {"countries": []}))
+    c, _ = make((200, {"x-ratelimit-limit": "300", "x-ratelimit-remaining": "12", "x-ratelimit-reset": "999"}, {"countries": []}))
     assert c.last_rate_limit is None
     c.countries()
-    assert c.last_rate_limit == calcbloc.RateLimit(limit=50, remaining=12, reset=999)
+    assert c.last_rate_limit == calcbloc.RateLimit(limit=300, remaining=12, reset=999)
 
 
 def test_tables_only_country_is_unsupported_country() -> None:
@@ -181,25 +198,55 @@ def test_429_is_rate_limit_error() -> None:
 
 def test_429_without_key_asks_for_a_free_key(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.delenv("CALCBLOC_API_KEY", raising=False)
-    headers = {"Retry-After": "36000", "X-RateLimit-Limit": "50", "X-RateLimit-Remaining": "0", "X-RateLimit-Reset": "36000"}
-    c, t = make((429, headers, error_body("rate_limited", "Daily limit of 50 requests reached.", "https://calcbloc.com/developers#limits")), api_key=None)
+    headers = {"Retry-After": "36000", "X-RateLimit-Limit": "300", "X-RateLimit-Remaining": "0", "X-RateLimit-Reset": "36000"}
+    c, t = make((429, headers, error_body("rate_limited", "Daily limit of 300 requests reached.", "https://calcbloc.com/developers#limits")), api_key=None)
     with pytest.raises(RateLimitError) as e:
         c.net_salary("uk", 30_000)
     assert "X-API-Key" not in t.calls[0]["headers"]
     msg = e.value.message
-    assert msg.startswith("The free allowance of 50 requests a day without a key is used up. Add your free API key (5,000 requests a day): ")
+    assert msg.startswith(
+        "The free daily allowance without a key (300 requests a day) is used up. Get a free API key (email only, much higher limits): "
+    )
     assert "https://calcbloc.com/developers/keys?utm_source=calcbloc-python&utm_medium=app&utm_campaign=itmarkerz-oss" in msg
     assert 'Client(api_key="...")' in msg and "CALCBLOC_API_KEY" in msg
-    assert (e.value.status, e.value.code, e.value.retry_after, e.value.remaining) == (429, "rate_limited", 36000, 0)
+    assert (e.value.status, e.value.code, e.value.retry_after, e.value.limit, e.value.remaining) == (429, "rate_limited", 36000, 300, 0)
+
+
+def test_429_without_key_and_no_limit_seen_has_no_number(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv("CALCBLOC_API_KEY", raising=False)
+    c, _ = make((429, {"Retry-After": "36000"}, error_body("rate_limited", "Daily limit reached.")), api_key=None)
+    with pytest.raises(RateLimitError) as e:
+        c.countries()
+    msg = e.value.message
+    assert msg.startswith("The free daily allowance without a key is used up. Get a free API key ")
+    assert not re.search(r"\d+ requests", msg)
+    assert "CALCBLOC_API_KEY" in msg and "developers/keys" in msg
+
+
+def test_429_without_key_remembers_limit_from_earlier_response(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv("CALCBLOC_API_KEY", raising=False)
+    c, _ = make(
+        (200, {"X-RateLimit-Limit": "1500", "X-RateLimit-Remaining": "1"}, {"countries": []}),
+        (429, {"Retry-After": "3600"}, error_body("rate_limited", "Daily limit reached.")),
+        api_key=None,
+    )
+    c.countries()
+    with pytest.raises(RateLimitError) as e:
+        c.countries()
+    assert e.value.message.startswith("The free daily allowance without a key (1,500 requests a day) is used up.")
 
 
 def test_429_without_key_per_minute(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.delenv("CALCBLOC_API_KEY", raising=False)
-    c, _ = make((429, {"Retry-After": "20"}, error_body("rate_limited", "Too many requests this minute (limit 5).")), api_key=None)
+    headers = {"Retry-After": "20", "X-RateLimit-Limit": "300", "X-RateLimit-Remaining": "250"}
+    c, _ = make((429, headers, error_body("rate_limited", "Too many requests this minute (limit 20).")), api_key=None)
     with pytest.raises(RateLimitError) as e:
         c.countries()
-    assert e.value.message.startswith("The free allowance without a key (5 requests a minute, 50 a day) is used up for this minute.")
-    assert "https://calcbloc.com/developers/keys?utm_source=calcbloc-python&utm_medium=app&utm_campaign=itmarkerz-oss" in e.value.message
+    msg = e.value.message
+    assert msg.startswith("The free per-minute allowance without a key is used up for this minute. Get a free API key ")
+    assert not re.search(r"\d+ requests", msg)
+    assert "https://calcbloc.com/developers/keys?utm_source=calcbloc-python&utm_medium=app&utm_campaign=itmarkerz-oss" in msg
+    assert "CALCBLOC_API_KEY" in msg
 
 
 def test_429_with_key_from_environment_keeps_keyed_message(monkeypatch: pytest.MonkeyPatch) -> None:
