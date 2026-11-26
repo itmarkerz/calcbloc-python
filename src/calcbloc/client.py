@@ -331,3 +331,77 @@ class Client:
             {"a": a, "b": b, "salary": salary, "currency": currency, "us_state": us_state, "uk_region": uk_region, "ca_province": ca_province, "in_state": in_state},
         )
         return data
+
+    # ------------------------------------------------------------------ API 1.8 and 1.9
+    # These return the API's JSON as a dict (every field the endpoint documents at
+    # https://calcbloc.com/developers, plus the ``attribution`` block). Parameters use the API's names.
+
+    def supplemental_withholding(self, country: str, salary: float, amount: float, *, type: Optional[str] = None, region: Optional[str] = None, **params: ParamValue) -> Dict[str, Any]:
+        """``GET /api/v1/supplemental-withholding`` (API 1.8): tax withheld on a bonus, commission, RSU vest,
+        option exercise or lump sum paid on top of ``salary``, next to the final tax the payment adds.
+
+        ``type`` is ``bonus`` (default), ``commission``, ``rsu_vest``, ``option_exercise`` or ``lump_sum`` (per
+        country; see ``countries()``). ``region`` is required in the US and Canada.
+        """
+        data: Dict[str, Any] = self._json("/api/v1/supplemental-withholding", {"country": country, "salary": salary, "amount": amount, "type": type, "region": region, **params})
+        return data
+
+    def equity_tax(self, country: str, instrument: str, units: float, grant_date: str, event_date: str, **params: ParamValue) -> Dict[str, Any]:
+        """``GET /api/v1/equity-tax`` (API 1.8): tax on RSUs and stock options at vest or exercise, and on sale.
+
+        ``instrument``: us ``rsu``/``nso``/``iso``; uk ``rsu``/``emi``/``csop``/``unapproved_option``; au
+        ``ess_upfront``/``ess_deferred``/``rsu``; ca ``stock_option``; in ``esop``/``rsu``. Dates are
+        ``YYYY-MM-DD``. Other parameters: ``fmv_event``, ``fmv_grant``, ``exercise_price``, ``sale_date``,
+        ``sale_price``, ``salary``, ``region`` and the country's options.
+        """
+        data: Dict[str, Any] = self._json("/api/v1/equity-tax", {"country": country, "instrument": instrument, "units": units, "grant_date": grant_date, "event_date": event_date, **params})
+        return data
+
+    def cross_border_equity(self, instrument: str, units: float, grant_date: str, event_date: str, periods: str, **params: ParamValue) -> Dict[str, Any]:
+        """``GET /api/v1/cross-border-equity`` (API 1.9): an RSU vest or option exercise split between the
+        countries worked in from grant to vest, with each share's estimated tax.
+
+        ``periods``: comma-separated ``country:start:end[:workdays]``, e.g.
+        ``"us:2024-01-01:2024-12-31:220,gb:2025-01-01:2025-06-30:120"``. Other parameters: ``vest_date``,
+        ``fmv_event``, ``exercise_price``, ``currency``, ``residence``, ``grant_country``, ``us_citizen``,
+        ``salaries`` (``"us:150000,gb:80000"``) and ``options`` (``"us.filing_status:mfj,us.region:ny"``).
+        """
+        data: Dict[str, Any] = self._json("/api/v1/cross-border-equity", {"instrument": instrument, "units": units, "grant_date": grant_date, "event_date": event_date, "periods": periods, **params})
+        return data
+
+    def facts(self, *, country: Optional[str] = None, tax_type: Optional[str] = None, jurisdiction: Optional[str] = None, year: Optional[str] = None, **params: ParamValue) -> Dict[str, Any]:
+        """``GET /api/v1/facts`` (API 1.9): tax facts by country, tax type (``income.pit``,
+        ``consumption.vat``...), jurisdiction (``gb-sct``, ``us-ca``) and year. Paged: pass ``cursor`` with the
+        previous page's ``next_cursor``; ``limit`` sets the page size; ``level`` filters by tier of government.
+        """
+        data: Dict[str, Any] = self._json("/api/v1/facts", {"country": country, "tax_type": tax_type, "jurisdiction": jurisdiction, "year": year, **params})
+        return data
+
+    def tax_calendar(self, country: Optional[str] = None, *, region: Optional[str] = None) -> Dict[str, Any]:
+        """``GET /api/v1/tax-calendar`` (API 1.9): the tax year, next tax year, enacted and announced changes
+        and the next budget date. Without ``country``, every country's calendar."""
+        data: Dict[str, Any] = self._json("/api/v1/tax-calendar", {"country": country, "region": region})
+        return data
+
+    def tariffs(self, destination: str, code: str, *, origin: Optional[str] = None, **params: ParamValue) -> Dict[str, Any]:
+        """``GET /api/v1/tariffs`` (API 1.9): tariff lines of a commodity code (HS prefix or full code) in the
+        UK (``gb``), EU (``eu`` or a member state), US (``us``) or Indian (``in``) tariff. With ``origin``,
+        the best preference for that origin. Paged with ``limit`` and ``cursor``."""
+        data: Dict[str, Any] = self._json("/api/v1/tariffs", {"destination": destination, "code": code, "origin": origin, **params})
+        return data
+
+    def trade_agreements(self, country: str, *, partner: Optional[str] = None) -> Dict[str, Any]:
+        """``GET /api/v1/trade-agreements`` (API 1.9): trade agreements and preference schemes in a country's
+        tariff (``gb``, ``eu``, ``us``, ``in``), optionally only those covering ``partner``."""
+        data: Dict[str, Any] = self._json("/api/v1/trade-agreements", {"country": country, "partner": partner})
+        return data
+
+    def import_duty(self, destination: str, origin: str, code: str, customs_value: float, **params: ParamValue) -> Dict[str, Any]:
+        """``GET /api/v1/import-duty`` (API 1.9): duties, import VAT, excise and landed cost of one import.
+
+        ``code`` is the full commodity code (10 digits; 8 for India). Other parameters: ``quantity``, ``unit``,
+        ``proof_of_origin``, ``additional_code``, ``excise_code``, ``documents``, ``vat_code`` and ``transport``
+        (US). An estimate, not a customs ruling.
+        """
+        data: Dict[str, Any] = self._json("/api/v1/import-duty", {"destination": destination, "origin": origin, "code": code, "customs_value": customs_value, **params})
+        return data

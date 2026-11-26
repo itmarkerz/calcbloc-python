@@ -7,7 +7,22 @@ version and give the data date.
 
 ## [Unreleased]
 
-For CalcBloc API 1.7.
+For CalcBloc API 1.9.
+
+### Added (API 1.8 and 1.9)
+
+- `Client.supplemental_withholding()` and `Client.equity_tax()` (API 1.8), and `Client.cross_border_equity()`,
+  `Client.facts()`, `Client.tax_calendar()`, `Client.tariffs()`, `Client.trade_agreements()` and
+  `Client.import_duty()` (API 1.9). They return the API's JSON as a dict.
+- Bundled tables: 133 countries (338 tables), synced from calcbloc-data 2026-11-26; Belgium stays pending.
+  Short codes, ISO codes and names for all of them in `_country_codes.py`.
+
+### Changed (API 1.8 and 1.9)
+
+- Schema test: band rates above 100% are accepted for an ad valorem vehicle registration tax (Hong Kong's
+  first registration tax, 115% and 132%).
+
+For CalcBloc API 1.7:
 
 ### Changed
 
