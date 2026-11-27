@@ -1,0 +1,1984 @@
+{
+  "as_of": "2026-11-27",
+  "coverage": {
+    "tax_tables": 217,
+    "net_salary": 15,
+    "employer_cost": 14,
+    "compare": 15,
+    "tables_only": 202,
+    "net_salary_countries": [
+      "ee",
+      "pl",
+      "dk",
+      "sg",
+      "fr",
+      "nl",
+      "es",
+      "de",
+      "us",
+      "uk",
+      "au",
+      "nz",
+      "ca",
+      "ie",
+      "in"
+    ],
+    "employer_cost_countries": [
+      "ee",
+      "pl",
+      "dk",
+      "sg",
+      "nl",
+      "es",
+      "de",
+      "us",
+      "uk",
+      "au",
+      "nz",
+      "ca",
+      "ie",
+      "in"
+    ],
+    "compare_countries": [
+      "ee",
+      "pl",
+      "dk",
+      "sg",
+      "fr",
+      "nl",
+      "es",
+      "de",
+      "us",
+      "uk",
+      "au",
+      "nz",
+      "ca",
+      "ie",
+      "in"
+    ],
+    "equity": 5,
+    "equity_countries": [
+      "us",
+      "uk",
+      "au",
+      "ca",
+      "in"
+    ],
+    "supplemental": 12,
+    "supplemental_countries": [
+      "sg",
+      "fr",
+      "nl",
+      "es",
+      "de",
+      "us",
+      "uk",
+      "au",
+      "nz",
+      "ca",
+      "ie",
+      "in"
+    ],
+    "cross_border": 10,
+    "cross_border_countries": [
+      "sg",
+      "nl",
+      "es",
+      "de",
+      "us",
+      "uk",
+      "au",
+      "ca",
+      "ie",
+      "in"
+    ],
+    "region_required": {
+      "net-salary": [
+        "us",
+        "ca"
+      ],
+      "employer-cost": [
+        "us",
+        "au",
+        "ca"
+      ]
+    },
+    "region_optional": {
+      "net-salary": [
+        "es",
+        "de",
+        "uk",
+        "in"
+      ],
+      "employer-cost": [
+        "es",
+        "de",
+        "in"
+      ]
+    },
+    "not_supported": "Cross-border is supported for equity income only: /cross-border-equity splits an RSU vest or option exercise between countries by workdays (OECD) or the country's own rule and estimates the tax on each share for Singapore, Netherlands, Spain, Germany, United States, United Kingdom, Australia, Canada, Ireland, India; it does not compute treaty rates or the double-tax relief, and cross-border salary withholding (multi-country payroll) is not supported yet. Equity compensation tax (/equity-tax) covers United States, United Kingdom, Australia, Canada, India; supplemental withholding (/supplemental-withholding: bonus, commission, RSU vest, option exercise, lump sum) covers Singapore, France, Netherlands, Spain, Germany, United States, United Kingdom, Australia, New Zealand, Canada, Ireland, India.",
+    "summary": "217 countries with official tax tables; 15 with take-home pay calculations; 14 with employer cost; 15 in the cross-country comparison (France: take-home pay and compare only, no employer cost yet); 12 with supplemental (bonus) withholding; 5 with equity compensation tax (RSUs and stock options); 10 with cross-border equity estimates for mobile employees."
+  },
+  "countries": [
+    {
+      "code": "estonia",
+      "short_code": "ee",
+      "iso_code": "EE",
+      "name": "Estonia",
+      "currency": "EUR",
+      "years": [
+        "2026"
+      ],
+      "current_year": "2026",
+      "years_available": [
+        "2026"
+      ],
+      "available_endpoints": [
+        "net-salary",
+        "employer-cost",
+        "compare",
+        "tax-tables"
+      ],
+      "tables_only": false,
+      "equity": false,
+      "equity_tax": null,
+      "supplemental": false,
+      "tax_calendar": {
+        "tax_year": {
+          "label": "2026",
+          "start": "2026-01-01",
+          "end": "2026-12-31",
+          "type": "calendar"
+        },
+        "days_remaining": 34,
+        "next_tax_year": {
+          "label": "2027",
+          "start": "2027-01-01"
+        },
+        "upcoming_changes": 0,
+        "next_change": null,
+        "next_budget": {
+          "status": "not_announced"
+        },
+        "path": "/api/v1/tax-calendar?country=ee"
+      },
+      "endpoints": {
+        "net-salary": {
+          "path": "/api/v1/net-salary?country=estonia",
+          "calculatorUrl": "https://calcbloc.com/estonia/estonia-take-home-pay-calculator",
+          "verification": "official-example",
+          "parameters": [
+            {
+              "name": "salary",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 100000000,
+              "description": "Annual gross salary in EUR (Salary paid monthly in 12 equal payments (no statutory 13th month in Estonia).)"
+            },
+            {
+              "name": "year",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "2026",
+                "latest"
+              ],
+              "default": "latest",
+              "description": "Tax year: latest (default) or the current year. Calculations use the current year only; earlier years are served as tax tables. The resolved year is echoed as year."
+            },
+            {
+              "name": "funded_pension",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "0",
+                "1",
+                "2",
+                "none"
+              ],
+              "labels": {
+                "0": "2%",
+                "1": "4%",
+                "2": "6%",
+                "none": "Not paying (born before 1983 or stopped)"
+              },
+              "aliases": {
+                "2%": "0",
+                "4%": "1",
+                "6%": "2",
+                "not_paying_(born_before_1983_or_stopped)": "none"
+              },
+              "default": "0",
+              "description": "Funded pension (II pillar) rate. 2% unless you applied for 4% or 6%. People born before 1983, and members who stopped paying, pay none. Default: The statutory default rate (EMTA: 'Kui avaldust suuremale määrale ei ole tehtud, siis kehtib vaikimisi maksemäär 2%')."
+            },
+            {
+              "name": "pension_age",
+              "type": "boolean",
+              "required": false,
+              "default": false,
+              "description": "Reached old-age pension age. Higher basic exemption; the employee's unemployment insurance contribution stops. Default: Below pension age."
+            }
+          ]
+        },
+        "employer-cost": {
+          "path": "/api/v1/employer-cost?country=estonia",
+          "calculatorUrl": "https://calcbloc.com/estonia/estonia-take-home-pay-calculator",
+          "verification": "official-example",
+          "parameters": [
+            {
+              "name": "salary",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 100000000,
+              "description": "Annual gross salary in EUR (Salary paid monthly in 12 equal payments (no statutory 13th month in Estonia).)"
+            },
+            {
+              "name": "year",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "2026",
+                "latest"
+              ],
+              "default": "latest",
+              "description": "Tax year: latest (default) or the current year. Calculations use the current year only; earlier years are served as tax tables. The resolved year is echoed as year."
+            },
+            {
+              "name": "funded_pension",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "0",
+                "1",
+                "2",
+                "none"
+              ],
+              "labels": {
+                "0": "2%",
+                "1": "4%",
+                "2": "6%",
+                "none": "Not paying (born before 1983 or stopped)"
+              },
+              "aliases": {
+                "2%": "0",
+                "4%": "1",
+                "6%": "2",
+                "not_paying_(born_before_1983_or_stopped)": "none"
+              },
+              "default": "0",
+              "description": "Funded pension (II pillar) rate. 2% unless you applied for 4% or 6%. People born before 1983, and members who stopped paying, pay none. Default: The statutory default rate (EMTA: 'Kui avaldust suuremale määrale ei ole tehtud, siis kehtib vaikimisi maksemäär 2%')."
+            },
+            {
+              "name": "pension_age",
+              "type": "boolean",
+              "required": false,
+              "default": false,
+              "description": "Reached old-age pension age. Higher basic exemption; the employee's unemployment insurance contribution stops. Default: Below pension age."
+            }
+          ]
+        },
+        "tax-tables": {
+          "path": "/api/v1/tax-tables/estonia/2026",
+          "pageUrl": "https://calcbloc.com/estonia/tax-tables/2026",
+          "years": [
+            "2026"
+          ],
+          "current_year": "2026",
+          "years_available": [
+            "2026"
+          ],
+          "latestPath": "/api/v1/tax-tables/estonia/latest",
+          "regions": [],
+          "formats": [
+            "json",
+            "csv"
+          ]
+        }
+      }
+    },
+    {
+      "code": "poland",
+      "short_code": "pl",
+      "iso_code": "PL",
+      "name": "Poland",
+      "currency": "PLN",
+      "years": [
+        "2026"
+      ],
+      "current_year": "2026",
+      "years_available": [
+        "2026"
+      ],
+      "available_endpoints": [
+        "net-salary",
+        "employer-cost",
+        "compare",
+        "tax-tables"
+      ],
+      "tables_only": false,
+      "equity": false,
+      "equity_tax": null,
+      "supplemental": false,
+      "tax_calendar": {
+        "tax_year": {
+          "label": "2026",
+          "start": "2026-01-01",
+          "end": "2026-12-31",
+          "type": "calendar"
+        },
+        "days_remaining": 34,
+        "next_tax_year": {
+          "label": "2027",
+          "start": "2027-01-01"
+        },
+        "upcoming_changes": 8,
+        "next_change": {
+          "effective_from": "2027-01-01",
+          "date_precision": "day",
+          "title": "Broadcasting licence fee and municipal fees",
+          "status": "enacted",
+          "region": null
+        },
+        "next_budget": {
+          "status": "not_announced"
+        },
+        "path": "/api/v1/tax-calendar?country=pl"
+      },
+      "endpoints": {
+        "net-salary": {
+          "path": "/api/v1/net-salary?country=poland",
+          "calculatorUrl": "https://calcbloc.com/poland/poland-take-home-pay-calculator",
+          "verification": "official-example",
+          "parameters": [
+            {
+              "name": "salary",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 100000000,
+              "description": "Annual gross salary in PLN (Salary paid monthly in 12 equal payments (no statutory 13th month for private-sector employees).)"
+            },
+            {
+              "name": "year",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "2026",
+                "latest"
+              ],
+              "default": "latest",
+              "description": "Tax year: latest (default) or the current year. Calculations use the current year only; earlier years are served as tax tables. The resolved year is echoed as year."
+            },
+            {
+              "name": "accident_rate_pct",
+              "type": "number",
+              "required": false,
+              "min": 0.4,
+              "max": 8.12,
+              "default": 1.67,
+              "unit": "percent (5 = 5%)",
+              "description": "Accident insurance rate (employer), %. 1.67% for payers reporting up to 9 insured; larger employers get their own rate from ZUS. Default: The rate for payers reporting up to 9 insured persons (biznes.gov.pl: 'Składka na ubezpieczenie wypadkowe dla małej firmy zatrudniającej do 9 osób wynosi 1,67%')."
+            },
+            {
+              "name": "commuter",
+              "type": "boolean",
+              "required": false,
+              "default": false,
+              "description": "Lives outside the town of the workplace (higher costs of earning income). Default: Lives in the town of the workplace: the standard costs of earning income."
+            }
+          ]
+        },
+        "employer-cost": {
+          "path": "/api/v1/employer-cost?country=poland",
+          "calculatorUrl": "https://calcbloc.com/poland/poland-take-home-pay-calculator",
+          "verification": "official-example",
+          "parameters": [
+            {
+              "name": "salary",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 100000000,
+              "description": "Annual gross salary in PLN (Salary paid monthly in 12 equal payments (no statutory 13th month for private-sector employees).)"
+            },
+            {
+              "name": "year",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "2026",
+                "latest"
+              ],
+              "default": "latest",
+              "description": "Tax year: latest (default) or the current year. Calculations use the current year only; earlier years are served as tax tables. The resolved year is echoed as year."
+            },
+            {
+              "name": "accident_rate_pct",
+              "type": "number",
+              "required": false,
+              "min": 0.4,
+              "max": 8.12,
+              "default": 1.67,
+              "unit": "percent (5 = 5%)",
+              "description": "Accident insurance rate (employer), %. 1.67% for payers reporting up to 9 insured; larger employers get their own rate from ZUS. Default: The rate for payers reporting up to 9 insured persons (biznes.gov.pl: 'Składka na ubezpieczenie wypadkowe dla małej firmy zatrudniającej do 9 osób wynosi 1,67%')."
+            },
+            {
+              "name": "commuter",
+              "type": "boolean",
+              "required": false,
+              "default": false,
+              "description": "Lives outside the town of the workplace (higher costs of earning income). Default: Lives in the town of the workplace: the standard costs of earning income."
+            }
+          ]
+        },
+        "tax-tables": {
+          "path": "/api/v1/tax-tables/poland/2026",
+          "pageUrl": "https://calcbloc.com/poland/tax-tables/2026",
+          "years": [
+            "2026"
+          ],
+          "current_year": "2026",
+          "years_available": [
+            "2026"
+          ],
+          "latestPath": "/api/v1/tax-tables/poland/latest",
+          "regions": [],
+          "formats": [
+            "json",
+            "csv"
+          ]
+        }
+      }
+    },
+    {
+      "code": "denmark",
+      "short_code": "dk",
+      "iso_code": "DK",
+      "name": "Denmark",
+      "currency": "DKK",
+      "years": [
+        "2026"
+      ],
+      "current_year": "2026",
+      "years_available": [
+        "2026"
+      ],
+      "available_endpoints": [
+        "net-salary",
+        "employer-cost",
+        "compare",
+        "tax-tables"
+      ],
+      "tables_only": false,
+      "equity": false,
+      "equity_tax": null,
+      "supplemental": false,
+      "tax_calendar": {
+        "tax_year": {
+          "label": "2026",
+          "start": "2026-01-01",
+          "end": "2026-12-31",
+          "type": "calendar"
+        },
+        "days_remaining": 34,
+        "next_tax_year": {
+          "label": "2027",
+          "start": "2027-01-01"
+        },
+        "upcoming_changes": 2,
+        "next_change": {
+          "effective_from": "2027-01-01",
+          "date_precision": "year",
+          "title": "Employment deduction 2027: 12.75% up to DKK 65,200; single parents' extra deduction up to DKK 52,000; job deduction up to DKK 3,200 above DKK 242,100",
+          "status": "enacted",
+          "region": null
+        },
+        "next_budget": {
+          "status": "not_announced"
+        },
+        "path": "/api/v1/tax-calendar?country=dk"
+      },
+      "endpoints": {
+        "net-salary": {
+          "path": "/api/v1/net-salary?country=denmark",
+          "calculatorUrl": "https://calcbloc.com/denmark/denmark-take-home-pay-calculator",
+          "verification": "law-text",
+          "parameters": [
+            {
+              "name": "salary",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 100000000,
+              "description": "Annual gross salary in DKK (Salary paid monthly in 12 equal payments (no statutory 13th month in Denmark).)"
+            },
+            {
+              "name": "year",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "2026",
+                "latest"
+              ],
+              "default": "latest",
+              "description": "Tax year: latest (default) or the current year. Calculations use the current year only; earlier years are served as tax tables. The resolved year is echoed as year."
+            },
+            {
+              "name": "municipality",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "average",
+                "165",
+                "201",
+                "420",
+                "151",
+                "530",
+                "400",
+                "153",
+                "810",
+                "155",
+                "240",
+                "561",
+                "563",
+                "710",
+                "320",
+                "210",
+                "607",
+                "147",
+                "813",
+                "250",
+                "190",
+                "430",
+                "157",
+                "159",
+                "161",
+                "253",
+                "270",
+                "376",
+                "510",
+                "260",
+                "766",
+                "217",
+                "163",
+                "657",
+                "219",
+                "860",
+                "316",
+                "661",
+                "615",
+                "167",
+                "169",
+                "223",
+                "756",
+                "183",
+                "849",
+                "326",
+                "440",
+                "621",
+                "101",
+                "259",
+                "482",
+                "350",
+                "665",
+                "360",
+                "173",
+                "825",
+                "846",
+                "410",
+                "773",
+                "707",
+                "480",
+                "450",
+                "370",
+                "727",
+                "461",
+                "306",
+                "730",
+                "840",
+                "760",
+                "329",
+                "265",
+                "230",
+                "175",
+                "741",
+                "740",
+                "746",
+                "779",
+                "330",
+                "269",
+                "340",
+                "336",
+                "671",
+                "479",
+                "706",
+                "540",
+                "787",
+                "550",
+                "185",
+                "187",
+                "573",
+                "575",
+                "630",
+                "820",
+                "791",
+                "390",
+                "492",
+                "580",
+                "851",
+                "751"
+              ],
+              "labels": {
+                "101": "København",
+                "147": "Frederiksberg",
+                "151": "Ballerup",
+                "153": "Brøndby",
+                "155": "Dragør",
+                "157": "Gentofte",
+                "159": "Gladsaxe",
+                "161": "Glostrup",
+                "163": "Herlev",
+                "165": "Albertslund",
+                "167": "Hvidovre",
+                "169": "Høje-Taastrup",
+                "173": "Lyngby-Taarbæk",
+                "175": "Rødovre",
+                "183": "Ishøj",
+                "185": "Tårnby",
+                "187": "Vallensbæk",
+                "190": "Furesø",
+                "201": "Allerød",
+                "210": "Fredensborg",
+                "217": "Helsingør",
+                "219": "Hillerød",
+                "223": "Hørsholm",
+                "230": "Rudersdal",
+                "240": "Egedal",
+                "250": "Frederikssund",
+                "253": "Greve",
+                "259": "Køge",
+                "260": "Halsnæs",
+                "265": "Roskilde",
+                "269": "Solrød",
+                "270": "Gribskov",
+                "306": "Odsherred",
+                "316": "Holbæk",
+                "320": "Faxe",
+                "326": "Kalundborg",
+                "329": "Ringsted",
+                "330": "Slagelse",
+                "336": "Stevns",
+                "340": "Sorø",
+                "350": "Lejre",
+                "360": "Lolland",
+                "370": "Næstved",
+                "376": "Guldborgsund",
+                "390": "Vordingborg",
+                "400": "Bornholm",
+                "410": "Middelfart",
+                "420": "Assens",
+                "430": "Faaborg-Midtfyn",
+                "440": "Kerteminde",
+                "450": "Nyborg",
+                "461": "Odense",
+                "479": "Svendborg",
+                "480": "Nordfyns",
+                "482": "Langeland",
+                "492": "Ærø",
+                "510": "Haderslev",
+                "530": "Billund",
+                "540": "Sønderborg",
+                "550": "Tønder",
+                "561": "Esbjerg",
+                "563": "Fanø",
+                "573": "Varde",
+                "575": "Vejen",
+                "580": "Aabenraa",
+                "607": "Fredericia",
+                "615": "Horsens",
+                "621": "Kolding",
+                "630": "Vejle",
+                "657": "Herning",
+                "661": "Holstebro",
+                "665": "Lemvig",
+                "671": "Struer",
+                "706": "Syddjurs",
+                "707": "Norddjurs",
+                "710": "Favrskov",
+                "727": "Odder",
+                "730": "Randers",
+                "740": "Silkeborg",
+                "741": "Samsø",
+                "746": "Skanderborg",
+                "751": "Aarhus",
+                "756": "Ikast-Brande",
+                "760": "Ringkøbing-Skjern",
+                "766": "Hedensted",
+                "773": "Morsø",
+                "779": "Skive",
+                "787": "Thisted",
+                "791": "Viborg",
+                "810": "Brønderslev",
+                "813": "Frederikshavn",
+                "820": "Vesthimmerland",
+                "825": "Læsø",
+                "840": "Rebild",
+                "846": "Mariagerfjord",
+                "849": "Jammerbugt",
+                "851": "Aalborg",
+                "860": "Hjørring",
+                "average": "National average"
+              },
+              "aliases": {
+                "københavn": "101",
+                "frederiksberg": "147",
+                "ballerup": "151",
+                "brøndby": "153",
+                "dragør": "155",
+                "gentofte": "157",
+                "gladsaxe": "159",
+                "glostrup": "161",
+                "herlev": "163",
+                "albertslund": "165",
+                "hvidovre": "167",
+                "høje_taastrup": "169",
+                "lyngby_taarbæk": "173",
+                "rødovre": "175",
+                "ishøj": "183",
+                "tarnby": "185",
+                "vallensbæk": "187",
+                "furesø": "190",
+                "allerød": "201",
+                "fredensborg": "210",
+                "helsingør": "217",
+                "hillerød": "219",
+                "hørsholm": "223",
+                "rudersdal": "230",
+                "egedal": "240",
+                "frederikssund": "250",
+                "greve": "253",
+                "køge": "259",
+                "halsnæs": "260",
+                "roskilde": "265",
+                "solrød": "269",
+                "gribskov": "270",
+                "odsherred": "306",
+                "holbæk": "316",
+                "faxe": "320",
+                "kalundborg": "326",
+                "ringsted": "329",
+                "slagelse": "330",
+                "stevns": "336",
+                "sorø": "340",
+                "lejre": "350",
+                "lolland": "360",
+                "næstved": "370",
+                "guldborgsund": "376",
+                "vordingborg": "390",
+                "bornholm": "400",
+                "middelfart": "410",
+                "assens": "420",
+                "faaborg_midtfyn": "430",
+                "kerteminde": "440",
+                "nyborg": "450",
+                "odense": "461",
+                "svendborg": "479",
+                "nordfyns": "480",
+                "langeland": "482",
+                "ærø": "492",
+                "haderslev": "510",
+                "billund": "530",
+                "sønderborg": "540",
+                "tønder": "550",
+                "esbjerg": "561",
+                "fanø": "563",
+                "varde": "573",
+                "vejen": "575",
+                "aabenraa": "580",
+                "fredericia": "607",
+                "horsens": "615",
+                "kolding": "621",
+                "vejle": "630",
+                "herning": "657",
+                "holstebro": "661",
+                "lemvig": "665",
+                "struer": "671",
+                "syddjurs": "706",
+                "norddjurs": "707",
+                "favrskov": "710",
+                "odder": "727",
+                "randers": "730",
+                "silkeborg": "740",
+                "samsø": "741",
+                "skanderborg": "746",
+                "aarhus": "751",
+                "ikast_brande": "756",
+                "ringkøbing_skjern": "760",
+                "hedensted": "766",
+                "morsø": "773",
+                "skive": "779",
+                "thisted": "787",
+                "viborg": "791",
+                "brønderslev": "810",
+                "frederikshavn": "813",
+                "vesthimmerland": "820",
+                "læsø": "825",
+                "rebild": "840",
+                "mariagerfjord": "846",
+                "jammerbugt": "849",
+                "aalborg": "851",
+                "hjørring": "860",
+                "national_average": "average"
+              },
+              "default": "average",
+              "description": "Municipality (kommune). Sets kommuneskat and kirkeskat. The national average uses the 2026 average rates. Default: The national average rates (Skatte- og Vækstministeriet, landsgennemsnit 2026)."
+            },
+            {
+              "name": "church",
+              "type": "boolean",
+              "required": false,
+              "default": false,
+              "description": "Member of the Church of Denmark (kirkeskat). Default: Not a member: kirkeskat is paid by members only."
+            },
+            {
+              "name": "atp_hours",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "0",
+                "1",
+                "2",
+                "3"
+              ],
+              "labels": {
+                "0": "117 hours or more a month",
+                "1": "78 to 116 hours a month",
+                "2": "39 to 77 hours a month",
+                "3": "Under 39 hours a month"
+              },
+              "aliases": {
+                "117_hours_or_more_a_month": "0",
+                "78_to_116_hours_a_month": "1",
+                "39_to_77_hours_a_month": "2",
+                "under_39_hours_a_month": "3"
+              },
+              "default": "0",
+              "description": "Hours worked a month (ATP rate). Default: Full time: the A rate for monthly-paid employees working 117 hours a month or more."
+            }
+          ]
+        },
+        "employer-cost": {
+          "path": "/api/v1/employer-cost?country=denmark",
+          "calculatorUrl": "https://calcbloc.com/denmark/denmark-take-home-pay-calculator",
+          "verification": "law-text",
+          "parameters": [
+            {
+              "name": "salary",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 100000000,
+              "description": "Annual gross salary in DKK (Salary paid monthly in 12 equal payments (no statutory 13th month in Denmark).)"
+            },
+            {
+              "name": "year",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "2026",
+                "latest"
+              ],
+              "default": "latest",
+              "description": "Tax year: latest (default) or the current year. Calculations use the current year only; earlier years are served as tax tables. The resolved year is echoed as year."
+            },
+            {
+              "name": "municipality",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "average",
+                "165",
+                "201",
+                "420",
+                "151",
+                "530",
+                "400",
+                "153",
+                "810",
+                "155",
+                "240",
+                "561",
+                "563",
+                "710",
+                "320",
+                "210",
+                "607",
+                "147",
+                "813",
+                "250",
+                "190",
+                "430",
+                "157",
+                "159",
+                "161",
+                "253",
+                "270",
+                "376",
+                "510",
+                "260",
+                "766",
+                "217",
+                "163",
+                "657",
+                "219",
+                "860",
+                "316",
+                "661",
+                "615",
+                "167",
+                "169",
+                "223",
+                "756",
+                "183",
+                "849",
+                "326",
+                "440",
+                "621",
+                "101",
+                "259",
+                "482",
+                "350",
+                "665",
+                "360",
+                "173",
+                "825",
+                "846",
+                "410",
+                "773",
+                "707",
+                "480",
+                "450",
+                "370",
+                "727",
+                "461",
+                "306",
+                "730",
+                "840",
+                "760",
+                "329",
+                "265",
+                "230",
+                "175",
+                "741",
+                "740",
+                "746",
+                "779",
+                "330",
+                "269",
+                "340",
+                "336",
+                "671",
+                "479",
+                "706",
+                "540",
+                "787",
+                "550",
+                "185",
+                "187",
+                "573",
+                "575",
+                "630",
+                "820",
+                "791",
+                "390",
+                "492",
+                "580",
+                "851",
+                "751"
+              ],
+              "labels": {
+                "101": "København",
+                "147": "Frederiksberg",
+                "151": "Ballerup",
+                "153": "Brøndby",
+                "155": "Dragør",
+                "157": "Gentofte",
+                "159": "Gladsaxe",
+                "161": "Glostrup",
+                "163": "Herlev",
+                "165": "Albertslund",
+                "167": "Hvidovre",
+                "169": "Høje-Taastrup",
+                "173": "Lyngby-Taarbæk",
+                "175": "Rødovre",
+                "183": "Ishøj",
+                "185": "Tårnby",
+                "187": "Vallensbæk",
+                "190": "Furesø",
+                "201": "Allerød",
+                "210": "Fredensborg",
+                "217": "Helsingør",
+                "219": "Hillerød",
+                "223": "Hørsholm",
+                "230": "Rudersdal",
+                "240": "Egedal",
+                "250": "Frederikssund",
+                "253": "Greve",
+                "259": "Køge",
+                "260": "Halsnæs",
+                "265": "Roskilde",
+                "269": "Solrød",
+                "270": "Gribskov",
+                "306": "Odsherred",
+                "316": "Holbæk",
+                "320": "Faxe",
+                "326": "Kalundborg",
+                "329": "Ringsted",
+                "330": "Slagelse",
+                "336": "Stevns",
+                "340": "Sorø",
+                "350": "Lejre",
+                "360": "Lolland",
+                "370": "Næstved",
+                "376": "Guldborgsund",
+                "390": "Vordingborg",
+                "400": "Bornholm",
+                "410": "Middelfart",
+                "420": "Assens",
+                "430": "Faaborg-Midtfyn",
+                "440": "Kerteminde",
+                "450": "Nyborg",
+                "461": "Odense",
+                "479": "Svendborg",
+                "480": "Nordfyns",
+                "482": "Langeland",
+                "492": "Ærø",
+                "510": "Haderslev",
+                "530": "Billund",
+                "540": "Sønderborg",
+                "550": "Tønder",
+                "561": "Esbjerg",
+                "563": "Fanø",
+                "573": "Varde",
+                "575": "Vejen",
+                "580": "Aabenraa",
+                "607": "Fredericia",
+                "615": "Horsens",
+                "621": "Kolding",
+                "630": "Vejle",
+                "657": "Herning",
+                "661": "Holstebro",
+                "665": "Lemvig",
+                "671": "Struer",
+                "706": "Syddjurs",
+                "707": "Norddjurs",
+                "710": "Favrskov",
+                "727": "Odder",
+                "730": "Randers",
+                "740": "Silkeborg",
+                "741": "Samsø",
+                "746": "Skanderborg",
+                "751": "Aarhus",
+                "756": "Ikast-Brande",
+                "760": "Ringkøbing-Skjern",
+                "766": "Hedensted",
+                "773": "Morsø",
+                "779": "Skive",
+                "787": "Thisted",
+                "791": "Viborg",
+                "810": "Brønderslev",
+                "813": "Frederikshavn",
+                "820": "Vesthimmerland",
+                "825": "Læsø",
+                "840": "Rebild",
+                "846": "Mariagerfjord",
+                "849": "Jammerbugt",
+                "851": "Aalborg",
+                "860": "Hjørring",
+                "average": "National average"
+              },
+              "aliases": {
+                "københavn": "101",
+                "frederiksberg": "147",
+                "ballerup": "151",
+                "brøndby": "153",
+                "dragør": "155",
+                "gentofte": "157",
+                "gladsaxe": "159",
+                "glostrup": "161",
+                "herlev": "163",
+                "albertslund": "165",
+                "hvidovre": "167",
+                "høje_taastrup": "169",
+                "lyngby_taarbæk": "173",
+                "rødovre": "175",
+                "ishøj": "183",
+                "tarnby": "185",
+                "vallensbæk": "187",
+                "furesø": "190",
+                "allerød": "201",
+                "fredensborg": "210",
+                "helsingør": "217",
+                "hillerød": "219",
+                "hørsholm": "223",
+                "rudersdal": "230",
+                "egedal": "240",
+                "frederikssund": "250",
+                "greve": "253",
+                "køge": "259",
+                "halsnæs": "260",
+                "roskilde": "265",
+                "solrød": "269",
+                "gribskov": "270",
+                "odsherred": "306",
+                "holbæk": "316",
+                "faxe": "320",
+                "kalundborg": "326",
+                "ringsted": "329",
+                "slagelse": "330",
+                "stevns": "336",
+                "sorø": "340",
+                "lejre": "350",
+                "lolland": "360",
+                "næstved": "370",
+                "guldborgsund": "376",
+                "vordingborg": "390",
+                "bornholm": "400",
+                "middelfart": "410",
+                "assens": "420",
+                "faaborg_midtfyn": "430",
+                "kerteminde": "440",
+                "nyborg": "450",
+                "odense": "461",
+                "svendborg": "479",
+                "nordfyns": "480",
+                "langeland": "482",
+                "ærø": "492",
+                "haderslev": "510",
+                "billund": "530",
+                "sønderborg": "540",
+                "tønder": "550",
+                "esbjerg": "561",
+                "fanø": "563",
+                "varde": "573",
+                "vejen": "575",
+                "aabenraa": "580",
+                "fredericia": "607",
+                "horsens": "615",
+                "kolding": "621",
+                "vejle": "630",
+                "herning": "657",
+                "holstebro": "661",
+                "lemvig": "665",
+                "struer": "671",
+                "syddjurs": "706",
+                "norddjurs": "707",
+                "favrskov": "710",
+                "odder": "727",
+                "randers": "730",
+                "silkeborg": "740",
+                "samsø": "741",
+                "skanderborg": "746",
+                "aarhus": "751",
+                "ikast_brande": "756",
+                "ringkøbing_skjern": "760",
+                "hedensted": "766",
+                "morsø": "773",
+                "skive": "779",
+                "thisted": "787",
+                "viborg": "791",
+                "brønderslev": "810",
+                "frederikshavn": "813",
+                "vesthimmerland": "820",
+                "læsø": "825",
+                "rebild": "840",
+                "mariagerfjord": "846",
+                "jammerbugt": "849",
+                "aalborg": "851",
+                "hjørring": "860",
+                "national_average": "average"
+              },
+              "default": "average",
+              "description": "Municipality (kommune). Sets kommuneskat and kirkeskat. The national average uses the 2026 average rates. Default: The national average rates (Skatte- og Vækstministeriet, landsgennemsnit 2026)."
+            },
+            {
+              "name": "church",
+              "type": "boolean",
+              "required": false,
+              "default": false,
+              "description": "Member of the Church of Denmark (kirkeskat). Default: Not a member: kirkeskat is paid by members only."
+            },
+            {
+              "name": "atp_hours",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "0",
+                "1",
+                "2",
+                "3"
+              ],
+              "labels": {
+                "0": "117 hours or more a month",
+                "1": "78 to 116 hours a month",
+                "2": "39 to 77 hours a month",
+                "3": "Under 39 hours a month"
+              },
+              "aliases": {
+                "117_hours_or_more_a_month": "0",
+                "78_to_116_hours_a_month": "1",
+                "39_to_77_hours_a_month": "2",
+                "under_39_hours_a_month": "3"
+              },
+              "default": "0",
+              "description": "Hours worked a month (ATP rate). Default: Full time: the A rate for monthly-paid employees working 117 hours a month or more."
+            }
+          ]
+        },
+        "tax-tables": {
+          "path": "/api/v1/tax-tables/denmark/2026",
+          "pageUrl": "https://calcbloc.com/denmark/tax-tables/2026",
+          "years": [
+            "2026"
+          ],
+          "current_year": "2026",
+          "years_available": [
+            "2026"
+          ],
+          "latestPath": "/api/v1/tax-tables/denmark/latest",
+          "regions": [
+            {
+              "code": "hovedstaden",
+              "name": "Region Hovedstaden"
+            },
+            {
+              "code": "sjaelland",
+              "name": "Region Sjælland"
+            },
+            {
+              "code": "syddanmark",
+              "name": "Region Syddanmark"
+            },
+            {
+              "code": "midtjylland",
+              "name": "Region Midtjylland"
+            },
+            {
+              "code": "nordjylland",
+              "name": "Region Nordjylland"
+            }
+          ],
+          "formats": [
+            "json",
+            "csv"
+          ]
+        }
+      }
+    },
+    {
+      "code": "uk",
+      "short_code": "uk",
+      "iso_code": "GB",
+      "name": "United Kingdom",
+      "currency": "GBP",
+      "years": [
+        "2026-27",
+        "2025-26"
+      ],
+      "current_year": "2026-27",
+      "years_available": [
+        "2026-27",
+        "2025-26"
+      ],
+      "available_endpoints": [
+        "net-salary",
+        "employer-cost",
+        "compare",
+        "tax-tables"
+      ],
+      "tables_only": false,
+      "equity": true,
+      "equity_tax": {
+        "path": "/api/v1/equity-tax?country=uk",
+        "tax_year": "2026-27",
+        "instruments": [
+          "rsu",
+          "emi",
+          "csop",
+          "unapproved_option"
+        ],
+        "parameters": [
+          {
+            "name": "instrument",
+            "type": "enum",
+            "required": true,
+            "values": [
+              "rsu",
+              "emi",
+              "csop",
+              "unapproved_option"
+            ],
+            "labels": {
+              "rsu": "Restricted stock units (RSUs)",
+              "emi": "Enterprise Management Incentives (EMI) options",
+              "csop": "Company Share Option Plan (CSOP) options",
+              "unapproved_option": "Unapproved (non-tax-advantaged) options"
+            },
+            "aliases": {
+              "restricted_stock_units_(rsus)": "rsu",
+              "enterprise_management_incentives_(emi)_options": "emi",
+              "company_share_option_plan_(csop)_options": "csop",
+              "unapproved_(non_tax_advantaged)_options": "unapproved_option",
+              "restricted_stock_unit": "rsu",
+              "restricted_stock_units": "rsu",
+              "rsus": "rsu",
+              "enterprise_management_incentives": "emi",
+              "emi_option": "emi",
+              "company_share_option_plan": "csop",
+              "unapproved": "unapproved_option",
+              "non_tax_advantaged": "unapproved_option"
+            },
+            "description": "Equity instrument."
+          },
+          {
+            "name": "units",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 1000000000,
+            "description": "Number of shares vesting or options exercised."
+          },
+          {
+            "name": "grant_date",
+            "type": "date",
+            "required": true,
+            "description": "Grant date (YYYY-MM-DD)."
+          },
+          {
+            "name": "event_date",
+            "type": "date",
+            "required": true,
+            "description": "Vest date (RSUs), exercise date (options), or acquisition / deferred taxing point (Australia ESS) (YYYY-MM-DD)."
+          },
+          {
+            "name": "fmv_event",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 1000000000,
+            "description": "Market value per share at vest / exercise (India: FMV under rule 15(6))."
+          },
+          {
+            "name": "fmv_grant",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 1000000000,
+            "description": "Market value per share at grant (UK EMI discount and CSOP limit, Canada 110(1)(d) and vesting limit)."
+          },
+          {
+            "name": "exercise_price",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 1000000000,
+            "description": "Exercise price per share (required for options; RSUs: amount paid, default 0)."
+          },
+          {
+            "name": "sale_price",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 1000000000,
+            "description": "Sale price per share (with sale_date: the capital gains part)."
+          },
+          {
+            "name": "sale_date",
+            "type": "date",
+            "required": false,
+            "description": "Sale date (YYYY-MM-DD), with sale_price."
+          },
+          {
+            "name": "salary",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 1000000000,
+            "description": "Regular annual salary in the country's currency (for the marginal rates and contribution ceilings)."
+          },
+          {
+            "name": "region",
+            "type": "enum",
+            "required": false,
+            "values": [
+              "england",
+              "scotland",
+              "wales"
+            ],
+            "labels": {
+              "england": "England & Northern Ireland",
+              "scotland": "Scotland",
+              "wales": "Wales"
+            },
+            "aliases": {
+              "england_&_northern_ireland": "england"
+            },
+            "description": "Region for income tax (england, scotland, wales)."
+          },
+          {
+            "name": "readily_convertible",
+            "type": "boolean",
+            "required": false,
+            "default": true,
+            "description": "The shares are readily convertible assets (e.g. listed, or with trading arrangements): PAYE and NIC apply to a taxable gain."
+          },
+          {
+            "name": "emi_exercise_period_years",
+            "type": "enum",
+            "required": false,
+            "values": [
+              "10",
+              "15"
+            ],
+            "labels": {
+              "10": "10 years",
+              "15": "15 years"
+            },
+            "aliases": {
+              "10_years": "10",
+              "15_years": "15"
+            },
+            "default": "10",
+            "description": "EMI: exercise period in the option agreement (10 or 15 years)."
+          },
+          {
+            "name": "emi_disqualifying_event_mv",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 1000000,
+            "default": 0,
+            "description": "EMI: market value per share immediately before a disqualifying event, when the option was exercised more than 90 days after it (0 = none)."
+          },
+          {
+            "name": "emi_badr_conditions_met",
+            "type": "boolean",
+            "required": false,
+            "default": true,
+            "description": "EMI: the other Business Asset Disposal Relief conditions are met (officer or employee of the trading company throughout the 2 years)."
+          },
+          {
+            "name": "csop_qualifying_early_exercise",
+            "type": "boolean",
+            "required": false,
+            "default": false,
+            "description": "CSOP: exercised within 3 years for a reason the scheme allows (good leaver within 6 months, company event)."
+          }
+        ]
+      },
+      "supplemental": true,
+      "tax_calendar": {
+        "tax_year": {
+          "label": "2026-27",
+          "start": "2026-04-06",
+          "end": "2027-04-05",
+          "type": "fiscal"
+        },
+        "days_remaining": 129,
+        "next_tax_year": {
+          "label": "2027-28",
+          "start": "2027-04-06"
+        },
+        "upcoming_changes": 13,
+        "next_change": {
+          "effective_from": "2027-01-01",
+          "date_precision": "day",
+          "title": "Bank Corporation Tax Surcharge rises from 3% to 6% for 15 months (1 January 2027 to 31 March 2028)",
+          "status": "announced",
+          "region": null
+        },
+        "next_budget": {
+          "status": "not_announced"
+        },
+        "path": "/api/v1/tax-calendar?country=uk"
+      },
+      "endpoints": {
+        "net-salary": {
+          "path": "/api/v1/net-salary?country=uk",
+          "calculatorUrl": "https://calcbloc.com/uk/take-home-pay-calculator",
+          "verification": null,
+          "parameters": [
+            {
+              "name": "salary",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 10000000,
+              "description": "Annual gross salary in GBP."
+            },
+            {
+              "name": "year",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "2026-27",
+                "latest",
+                "2025-26"
+              ],
+              "default": "latest",
+              "description": "Tax year: latest (default) or the current year. Calculations use the current year only; earlier years are served as tax tables. The resolved year is echoed as year."
+            },
+            {
+              "name": "region",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "england",
+                "scotland",
+                "wales"
+              ],
+              "labels": {
+                "england": "England / NI",
+                "scotland": "Scotland",
+                "wales": "Wales"
+              },
+              "aliases": {
+                "england_/_ni": "england"
+              },
+              "default": "england",
+              "description": "Where the employee lives for Income Tax: england (England and Northern Ireland), scotland or wales."
+            },
+            {
+              "name": "frequency",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "weekly",
+                "fortnightly",
+                "fourWeekly",
+                "monthly"
+              ],
+              "labels": {
+                "weekly": "Weekly",
+                "fortnightly": "Fortnightly",
+                "fourWeekly": "4-weekly",
+                "monthly": "Monthly"
+              },
+              "aliases": {
+                "4_weekly": "fourWeekly"
+              },
+              "default": "monthly",
+              "description": "Pay frequency used for the per-period figures in the calculator's output."
+            },
+            {
+              "name": "pension_pct",
+              "type": "number",
+              "required": false,
+              "min": 0,
+              "max": 100,
+              "default": 0,
+              "unit": "percent (5 = 5%)",
+              "description": "Employee pension contribution, percent of gross salary."
+            },
+            {
+              "name": "pension_method",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "netpay",
+                "ras",
+                "sacrifice"
+              ],
+              "labels": {
+                "netpay": "Net pay (before tax)",
+                "ras": "Relief at source (after tax)",
+                "sacrifice": "Salary sacrifice"
+              },
+              "aliases": {
+                "net_pay_(before_tax)": "netpay",
+                "relief_at_source_(after_tax)": "ras",
+                "salary_sacrifice": "sacrifice"
+              },
+              "default": "netpay",
+              "description": "How the pension is paid: netpay, ras (relief at source) or sacrifice (salary sacrifice)."
+            },
+            {
+              "name": "student_loan",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "none",
+                "plan1",
+                "plan2",
+                "plan4",
+                "plan5"
+              ],
+              "labels": {
+                "none": "None",
+                "plan1": "Plan 1",
+                "plan2": "Plan 2",
+                "plan4": "Plan 4 (Scotland)",
+                "plan5": "Plan 5"
+              },
+              "aliases": {
+                "plan_1": "plan1",
+                "plan_2": "plan2",
+                "plan_4_(scotland)": "plan4",
+                "plan_5": "plan5"
+              },
+              "default": "none",
+              "description": "Student loan plan."
+            },
+            {
+              "name": "postgraduate_loan",
+              "type": "boolean",
+              "required": false,
+              "default": false,
+              "description": "Repaying a Postgraduate Loan."
+            },
+            {
+              "name": "over_state_pension_age",
+              "type": "boolean",
+              "required": false,
+              "default": false,
+              "description": "Over State Pension age (no employee National Insurance)."
+            }
+          ]
+        },
+        "employer-cost": {
+          "path": "/api/v1/employer-cost?country=uk",
+          "calculatorUrl": "https://calcbloc.com/uk/uk-employer-cost-calculator",
+          "verification": null,
+          "parameters": [
+            {
+              "name": "salary",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 10000000,
+              "description": "Annual gross salary in GBP."
+            },
+            {
+              "name": "year",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "2026-27",
+                "latest",
+                "2025-26"
+              ],
+              "default": "latest",
+              "description": "Tax year: latest (default) or the current year. Calculations use the current year only; earlier years are served as tax tables. The resolved year is echoed as year."
+            },
+            {
+              "name": "ni_category",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "A",
+                "M",
+                "H",
+                "V"
+              ],
+              "labels": {
+                "A": "A: most employees",
+                "M": "M: under 21",
+                "H": "H: apprentice under 25",
+                "V": "V: armed forces veteran (first job)"
+              },
+              "aliases": {
+                "a:_most_employees": "A",
+                "m:_under_21": "M",
+                "h:_apprentice_under_25": "H",
+                "v:_armed_forces_veteran_(first_job)": "V"
+              },
+              "default": "A",
+              "description": "Employer National Insurance category letter."
+            },
+            {
+              "name": "pension_mode",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "auto",
+                "custom"
+              ],
+              "labels": {
+                "auto": "Auto-enrolment minimum",
+                "custom": "Custom %"
+              },
+              "aliases": {
+                "auto_enrolment_minimum": "auto",
+                "custom_%": "custom"
+              },
+              "default": "auto",
+              "description": "auto = auto-enrolment minimum; custom = pension_pct of salary."
+            },
+            {
+              "name": "pension_pct",
+              "type": "number",
+              "required": false,
+              "min": 0,
+              "max": 100,
+              "default": 5,
+              "unit": "percent (5 = 5%)",
+              "description": "Employer pension contribution when pension_mode=custom, percent of salary."
+            },
+            {
+              "name": "employment_allowance",
+              "type": "number",
+              "required": false,
+              "min": 0,
+              "max": 10500,
+              "default": 0,
+              "description": "Employment Allowance set against this employee's employer NI."
+            },
+            {
+              "name": "apprenticeship_levy",
+              "type": "boolean",
+              "required": false,
+              "default": false,
+              "description": "Pay bill over the levy threshold (adds the levy on this employee's pay)."
+            },
+            {
+              "name": "other_costs",
+              "type": "number",
+              "required": false,
+              "min": 0,
+              "max": 10000000,
+              "default": 0,
+              "description": "Other annual costs."
+            }
+          ]
+        },
+        "tax-tables": {
+          "path": "/api/v1/tax-tables/uk/2026-27",
+          "pageUrl": "https://calcbloc.com/uk/tax-tables/2026-27",
+          "years": [
+            "2026-27",
+            "2025-26"
+          ],
+          "current_year": "2026-27",
+          "years_available": [
+            "2026-27",
+            "2025-26"
+          ],
+          "latestPath": "/api/v1/tax-tables/uk/latest",
+          "regions": [
+            {
+              "code": "scotland",
+              "name": "Scotland"
+            },
+            {
+              "code": "wales",
+              "name": "Wales"
+            }
+          ],
+          "formats": [
+            "json",
+            "csv"
+          ]
+        },
+        "supplemental-withholding": {
+          "path": "/api/v1/supplemental-withholding?country=uk",
+          "types": [
+            "bonus",
+            "commission",
+            "rsu_vest",
+            "option_exercise",
+            "lump_sum"
+          ],
+          "parameters": [
+            {
+              "name": "salary",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 1000000000,
+              "description": "Regular gross salary for the year, before the supplemental payment, in the country's currency."
+            },
+            {
+              "name": "amount",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 1000000000,
+              "description": "The supplemental payment (gross), in the country's currency."
+            },
+            {
+              "name": "type",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "bonus",
+                "commission",
+                "rsu_vest",
+                "option_exercise",
+                "lump_sum"
+              ],
+              "labels": {
+                "bonus": "Bonus",
+                "commission": "Commission",
+                "rsu_vest": "RSU vest",
+                "option_exercise": "Stock option exercise",
+                "lump_sum": "Lump sum"
+              },
+              "aliases": {
+                "stock_option_exercise": "option_exercise",
+                "rsu": "rsu_vest",
+                "rsus": "rsu_vest",
+                "restricted_stock_units": "rsu_vest",
+                "vest": "rsu_vest",
+                "option": "option_exercise",
+                "options": "option_exercise",
+                "stock_option": "option_exercise",
+                "exercise": "option_exercise",
+                "commissions": "commission",
+                "bonuses": "bonus",
+                "extra_pay": "bonus",
+                "lumpsum": "lump_sum"
+              },
+              "default": "bonus",
+              "description": "Kind of payment: bonus, commission, rsu_vest, option_exercise or lump_sum (the country lists the ones it supports)."
+            },
+            {
+              "name": "region",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "england",
+                "scotland",
+                "wales"
+              ],
+              "labels": {
+                "england": "England & Northern Ireland",
+                "scotland": "Scotland",
+                "wales": "Wales"
+              },
+              "aliases": {
+                "england_&_northern_ireland": "england"
+              },
+              "description": "Region (optional for this country)."
+            },
+            {
+              "name": "month_paid",
+              "type": "integer",
+              "required": false,
+              "min": 1,
+              "max": 12,
+              "default": 12,
+              "description": "Tax month the bonus is paid in (1 = 6 April to 5 May … 12 = 6 March to 5 April). PAYE is cumulative, so the month matters."
+            },
+            {
+              "name": "tax_code_number",
+              "type": "integer",
+              "required": false,
+              "min": 0,
+              "max": 9999,
+              "default": 1257,
+              "description": "Numeric part of the employee's suffix tax code (1257 for 1257L); the S or C prefix follows the region. K, BR, D and NT codes are not supported."
+            },
+            {
+              "name": "ni_category",
+              "type": "enum",
+              "required": false,
+              "values": [
+                "A",
+                "B",
+                "C",
+                "H",
+                "M",
+                "V"
+              ],
+              "labels": {
+                "A": "A: most employees",
+                "B": "B: married women's reduced rate",
+                "C": "C: over State Pension age",
+                "H": "H: apprentice under 25",
+                "M": "M: under 21",
+                "V": "V: armed forces veteran (first job)"
+              },
+              "aliases": {
+                "a:_most_employees": "A",
+                "b:_married_women's_reduced_rate": "B",
+                "c:_over_state_pension_age": "C",
+                "h:_apprentice_under_25": "H",
+                "m:_under_21": "M",
+                "v:_armed_forces_veteran_(first_job)": "V"
+              },
+              "default": "A",
+              "description": "National Insurance category letter."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "code": "fiji",
+      "short_code": "fj",
+      "iso_code": "FJ",
+      "name": "Fiji",
+      "currency": "FJD",
+      "years": [
+        "2026"
+      ],
+      "current_year": "2026",
+      "years_available": [
+        "2026"
+      ],
+      "available_endpoints": [
+        "tax-tables"
+      ],
+      "tables_only": true,
+      "equity": false,
+      "equity_tax": null,
+      "supplemental": false,
+      "tax_calendar": {
+        "tax_year": {
+          "label": "2026",
+          "start": "2026-01-01",
+          "end": "2026-12-31",
+          "type": "calendar"
+        },
+        "days_remaining": 34,
+        "next_tax_year": {
+          "label": "2027",
+          "start": "2027-01-01"
+        },
+        "upcoming_changes": 0,
+        "next_change": null,
+        "next_budget": {
+          "status": "not_announced"
+        },
+        "path": "/api/v1/tax-calendar?country=fj"
+      },
+      "endpoints": {
+        "tax-tables": {
+          "path": "/api/v1/tax-tables/fiji/2026",
+          "pageUrl": "https://calcbloc.com/fiji/tax-tables/2026",
+          "years": [
+            "2026"
+          ],
+          "current_year": "2026",
+          "years_available": [
+            "2026"
+          ],
+          "latestPath": "/api/v1/tax-tables/fiji/latest",
+          "regions": [],
+          "formats": [
+            "json",
+            "csv"
+          ]
+        }
+      }
+    }
+  ],
+  "attribution": {
+    "source": "CalcBloc",
+    "url": "https://calcbloc.com/developers",
+    "required": true,
+    "text": "Data by CalcBloc (calcbloc.com)"
+  }
+}

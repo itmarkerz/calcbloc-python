@@ -28,7 +28,7 @@ from typing import Any, Callable, Dict, Literal, Mapping, Optional, Tuple, Union
 from ._country_codes import resolve_country_key
 from ._version import __version__
 from .errors import AuthenticationError, CalcBlocError, NetworkError, RateLimitError
-from .types import CalculationResponse, CompareResponse, CountriesResponse, RateLimit, TaxTable
+from .types import CalculationResponse, CompareResponse, CountriesResponse, RateLimit, TaxTable, TaxTreatiesResponse
 
 __all__ = ["Client", "Response", "Transport", "DEFAULT_BASE_URL", "DEFAULT_TIMEOUT"]
 
@@ -404,4 +404,18 @@ class Client:
         (US). An estimate, not a customs ruling.
         """
         data: Dict[str, Any] = self._json("/api/v1/import-duty", {"destination": destination, "origin": origin, "code": code, "customs_value": customs_value, **params})
+        return data
+
+    # ------------------------------------------------------------------ API 1.10
+
+    def tax_treaties(self, country: str, *, partner: Optional[str] = None) -> TaxTreatiesResponse:
+        """``GET /api/v1/tax-treaties`` (API 1.10): the double taxation treaties stored for a country.
+
+        ``country`` is an ISO 3166-1 alpha-2 code (``"in"``) or an English name (``"India"``); treaties are
+        stored for India. ``partner`` (ISO code, ``"uk"`` or a name) narrows the list to one treaty. Each treaty
+        gives the maximum withholding rates in the source State on dividends, interest, royalties and fees for
+        technical services (decimals) with their conditions, articles and wording, the relief method of each
+        country, signature and entry-into-force dates, MLI status and the official source. Nothing is computed.
+        """
+        data: TaxTreatiesResponse = self._json("/api/v1/tax-treaties", {"country": country, "partner": partner})
         return data

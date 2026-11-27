@@ -1,0 +1,142 @@
+{
+  "endpoint": "net-salary",
+  "country": "denmark",
+  "countryName": "Denmark",
+  "year": "2026",
+  "requested_year": "latest",
+  "currency": "DKK",
+  "inputs": {
+    "salary": 600000,
+    "municipality": "average",
+    "church": false,
+    "atp_hours": "0"
+  },
+  "summary": {
+    "grossAnnual": 600000,
+    "netAnnual": 383427.85,
+    "totalDeductions": 216572.15,
+    "effectiveRate": 0.36095358333333327
+  },
+  "results": {
+    "netMonthly": 31952.32,
+    "netAnnual": 383427.85,
+    "netPerPayment": 31952.32,
+    "grossAnnual": 600000,
+    "incomeTax": 167479.19,
+    "employeeContributions": 49092.96,
+    "totalDeductions": 216572.15,
+    "effectiveRate": 0.36095358333333327,
+    "employerContributions": 2376,
+    "employerCost": 602376,
+    "employerCostMonthly": 50198,
+    "multiplier": 1.00396,
+    "employee_atp": 1188,
+    "employee_am": 47904.96,
+    "deduction_employment": 63300,
+    "deduction_job": 3100,
+    "tax_municipal": 107812.66,
+    "tax_church": 0,
+    "tax_bottom": 59666.53,
+    "tax_middle": 0,
+    "tax_top": 0,
+    "tax_topTop": 0,
+    "employer_atpEmployer": 2376
+  },
+  "breakdown": {
+    "title": "From gross to net, Denmark 2026",
+    "columns": [
+      "Per year",
+      "Per month"
+    ],
+    "rows": [
+      {
+        "label": "Gross salary",
+        "values": [
+          600000,
+          50000
+        ]
+      },
+      {
+        "label": "ATP (employee share)",
+        "values": [
+          -1188,
+          -99
+        ]
+      },
+      {
+        "label": "AM-bidrag (labour market contribution)",
+        "values": [
+          -47904.96,
+          -3992.08
+        ]
+      },
+      {
+        "label": "Beskæftigelsesfradrag (employment deduction) (reduces the tax base)",
+        "values": [
+          63300,
+          5275
+        ]
+      },
+      {
+        "label": "Jobfradrag (job deduction) (reduces the tax base)",
+        "values": [
+          3100,
+          258.3333333333333
+        ]
+      },
+      {
+        "label": "Kommuneskat (municipal tax) (25.05%)",
+        "values": [
+          -107812.66,
+          -8984.388333333334
+        ]
+      },
+      {
+        "label": "Bundskat (bottom-bracket tax) (12.01%)",
+        "values": [
+          -59666.53,
+          -4972.2108333333335
+        ]
+      },
+      {
+        "label": "Take-home pay",
+        "values": [
+          383427.85,
+          31952.32
+        ]
+      },
+      {
+        "label": "ATP (employer share), paid on top by the employer",
+        "values": [
+          2376,
+          198
+        ]
+      },
+      {
+        "label": "Cost to the employer",
+        "values": [
+          602376,
+          50198
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "Verification (law-text): Worked from the law (no official example published). No official worked example for 2026 is published, so the golden tests are worked by hand from the Personskatteloven, the Arbejdsmarkedsbidragsloven and the Ligningsloven rates as published by Skatte- og Vækstministeriet and Skattestyrelsen. https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/arbejdsmarkedsbidragsloven https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/ligningsloven https://info.skat.dk/data.aspx?oid=2273718",
+    "Salary paid monthly in 12 equal payments (no statutory 13th month in Denmark).",
+    "Full-year resident employee aged 18 or over, salary only: no capital income, pension contributions, share income or other deductions (transport, union fees, interest).",
+    "The employment and job deductions are worked out on the AM-bidrag base plus the ATP contributions the employer reports (Skattestyrelsen, Den juridiske vejledning: C.A.4.3.7 Beskæftigelsesfradrag og ekstra beskæftigelsesfradrag til enlige forsørgere og seniorer (version 3.16, 30.01.26)).",
+    "The personal allowance is used against each tax (no unused allowance moved to a spouse).",
+    "Annual tax liability on the salary; the payslip withholding uses the trækprocent and fradrag on the tax card and evens out on the annual statement.",
+    "Not modelled: Married couples' transfer of unused allowances and thresholds; Capital income (positive net capital income above the allowance in the mellemskat base); Pension contributions through payroll and the senior and single-parent employment deductions; Christiansø's reduced bottom-bracket tax and limited tax liability (non-residents)."
+  ],
+  "verification": "law-text",
+  "calculatorUrl": "https://calcbloc.com/denmark/denmark-take-home-pay-calculator",
+  "warnings": [],
+  "attribution": {
+    "source": "CalcBloc",
+    "url": "https://calcbloc.com/denmark/denmark-take-home-pay-calculator",
+    "required": true,
+    "text": "Data by CalcBloc (calcbloc.com)"
+  }
+}

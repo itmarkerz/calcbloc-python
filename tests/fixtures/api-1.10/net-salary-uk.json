@@ -1,0 +1,92 @@
+{
+  "endpoint": "net-salary",
+  "country": "uk",
+  "countryName": "United Kingdom",
+  "year": "2026-27",
+  "requested_year": "latest",
+  "currency": "GBP",
+  "inputs": {
+    "salary": 50000,
+    "region": "england",
+    "frequency": "monthly",
+    "pension_pct": 0,
+    "pension_method": "netpay",
+    "student_loan": "none",
+    "postgraduate_loan": false,
+    "over_state_pension_age": false
+  },
+  "summary": {
+    "grossAnnual": 50000,
+    "netAnnual": 39520.12,
+    "totalDeductions": null,
+    "effectiveRate": 0.20959760000000002
+  },
+  "results": {
+    "netAnnual": 39520.12,
+    "netMonthly": 3293.3433333333337,
+    "netWeekly": 760.0023076923078,
+    "netPerPeriod": 3293.3433333333337,
+    "incomeTax": 7486,
+    "employeeNi": 2993.88,
+    "studentLoan": 0,
+    "pension": 0,
+    "employerNi": 6749.4,
+    "effectiveRate": 0.20959760000000002,
+    "allowance": 12570
+  },
+  "breakdown": {
+    "title": "Your pay in 2026/27",
+    "columns": [
+      "Year",
+      "Month",
+      "Week"
+    ],
+    "rows": [
+      {
+        "label": "Gross salary",
+        "values": [
+          50000,
+          4166.666666666667,
+          961.5384615384615
+        ]
+      },
+      {
+        "label": "Income Tax",
+        "values": [
+          7486,
+          623.8333333333334,
+          143.96153846153845
+        ]
+      },
+      {
+        "label": "National Insurance",
+        "values": [
+          2993.88,
+          249.49,
+          57.574615384615385
+        ]
+      },
+      {
+        "label": "Take-home pay",
+        "values": [
+          39520.12,
+          3293.3433333333337,
+          760.0023076923078
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "Income Tax is the 2026/27 amount for a full tax year on the standard 1257L code; payroll spreads it across your payslips. National Insurance and student loans are worked out per month, as on your payslip.",
+    "Your employer also pays about £6,749 a year in employer National Insurance on your pay (not taken from you)."
+  ],
+  "verification": null,
+  "calculatorUrl": "https://calcbloc.com/uk/take-home-pay-calculator",
+  "warnings": [],
+  "attribution": {
+    "source": "CalcBloc",
+    "url": "https://calcbloc.com/uk/take-home-pay-calculator",
+    "required": true,
+    "text": "Data by CalcBloc (calcbloc.com)"
+  }
+}

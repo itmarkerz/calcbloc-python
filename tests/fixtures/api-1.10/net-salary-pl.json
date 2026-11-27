@@ -1,0 +1,177 @@
+{
+  "endpoint": "net-salary",
+  "country": "poland",
+  "countryName": "Poland",
+  "year": "2026",
+  "requested_year": "latest",
+  "currency": "PLN",
+  "inputs": {
+    "salary": 120000,
+    "accident_rate_pct": 1.67,
+    "commuter": false
+  },
+  "summary": {
+    "grossAnnual": 120000,
+    "netAnnual": 85762.92,
+    "totalDeductions": 34237.08,
+    "effectiveRate": 0.28530900000000003
+  },
+  "results": {
+    "netMonthly": 7146.91,
+    "netAnnual": 85762.92,
+    "netPerPayment": 7146.91,
+    "grossAnnual": 120000,
+    "incomeTax": 8465.76,
+    "employeeContributions": 25771.32,
+    "totalDeductions": 34237.08,
+    "effectiveRate": 0.28530900000000003,
+    "employerContributions": 24576,
+    "employerCost": 144576,
+    "employerCostMonthly": 12048,
+    "multiplier": 1.2048,
+    "employee_pension": 11712,
+    "employee_disability": 1800,
+    "employee_sickness": 2940,
+    "employee_health": 9319.32,
+    "deduction_costs": 3000,
+    "tax_pit": 8465.76,
+    "tax_solidarity": 0,
+    "employer_pensionEmployer": 11712,
+    "employer_disabilityEmployer": 7800,
+    "employer_accident": 2004,
+    "employer_labourFund": 1200,
+    "employer_solidarityFund": 1740,
+    "employer_fgsp": 120
+  },
+  "breakdown": {
+    "title": "From gross to net, Poland 2026",
+    "columns": [
+      "Per year",
+      "Per month"
+    ],
+    "rows": [
+      {
+        "label": "Gross salary",
+        "values": [
+          120000,
+          10000
+        ]
+      },
+      {
+        "label": "Pension contribution (emerytalna)",
+        "values": [
+          -11712,
+          -976
+        ]
+      },
+      {
+        "label": "Disability contribution (rentowa)",
+        "values": [
+          -1800,
+          -150
+        ]
+      },
+      {
+        "label": "Sickness contribution (chorobowa)",
+        "values": [
+          -2940,
+          -245
+        ]
+      },
+      {
+        "label": "Health contribution (zdrowotna)",
+        "values": [
+          -9319.32,
+          -776.61
+        ]
+      },
+      {
+        "label": "Costs of earning income (koszty uzyskania przychodu) (reduces the tax base)",
+        "values": [
+          3000,
+          250
+        ]
+      },
+      {
+        "label": "Income tax (PIT, tax scale)",
+        "values": [
+          -8465.76,
+          -705.48
+        ]
+      },
+      {
+        "label": "Take-home pay",
+        "values": [
+          85762.92,
+          7146.91
+        ]
+      },
+      {
+        "label": "Pension contribution (employer), paid on top by the employer",
+        "values": [
+          11712,
+          976
+        ]
+      },
+      {
+        "label": "Disability contribution (employer), paid on top by the employer",
+        "values": [
+          7800,
+          650
+        ]
+      },
+      {
+        "label": "Accident insurance (wypadkowa), paid on top by the employer",
+        "values": [
+          2004,
+          167
+        ]
+      },
+      {
+        "label": "Labour Fund (Fundusz Pracy), paid on top by the employer",
+        "values": [
+          1200,
+          100
+        ]
+      },
+      {
+        "label": "Solidarity Fund (Fundusz Solidarnościowy), paid on top by the employer",
+        "values": [
+          1740,
+          145
+        ]
+      },
+      {
+        "label": "Guaranteed Employee Benefits Fund (FGŚP), paid on top by the employer",
+        "values": [
+          120,
+          10
+        ]
+      },
+      {
+        "label": "Cost to the employer",
+        "values": [
+          144576,
+          12048
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "Verification (official-example): Checked against an official worked example. The golden tests reproduce the government business portal's (biznes.gov.pl) 2026 worked example for the minimum wage: employee contributions, health contribution, tax advance and net pay within 1 złoty, and the employer's contributions and total cost. https://www.biznes.gov.pl/pl/portal/0083",
+    "Salary paid monthly in 12 equal payments (no statutory 13th month for private-sector employees).",
+    "Employment contract (umowa o pracę) with one employer, the tax scale, PIT-2 filed (the tax-reducing amount applied), standard costs of earning income for one employment.",
+    "Annual figures for a salary paid evenly over the year; the monthly tax advance is rounded to whole złoty on the payslip, so a month can differ by under 1 złoty.",
+    "The employer pays the Labour Fund and Solidarity Fund (pay at or above the minimum wage) and takes part in no PPK contributions.",
+    "Not modelled: Employee capital plans (PPK) contributions, which are voluntary for the employee; The PIT-0 exemptions (under 26, return relief, families with 4+ children, working seniors); Author's costs (50%), joint filing with a spouse and child relief; Contracts of mandate (umowa zlecenie) and specific-task contracts."
+  ],
+  "verification": "official-example",
+  "calculatorUrl": "https://calcbloc.com/poland/poland-take-home-pay-calculator",
+  "warnings": [],
+  "attribution": {
+    "source": "CalcBloc",
+    "url": "https://calcbloc.com/poland/poland-take-home-pay-calculator",
+    "required": true,
+    "text": "Data by CalcBloc (calcbloc.com)"
+  }
+}

@@ -74,8 +74,10 @@ def test_sections(rel: str, t: Dict[str, Any]) -> None:
             for r in s["rows"]:
                 assert isinstance(r["from"], (int, float)) and isinstance(r["rate"], (int, float)), where
                 assert r["to"] is None or r["to"] >= r["from"], where
-                # Above 100% only for an ad valorem vehicle registration tax (Hong Kong's first registration tax: 115%, 132%).
-                cap = 5 if re.search(r"^vehicle-tax$|registration", s["id"], re.I) else 1
+                # Above 100% only for an ad valorem tax on vehicles: Hong Kong's first registration tax (115%, 132%)
+                # and Laos's excise on fuel-powered cars by engine capacity (up to 220%).
+                vehicle = re.search(r"^vehicle-tax$|registration", s["id"], re.I) or re.search(r"\bcars\b|vehicle", s.get("title", ""), re.I)
+                cap = 5 if vehicle else 1
                 assert 0 <= r["rate"] <= cap, f"{where}: rate {r['rate']} is not a decimal"
                 assert prev_from is None or r["from"] >= prev_from, f"{where}: bands out of order"
                 prev_from = r["from"]

@@ -5,7 +5,30 @@ All notable changes to this package are listed here. The format follows
 [semantic versioning](https://semver.org/). Data-only updates (a new snapshot of the tables) bump the patch
 version and give the data date.
 
-## [Unreleased]
+## [0.2.0] - Unreleased
+
+For CalcBloc API 1.10.
+
+### Added (API 1.10)
+
+- `Client.tax_treaties()` for `GET /api/v1/tax-treaties`: the double taxation treaties stored for a country
+  (India), with the maximum withholding rates on dividends, interest, royalties and fees for technical
+  services, their articles and wording, the relief methods, dates and the official source. Typed as
+  `TaxTreatiesResponse` (`TaxTreaty`, `TreatyWithholding`).
+- `verification` in `CalculationResponse` (net salary and employer cost) and in each calculation endpoint of
+  `countries()` (`Verification`: `"official-example"`, `"law-text"` or `None`). With a value, the first note
+  says how the calculation was checked and links the official sources.
+- Take-home pay and employer cost for Denmark (`dk`: `municipality`, `church`, `atp_hours`), Estonia (`ee`:
+  `funded_pension`, `pension_age`) and Poland (`pl`: `accident_rate_pct`, `commuter`) work through
+  `net_salary()` and `employer_cost()` as they are; `compare()` accepts `dk`, `ee` and `pl`.
+- Bundled tables: 217 countries (422 tables), synced from calcbloc-data 2026-11-27; Belgium stays pending.
+  Short codes, ISO codes and names for the 84 new countries in `_country_codes.py`.
+- Tests use real API 1.10 responses as fixtures (`tests/fixtures/api-1.10/`).
+
+### Changed (API 1.10)
+
+- Schema test: band rates above 100% are also accepted for Laos's excise on fuel-powered cars by engine
+  capacity (up to 220%).
 
 For CalcBloc API 1.9.
 

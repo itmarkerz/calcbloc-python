@@ -1,0 +1,97 @@
+{
+  "country": "in",
+  "partner": "us",
+  "count": 1,
+  "treaties": [
+    {
+      "countries": [
+        "in",
+        "us"
+      ],
+      "partner": "us",
+      "partner_name": "United States",
+      "title": "Convention between the Government of the United States of America and the Government of the Republic of India for the Avoidance of Double Taxation and the Prevention of Fiscal Evasion with respect to Taxes on Income",
+      "signed": "1989-09-12",
+      "in_force": "1990-12-18",
+      "mli": null,
+      "relief_method": {
+        "in": "credit",
+        "us": "credit"
+      },
+      "withholding": [
+        {
+          "kind": "dividend_substantial",
+          "rate": 0.15,
+          "condition": "The beneficial owner is a company which owns at least 10 per cent of the voting stock of the company paying the dividends (not for dividends paid by a U.S. Real Estate Investment Trust; a U.S. Regulated Investment Company pays at the rate of subparagraph b))",
+          "article": "Article 10(2)(a)",
+          "quote": "a) 15 per cent of the gross amount of the dividends if the beneficial owner is a company which owns at least 10 per cent of the voting stock of the company paying the dividends;"
+        },
+        {
+          "kind": "dividend",
+          "rate": 0.25,
+          "condition": "All other cases (the beneficial owner is a resident of the other Contracting State)",
+          "article": "Article 10(2)(b)",
+          "quote": "b) 25 per cent of the gross amount of the dividends in all other cases."
+        },
+        {
+          "kind": "interest",
+          "rate": 0.1,
+          "condition": "Interest paid on a loan granted by a bank carrying on a bona fide banking business or by a similar financial institution (including an insurance company)",
+          "article": "Article 11(2)(a)",
+          "quote": "a) 10 percent of the gross amount of the interest if such interest is paid on a loan granted by a bank carrying on a bona fide banking business or by a similar financial institution (including an insurance company); and"
+        },
+        {
+          "kind": "interest",
+          "rate": 0.15,
+          "condition": "All other cases (interest beneficially owned by the Government, the Reserve Bank of India, the Federal Reserve Banks and other institutions named in Article 11(3) is exempt in the source State)",
+          "article": "Article 11(2)(b)",
+          "quote": "b) 15 percent of the gross amount of the interest in all other cases."
+        },
+        {
+          "kind": "royalty",
+          "rate": 0.15,
+          "condition": "Royalties of paragraph 3(a) (copyrights, patents, trade marks, designs, secret formulas, information concerning industrial, commercial or scientific experience), for the years after the first five taxable years for which the Convention has effect",
+          "article": "Article 12(2)(a)(ii)",
+          "quote": "ii) during the subsequent years, 15 percent of the gross amount of royalties or fees for included services;"
+        },
+        {
+          "kind": "royalty",
+          "rate": 0.1,
+          "condition": "Royalties of paragraph 3(b) (the use of, or the right to use, industrial, commercial or scientific equipment)",
+          "article": "Article 12(2)(b)",
+          "quote": "b) in the case of royalties referred to in sub-paragraph (b) of paragraph 3 and fees for included services as defined in this Article that are ancillary and subsidiary to the enjoyment of the property for which payment is received under paragraph 3 (b) of this Article, 10 percent of the gross amount of the royalties or fees for included services."
+        },
+        {
+          "kind": "fts",
+          "rate": 0.15,
+          "condition": "Fees for included services as defined in Article 12(4), other than those ancillary and subsidiary to the enjoyment of property under paragraph 3(b), for the years after the first five taxable years",
+          "article": "Article 12(2)(a)(ii)",
+          "quote": "ii) during the subsequent years, 15 percent of the gross amount of royalties or fees for included services;"
+        },
+        {
+          "kind": "fts",
+          "rate": 0.1,
+          "condition": "Fees for included services that are ancillary and subsidiary to the enjoyment of the property for which royalties under paragraph 3(b) are received",
+          "article": "Article 12(2)(b)",
+          "quote": "b) in the case of royalties referred to in sub-paragraph (b) of paragraph 3 and fees for included services as defined in this Article that are ancillary and subsidiary to the enjoyment of the property for which payment is received under paragraph 3 (b) of this Article, 10 percent of the gross amount of the royalties or fees for included services."
+        }
+      ],
+      "source": {
+        "id": "src-ec6b143ff2aa",
+        "url": "https://www.irs.gov/pub/irs-trty/india.pdf",
+        "title": "Convention between the Government of the United States of America and the Government of the Republic of India for the Avoidance of Double Taxation and the Prevention of Fiscal Evasion with respect to Taxes on Income, signed at New Delhi September 12, 1989, with Protocol (Treaties and Other International Acts Series 90-1218)",
+        "publisher": "Internal Revenue Service (U.S. Department of the Treasury)",
+        "instrument": "India-United States income tax convention of 12 September 1989, Articles 10, 11, 12 and 25",
+        "retrieved_at": "2026-11-26",
+        "quote": "Signed at New Delhi September 12, 1989 … Entered into force December 18, 1990."
+      },
+      "data_file": "data/v2/in/2026-27/trade.json"
+    }
+  ],
+  "attribution": {
+    "source": "CalcBloc",
+    "url": "https://calcbloc.com/developers",
+    "required": true,
+    "text": "Data by CalcBloc (calcbloc.com)"
+  }
+}

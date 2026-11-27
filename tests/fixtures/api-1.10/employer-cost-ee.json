@@ -1,0 +1,120 @@
+{
+  "endpoint": "employer-cost",
+  "country": "estonia",
+  "countryName": "Estonia",
+  "year": "2026",
+  "requested_year": "latest",
+  "currency": "EUR",
+  "inputs": {
+    "salary": 30000,
+    "funded_pension": "0",
+    "pension_age": false
+  },
+  "summary": {
+    "salary": 30000,
+    "totalCost": 40140,
+    "monthlyCost": 3345,
+    "multiplier": 1.338
+  },
+  "results": {
+    "netMonthly": 2033.8,
+    "netAnnual": 24405.6,
+    "netPerPayment": 2033.8,
+    "grossAnnual": 30000,
+    "incomeTax": 4514.4,
+    "employeeContributions": 1080,
+    "totalDeductions": 5594.4,
+    "effectiveRate": 0.18648000000000006,
+    "employerContributions": 10140,
+    "employerCost": 40140,
+    "employerCostMonthly": 3345,
+    "multiplier": 1.338,
+    "employee_fundedPension": 600,
+    "employee_unemployment": 480,
+    "tax_incomeTax": 4514.4,
+    "employer_socialTax": 9900,
+    "employer_unemploymentEmployer": 240
+  },
+  "breakdown": {
+    "title": "From gross to net, Estonia 2026",
+    "columns": [
+      "Per year",
+      "Per month"
+    ],
+    "rows": [
+      {
+        "label": "Gross salary",
+        "values": [
+          30000,
+          2500
+        ]
+      },
+      {
+        "label": "Funded pension contribution (II pillar)",
+        "values": [
+          -600,
+          -50
+        ]
+      },
+      {
+        "label": "Unemployment insurance (employee)",
+        "values": [
+          -480,
+          -40
+        ]
+      },
+      {
+        "label": "Income tax (tulumaks) (22%)",
+        "values": [
+          -4514.4,
+          -376.2
+        ]
+      },
+      {
+        "label": "Take-home pay",
+        "values": [
+          24405.6,
+          2033.8
+        ]
+      },
+      {
+        "label": "Social tax (sotsiaalmaks), paid on top by the employer",
+        "values": [
+          9900,
+          825
+        ]
+      },
+      {
+        "label": "Unemployment insurance (employer), paid on top by the employer",
+        "values": [
+          240,
+          20
+        ]
+      },
+      {
+        "label": "Cost to the employer",
+        "values": [
+          40140,
+          3345
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "Verification (official-example): Checked against an official worked example. The golden tests reproduce the Estonian Tax and Customs Board's (EMTA) 2026 worked payroll examples for a 2,100-euro and a 600-euro monthly wage to the cent. https://emta.ee/node/330/chapter/13288/pdf https://emta.ee/node/330/chapter/13291/pdf",
+    "Salary paid monthly in 12 equal payments (no statutory 13th month in Estonia).",
+    "One employer, who applies the basic exemption (maksuvaba tulu) on your written application.",
+    "Annual figures for a salary paid evenly over the year; the social tax minimum base applies in every month (the employer who applies the basic exemption pays it).",
+    "Income tax is the annual amount; any exemption unused in a month is settled on the annual return.",
+    "Not modelled: Third-pillar pension, training cost and donation deductions on the annual return; Several employers, and the exceptions to the social tax minimum (part-time disabled workers, parents on leave …); Fringe benefits and board member fees."
+  ],
+  "verification": "official-example",
+  "calculatorUrl": "https://calcbloc.com/estonia/estonia-take-home-pay-calculator",
+  "warnings": [],
+  "attribution": {
+    "source": "CalcBloc",
+    "url": "https://calcbloc.com/estonia/estonia-take-home-pay-calculator",
+    "required": true,
+    "text": "Data by CalcBloc (calcbloc.com)"
+  }
+}

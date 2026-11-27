@@ -45,6 +45,10 @@ __all__ = [
     "CalculationResponse",
     "CompareSide",
     "CompareResponse",
+    "Verification",
+    "TreatyWithholding",
+    "TaxTreaty",
+    "TaxTreatiesResponse",
     "RateLimit",
     "BandSlice",
 ]
@@ -57,6 +61,12 @@ Unit = Literal["rate", "money", "number", "text"]
 
 RowStatus = Literal["verified", "under_review", "not_applicable"]
 """Verification status of a single figure."""
+
+Verification = Optional[Literal["official-example", "law-text"]]
+"""API 1.10+: how a calculation is checked. ``"official-example"``: the golden tests reproduce a worked example
+or simulator result published by the tax authority or social security institution (within 1 currency unit);
+``"law-text"``: no official example is published, so the golden tests are worked by hand from the law;
+``None`` for countries with their own engine."""
 
 
 class Source(TypedDict, total=False):
@@ -265,6 +275,8 @@ class CountryParameter(TypedDict, total=False):
 class CountryCalcEndpoint(TypedDict, total=False):
     path: str
     calculatorUrl: str
+    verification: Verification
+    """API 1.10+: how this country's calculation is checked (see :data:`Verification`)."""
     parameters: List[CountryParameter]
 
 
@@ -340,6 +352,10 @@ class CalculationResponse(TypedDict, total=False):
     results: Dict[str, float]
     breakdown: Optional[Dict[str, Any]]
     notes: List[str]
+    """With a ``verification``, the first note says how the calculation was checked and gives the official URLs."""
+    verification: Verification
+    """API 1.10+: ``"official-example"`` (Estonia, Poland), ``"law-text"`` (Denmark) or ``None`` (countries with
+    their own engine)."""
     calculatorUrl: str
     warnings: List[str]
     attribution: ApiAttribution
@@ -373,6 +389,52 @@ class CompareResponse(TypedDict, total=False):
     interpretation: str
     calculatorUrl: str
     warnings: List[str]
+    attribution: ApiAttribution
+
+
+class TreatyWithholding(TypedDict, total=False):
+    """One withholding limit of a treaty: the maximum tax the source State may charge."""
+
+    kind: Literal["dividend", "dividend_substantial", "interest", "royalty", "fts"]
+    rate: float
+    """Maximum rate in the source State, as a decimal (``0.15`` = 15%)."""
+    condition: Optional[str]
+    article: Optional[str]
+    """Article and paragraph, e.g. ``"Article 10(2)(a)"``."""
+    quote: Optional[str]
+    """The article's wording, verbatim."""
+
+
+class TaxTreaty(TypedDict, total=False):
+    """One double taxation treaty of ``GET /api/v1/tax-treaties``."""
+
+    countries: List[str]
+    """The two countries (ISO 3166-1 alpha-2, lower case), e.g. ``["in", "us"]``."""
+    partner: str
+    partner_name: Optional[str]
+    title: str
+    signed: Optional[str]
+    """Signature date (``YYYY-MM-DD``) where the source states it."""
+    in_force: Optional[str]
+    """Entry-into-force date (``YYYY-MM-DD``) where the source states it."""
+    mli: Optional[bool]
+    """Whether the MLI modifies the treaty; ``None`` where not stated."""
+    relief_method: Dict[str, str]
+    """Relief method of each country (``credit``, ``exemption`` or ``exemption_with_progression``), by ISO code."""
+    withholding: List[TreatyWithholding]
+    source: Dict[str, Any]
+    data_file: str
+
+
+class TaxTreatiesResponse(TypedDict, total=False):
+    """Response of ``GET /api/v1/tax-treaties`` (API 1.10). Nothing is computed: the rates are the treaty's
+    maximum rates in the source State."""
+
+    country: str
+    """ISO code of the country asked for, e.g. ``"in"``."""
+    partner: Optional[str]
+    count: int
+    treaties: List[TaxTreaty]
     attribution: ApiAttribution
 
 

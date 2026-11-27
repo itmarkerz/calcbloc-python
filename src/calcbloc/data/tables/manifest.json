@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-26",
-  "dataset_version": "2026.11.26",
+  "generatedAt": "2026-11-27",
+  "dataset_version": "2026.11.27",
   "source": "https://calcbloc.com/data",
   "licence": "CC BY 4.0",
   "credit": "Data by CalcBloc (calcbloc.com/data)",
@@ -1194,7 +1194,7 @@
       ],
       "pageUrl": "https://calcbloc.com/australia/tax-tables/2026-27",
       "apiUrl": "https://calcbloc.com/api/v1/tax-tables/australia/2026-27",
-      "lastVerified": "2026-11-22",
+      "lastVerified": "2026-11-27",
       "sourceUrls": [
         "https://content.legislation.vic.gov.au/sites/default/files/2026-05/07-26aa041-authorised.pdf",
         "https://legislation.act.gov.au/DownloadFile/di/2026-151/current/PDF/2026-151.PDF",
@@ -1226,8 +1226,10 @@
         "https://www.legislation.gov.au/C2004A00466/latest/text",
         "https://www.legislation.gov.au/C2004A01234/latest/text",
         "https://www.legislation.gov.au/C2004A01917/latest/text",
+        "https://www.legislation.gov.au/C2004A03088/2010-06-29/2010-06-29/text/original/epub/OEBPS/document_1/document_1.html",
         "https://www.legislation.gov.au/C2004A03348/latest/text",
         "https://www.legislation.gov.au/C2004A03351/latest/text",
+        "https://www.legislation.gov.au/C2004A04175/asmade/1989-06-30/text/original/epub/OEBPS/document_1/document_1.html",
         "https://www.legislation.gov.au/C2004A04402/latest/text",
         "https://www.legislation.gov.au/C2004A04997/latest/text",
         "https://www.legislation.gov.au/C2004A05138/latest/text",
@@ -1235,6 +1237,7 @@
         "https://www.legislation.gov.au/C2007A00031/latest/text",
         "https://www.legislation.gov.au/C2009A00028/latest/text",
         "https://www.legislation.gov.au/C2014A00083/latest/text",
+        "https://www.legislation.gov.au/C2015A00053/asmade/2015-05-26/text/original/pdf",
         "https://www.legislation.gov.au/C2024A00132/latest/text",
         "https://www.legislation.gov.au/F2015L00375/latest/text",
         "https://www.legislation.gov.au/F2017L01227/latest/text",
@@ -1287,7 +1290,7 @@
         "https://www.workcoverqld.com.au/news-and-events/news/2026/workcover-queensland-holds-premiums-steady-for-the-second-year",
         "https://www1.worksafe.vic.gov.au/vwa/claimsmanual/Claims%20Manual/1-the-scheme/1-1-overview-of-the-scheme.htm"
       ],
-      "rowCount": 345,
+      "rowCount": 351,
       "underReviewRows": 3
     },
     {
@@ -2125,7 +2128,7 @@
       ],
       "pageUrl": "https://calcbloc.com/france/tax-tables/2026",
       "apiUrl": "https://calcbloc.com/api/v1/tax-tables/france/2026",
-      "lastVerified": "2026-11-22",
+      "lastVerified": "2026-11-27",
       "sourceUrls": [
         "https://bofip.impots.gouv.fr/bofip/11255-PGP.html/identifiant=BOI-BAREME-000037-20260706",
         "https://bofip.impots.gouv.fr/bofip/13631-PGP.html/identifiant=BOI-BAREME-000043-20260402",
@@ -2133,7 +2136,10 @@
         "https://bofip.impots.gouv.fr/bofip/14752-PGP.html/ACTU-2025-00122",
         "https://bofip.impots.gouv.fr/bofip/2048-PGP.html/identifiant=BOI-RPPM-RCM-30-30-30-30-20180801",
         "https://bofip.impots.gouv.fr/bofip/3311-PGP.html/identifiant=BOI-ENR-DMTOI-10-20-20260617",
+        "https://bofip.impots.gouv.fr/bofip/341-PGP.html/identifiant=BOI-TVA-GEO-20-20230118",
         "https://bofip.impots.gouv.fr/bofip/849-PGP.html/identifiant=BOI-TVA-DECLA-40-10-10-20260701",
+        "https://bofip.impots.gouv.fr/doctrine/pgp/343-PGP",
+        "https://bofip.impots.gouv.fr/doctrine/pgp/4618-PGP",
         "https://code.travail.gouv.fr/code-du-travail/l1254-2",
         "https://entreprendre.service-public.gouv.fr/vosdroits/F22576",
         "https://entreprendre.service-public.gouv.fr/vosdroits/F23510",
@@ -2143,15 +2149,22 @@
         "https://taxation-customs.ec.europa.eu/news/guidance-and-legal-text-temporary-flat-fee-low-value-imports-which-will-apply-until-1-july-2028-2026-06-08_en",
         "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html",
         "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/toutes-les-actualites/2026--modification-des-seuils-de.html",
+        "https://www.cleiss.fr/docs/regimes/regime_mayotte.html",
         "https://www.collectivites-locales.gouv.fr/gerer-les-finances-publiques-locales/fiscalite-locale/fiscalite-directe-locale/elements-de-reference-nationaux-de-fiscalite-directe-locale",
         "https://www.douane.gouv.fr/fiche/droits-des-alcools-et-boissons-alcooliques",
+        "https://www.douane.gouv.fr/fiche/fiscalite-douaniere-dans-les-departements-doutre-mer",
         "https://www.douane.gouv.fr/fiche/franchises-douanieres-et-fiscales-en-valeur-et-en-quantites",
+        "https://www.douane.gouv.fr/fiche/la-fiscalite-de-loctroi-de-mer-en-guyane",
+        "https://www.douane.gouv.fr/fiche/loctroi-de-mer-la-reunion",
+        "https://www.douane.gouv.fr/fiche/vous-voyagez-aux-antilles",
+        "https://www.douane.gouv.fr/fiche/vous-voyagez-mayotte",
         "https://www.douane.gouv.fr/sites/default/files/ba_files/da/2026-09/BOD%20DetT%20octobre%202026.pdf",
         "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/tva-quels-sont-les-taux-de-votre-quotidien",
         "https://www.economie.gouv.fr/particuliers/taxe-sejour-tarifs",
         "https://www.economie.gouv.fr/particuliers/voyager-et-se-deplacer/passer-les-frontieres-les-regles-de-la-douane",
         "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
         "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+        "https://www.impots.gouv.fr/professionnel/questions/puis-je-beneficier-davantages-fiscaux-specifiques-en-exercant-une-activite",
         "https://www.impots.gouv.fr/sites/default/files/formulaires/2040-tic-sd/2026/2040-tic-sd_5322.pdf",
         "https://www.impots.gouv.fr/sites/default/files/media/1_metier/3_partenaire/notaires/dmto/dmto_2026-06.pdf",
         "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/21-calcul_impot_369a382.pdf",
@@ -2199,8 +2212,8 @@
         "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
         "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html"
       ],
-      "rowCount": 479,
-      "underReviewRows": 14
+      "rowCount": 511,
+      "underReviewRows": 15
     },
     {
       "country": "singapore",
@@ -2639,7 +2652,7 @@
       ],
       "pageUrl": "https://calcbloc.com/portugal/tax-tables/2026",
       "apiUrl": "https://calcbloc.com/api/v1/tax-tables/portugal/2026",
-      "lastVerified": "2026-11-22",
+      "lastVerified": "2026-11-27",
       "sourceUrls": [
         "https://at.madeira.gov.pt/ficheiros/IISerie-013-2026-01-20Supl4.pdf",
         "https://at.madeira.gov.pt/ficheiros/Portaria_480_A_2025_1%5B1%5D.pdf",
@@ -2678,6 +2691,7 @@
         "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx",
         "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx",
         "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78a.aspx",
+        "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99c.aspx",
         "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs68ra-202611.aspx",
         "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx",
         "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx",
@@ -2702,7 +2716,7 @@
         "https://www.seg-social.pt/ptss/pssd/documento/cmc1ygvnw00f4kl2yl22z68po",
         "https://www.seg-social.pt/ptss/pssd/documento/cmdddzytm006agq2y1ci6tibc"
       ],
-      "rowCount": 271,
+      "rowCount": 350,
       "underReviewRows": 4
     },
     {
@@ -3257,8 +3271,9 @@
       ],
       "pageUrl": "https://calcbloc.com/austria/tax-tables/2026",
       "apiUrl": "https://calcbloc.com/api/v1/tax-tables/austria/2026",
-      "lastVerified": "2026-11-22",
+      "lastVerified": "2026-11-27",
       "sourceUrls": [
+        "https://findok.bmf.gv.at/findok/iwg/84/84040/84040.1.pdf",
         "https://ris.bka.gv.at/eli/bgbl/1984/501/A1P25a/NOR40260995",
         "https://ris.bka.gv.at/eli/bgbl/1984/501/A1P32/NOR40280379",
         "https://ris.bka.gv.at/eli/bgbl/1987/309/P7/NOR40273540",
@@ -3326,7 +3341,7 @@
         "https://www.wien.gv.at/amtswege/ortstaxe",
         "https://www.wko.at/lohnverrechnung/lohnverrechnung-abrechnung-dienstnehmer"
       ],
-      "rowCount": 266,
+      "rowCount": 290,
       "underReviewRows": 1
     },
     {
@@ -3405,7 +3420,7 @@
       ],
       "pageUrl": "https://calcbloc.com/luxembourg/tax-tables/2026",
       "apiUrl": "https://calcbloc.com/api/v1/tax-tables/luxembourg/2026",
-      "lastVerified": "2026-11-22",
+      "lastVerified": "2026-11-27",
       "sourceUrls": [
         "https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf",
         "https://ccss.public.lu/dam-assets/publications/2026/ccss-20260313-avis-60-fr-de.pdf",
@@ -3456,7 +3471,7 @@
         "https://wdocs-pub.chd.lu/docs/exped/2026/03/QP_62533_1773327785492.pdf",
         "https://www.chd.lu/fr/dossier/8082A"
       ],
-      "rowCount": 294,
+      "rowCount": 297,
       "underReviewRows": 0
     },
     {
@@ -4376,7 +4391,7 @@
       ],
       "pageUrl": "https://calcbloc.com/bulgaria/tax-tables/2026",
       "apiUrl": "https://calcbloc.com/api/v1/tax-tables/bulgaria/2026",
-      "lastVerified": "2026-11-22",
+      "lastVerified": "2026-11-27",
       "sourceUrls": [
         "https://dv.parliament.bg/DVWeb/fileUploadShowing.jsp?idFileAtt=753462&allowCache=true&openDirectly=false",
         "https://dv.parliament.bg/DVWeb/fileUploadShowing.jsp?idFileAtt=789780&allowCache=true&openDirectly=false",
@@ -4413,7 +4428,7 @@
         "https://www.nssi.bg/samoosiguryavashti-se-lica/osiguriavane-samoosiguriavashti-lica/",
         "https://www.nssi.bg/wp-content/uploads/SIC_2019.pdf"
       ],
-      "rowCount": 169,
+      "rowCount": 172,
       "underReviewRows": 3
     },
     {
@@ -4781,7 +4796,7 @@
       ],
       "pageUrl": "https://calcbloc.com/turkey/tax-tables/2026",
       "apiUrl": "https://calcbloc.com/api/v1/tax-tables/turkey/2026",
-      "lastVerified": "2026-11-22",
+      "lastVerified": "2026-11-27",
       "sourceUrls": [
         "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU/UNIVERSAL/2026/2026_Gecici67.pdf",
         "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU/UNIVERSAL/2026/2026_Serbest_Meslek_Kazanci.pdf",
@@ -4821,7 +4836,7 @@
         "https://www.sgk.gov.tr/Content/Post/c7812ea8-5087-413f-aeb5-d3c1d153e11a/Isveren-Prim-Oranlari-2026-01-13-04-52-38",
         "https://www.sgk.gov.tr/Content/Post/e85649be-3a38-484f-8a82-95109bc7ccde/Bagimsiz-Calisanlarin-Prim-Tahakkuk-ve-Tahsilat-Islemleri-2026-05-11-10-21-03"
       ],
-      "rowCount": 217,
+      "rowCount": 224,
       "underReviewRows": 0
     },
     {
@@ -4838,7 +4853,7 @@
       ],
       "pageUrl": "https://calcbloc.com/japan/tax-tables/2026",
       "apiUrl": "https://calcbloc.com/api/v1/tax-tables/japan/2026",
-      "lastVerified": "2026-11-21",
+      "lastVerified": "2026-11-27",
       "sourceUrls": [
         "https://www.customs.go.jp/kaigairyoko/shiharaishudan.htm",
         "https://www.customs.go.jp/tetsuzuki/c-answer/imtsukan/1006_jr.htm",
@@ -4860,6 +4875,7 @@
         "https://www.moj.go.jp/isa/content/001422244.pdf",
         "https://www.nenkin.go.jp/service/kokunen/hokenryo/hokenryo.html",
         "https://www.nta.go.jp/publication/pamph/gensen/zeigakuhyo2026/data/01-07.pdf",
+        "https://www.nta.go.jp/publication/pamph/gensen/zeigakuhyo2026/data/denshi_01.pdf",
         "https://www.nta.go.jp/publication/pamph/hojin/chihou_hojin/01.htm",
         "https://www.nta.go.jp/publication/pamph/hojin/kaisei_gaiyo2025/pdf/E.pdf",
         "https://www.nta.go.jp/publication/pamph/pdf/0025004-012.pdf",
@@ -4874,6 +4890,7 @@
         "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6303.htm",
         "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6501.htm",
         "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6505.htm",
+        "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1130.htm",
         "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1180.htm",
         "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1191.htm",
         "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1199.htm",
@@ -4905,7 +4922,7 @@
         "https://www.tax.metro.tokyo.lg.jp/kazei/automobiles/shubetsu",
         "https://www.tax.metro.tokyo.lg.jp/kazei/leisure/shuk/shukuhakusha"
       ],
-      "rowCount": 340,
+      "rowCount": 371,
       "underReviewRows": 1
     },
     {
@@ -5054,7 +5071,7 @@
       ],
       "pageUrl": "https://calcbloc.com/brazil/tax-tables/2026",
       "apiUrl": "https://calcbloc.com/api/v1/tax-tables/brazil/2026",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-27",
       "sourceUrls": [
         "http://alerjln1.alerj.rj.gov.br/contlei.nsf/f25edae7e64db53b032564fe005262ef/01cc04eee53b3b30032564fb005c2ddf?OpenDocument=",
         "http://app1.sefaz.mt.gov.br/0325677500623408/07FA81BED2760C6B84256710004D3940/62CE5995729DDCEA03256921006ED745",
@@ -5091,10 +5108,12 @@
         "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/leis/l14937_2003.html",
         "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/leis/l14941_2003.html",
         "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/leis/l6763_1975_02.html",
+        "https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-versao-s-1-3-nt-06-2026-rev-09-04-2026/tabelas.html",
         "https://www.gov.br/inss/pt-br/direitos-e-deveres/inscricao-e-contribuicao/tabela-de-contribuicao-mensal",
         "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/manuais/remessas-postal-e-expressa/preciso-pagar-impostos-nas-compras-internacionais/quanto-pagarei-de-imposto",
         "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/cota-de-isencao-duty-free-e-bagagem-tributavel",
         "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026",
+        "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/exemplos-de-aplicacao-da-lei-15-270-2025",
         "https://www.legis.ac.gov.br/detalhar/191",
         "https://www.legis.ac.gov.br/detalhar/4164",
         "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm",
@@ -5102,14 +5121,17 @@
         "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15079.htm",
         "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12797.htm",
         "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15270.htm",
+        "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
         "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm",
         "https://www.planalto.gov.br/ccivil_03/leis/2002/l10637.htm",
         "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.833.htm",
+        "https://www.planalto.gov.br/ccivil_03/leis/l4090.htm",
         "https://www.planalto.gov.br/ccivil_03/leis/l7689.htm",
         "https://www.planalto.gov.br/ccivil_03/leis/l8036consol.htm",
         "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm",
         "https://www.planalto.gov.br/ccivil_03/leis/l8981.htm",
         "https://www.planalto.gov.br/ccivil_03/leis/l9249.htm",
+        "https://www.planalto.gov.br/ccivil_03/leis/l9250.htm",
         "https://www.planalto.gov.br/ccivil_03/leis/l9424.htm",
         "https://www.planalto.gov.br/ccivil_03/leis/l9718compilada.htm",
         "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm",
@@ -5131,7 +5153,7 @@
         "https://www2.al.ce.gov.br/legislativo/legislacao5/leis2023/18305.htm",
         "https://www2.camara.leg.br/legin/fed/ressen/1992/resolucao-9-5-maio-1992-451294-publicacaooriginal-1-pl.html"
       ],
-      "rowCount": 207,
+      "rowCount": 223,
       "underReviewRows": 14
     },
     {
@@ -6483,12 +6505,13 @@
       ],
       "pageUrl": "https://calcbloc.com/armenia/tax-tables/2026",
       "apiUrl": "https://calcbloc.com/api/v1/tax-tables/armenia/2026",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-27",
       "sourceUrls": [
         "https://arlis.am/en/acts/216323",
+        "https://arlis.am/en/acts/229557",
         "https://arlis.am/en/acts/229632"
       ],
-      "rowCount": 54,
+      "rowCount": 58,
       "underReviewRows": 0
     },
     {
@@ -7204,7 +7227,7 @@
         "https://www.cnps.cm/images/documentutile/decret%20fixant%20taux%20de%20cotisations%20sociales%20et%20plafonds%20des%20rmunrations_baremes.pdf",
         "https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf"
       ],
-      "rowCount": 33,
+      "rowCount": 50,
       "underReviewRows": 0
     },
     {
@@ -7514,6 +7537,11 @@
       "lastVerified": "2026-11-26",
       "sourceUrls": [
         "https://pension.gov.mv/mrps",
+        "https://www.finance.gov.mv/public-finance/revenue-policy",
+        "https://www.mira.gov.mv/Legislations/View/14-th-amendment-to%20the-tourism-act",
+        "https://www.mira.gov.mv/Legislations/View/2nd-amendment-to-ita",
+        "https://www.mira.gov.mv/Legislations/View/First-amendment-to-the-Income-Tax-Act",
+        "https://www.mira.gov.mv/Legislations/View/airport-taxes-and-fees-act-consolidated",
         "https://www.mira.gov.mv/Pages/View/FAQ_IncomeTax",
         "https://www.mira.gov.mv/Pages/View/cgwt",
         "https://www.mira.gov.mv/Pages/View/gst",
@@ -7528,7 +7556,7 @@
         "https://www.mira.gov.mv/Pages/View/whatisairporttaxesandfees",
         "https://www.mira.gov.mv/Pages/View/whatisgreentax"
       ],
-      "rowCount": 42,
+      "rowCount": 55,
       "underReviewRows": 0
     },
     {
@@ -7545,15 +7573,17 @@
       ],
       "pageUrl": "https://calcbloc.com/bhutan/tax-tables/2026",
       "apiUrl": "https://calcbloc.com/api/v1/tax-tables/bhutan/2026",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-27",
       "sourceUrls": [
+        "https://bhutan.travel/faqs",
         "https://www.drc.gov.bt/wp-content/uploads/2024/10/Property-Tax-Act-of-Bhutan-2022.pdf",
         "https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf",
         "https://www.drc.gov.bt/wp-content/uploads/2025/10/Excise-Tax-Act-of-Bhutan-2025-2.pdf",
         "https://www.drc.gov.bt/wp-content/uploads/2025/12/Consolidated-GST-Act-of-Bhutan-2020-and-amendment-thereof.pdf",
+        "https://www.drc.gov.bt/wp-content/uploads/2026/01/Withholding-tax-rates-for-employers.pdf",
         "https://www.nppf.org.bt/remittance-of-contribution/"
       ],
-      "rowCount": 41,
+      "rowCount": 50,
       "underReviewRows": 0
     },
     {
@@ -7669,6 +7699,2264 @@
       ],
       "rowCount": 19,
       "underReviewRows": 10
+    },
+    {
+      "country": "fiji",
+      "name": "Fiji",
+      "currency": "FJD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "fiji/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/fiji/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/fiji/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://frcs.org.fj/files/2024/08/Act-10-Airport-Departure-Tax-Budget-Amendment-Act-2024.pdf",
+        "https://frcs.org.fj/files/2026/06/Excise-Act-1986-Revised-1st-August-2025.pdf",
+        "https://frcs.org.fj/files/2026/06/INCOME-TAX-ACT-2015-Revised-to-1-August-2025.pdf",
+        "https://frcs.org.fj/files/2026/08/Employer-Guide-2026.pdf",
+        "https://frcs.org.fj/our-services/customs/travellers/visiting-fiji/arriving-in-fiji/",
+        "https://frcs.org.fj/our-services/taxation-section/individuals/tax-request/capital-gains-tax/",
+        "https://frcs.org.fj/our-services/taxation-section/non-individuals/reporting-and-paying-taxes/vat-guide/",
+        "https://frcs.org.fj/tax-rates-and-codes",
+        "https://myfnpf.com.fj/employers/",
+        "https://www.parliament.gov.fj/wp-content/uploads/2024/06/2024-2025-Budget-Address.pdf"
+      ],
+      "rowCount": 53,
+      "underReviewRows": 0
+    },
+    {
+      "country": "papua-new-guinea",
+      "name": "Papua New Guinea",
+      "currency": "PGK",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "papua-new-guinea/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/papua-new-guinea/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/papua-new-guinea/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://static.irc.gov.pg/2021/December/5ExWcL-media-GST-Section-65A-Fact-Sheet.pdf",
+        "https://static.irc.gov.pg/2021/December/tlrzw1-media-SBT-Guideline.pdf",
+        "https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions",
+        "https://www.customs.gov.pg/border/travellers_concessions",
+        "https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf",
+        "https://www.treasury.gov.pg/wp-content/uploads/2025/12/2026-National-Budget-Volume-1-Master-Version-Final-for-Uploading_Updated_11_Dec_0200pm.pdf"
+      ],
+      "rowCount": 54,
+      "underReviewRows": 5
+    },
+    {
+      "country": "samoa",
+      "name": "Samoa",
+      "currency": "WST",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "samoa/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/samoa/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/samoa/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://customs.gov.ws/customs-services/",
+        "https://revenue.gov.ws/inland-revenue-services/",
+        "https://revenue.gov.ws/rates/",
+        "https://revenue.gov.ws/wp-content/uploads/2026/10/IS01_Income-Tax-1-2026.pdf",
+        "https://revenue.gov.ws/wp-content/uploads/2026/10/IS02_Salary-and-Wage-Income-Tax-2026.pdf",
+        "https://www.mcil.gov.ws/services/employment",
+        "https://www.npf.ws/employers-guide"
+      ],
+      "rowCount": 25,
+      "underReviewRows": 3
+    },
+    {
+      "country": "tonga",
+      "name": "Tonga",
+      "currency": "TOP",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "tonga/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/tonga/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/tonga/2026-27",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://ago.gov.to/cms/images/LEGISLATION/SUBORDINATE/2005/2005-0380/ConsumptionTaxAct2003OrderinCouncil_1.pdf",
+        "https://www.revenue.gov.to/company-partnership-corporative-society-trust",
+        "https://www.revenue.gov.to/consumption-tax-overview",
+        "https://www.revenue.gov.to/consumption-tax-registration",
+        "https://www.revenue.gov.to/individual-employee",
+        "https://www.revenue.gov.to/non-residents-and-visitors"
+      ],
+      "rowCount": 20,
+      "underReviewRows": 0
+    },
+    {
+      "country": "vanuatu",
+      "name": "Vanuatu",
+      "currency": "VUV",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "vanuatu/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/vanuatu/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/vanuatu/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://vanuatucustoms.gov.vu/home/section/customs/travellers/personal-concession.html",
+        "https://vanuatucustoms.gov.vu/taxes-and-licensing/taxes/rent-tax.html",
+        "https://vanuatucustoms.gov.vu/taxes-and-licensing/taxes/turnover-tax.html",
+        "https://vanuatucustoms.gov.vu/taxes-and-licensing/taxes/value-added-tax-vat/introduction.html",
+        "https://www.investvanuatu.org/untapped-potential/low-tax-jurisdiction/",
+        "https://www.investvanuatu.org/wp-content/uploads/2019/07/VAT-FS.pdf",
+        "https://www.vnpf.com.vu/employers.html"
+      ],
+      "rowCount": 19,
+      "underReviewRows": 0
+    },
+    {
+      "country": "solomon-islands",
+      "name": "Solomon Islands",
+      "currency": "SBD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "solomon-islands/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/solomon-islands/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/solomon-islands/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://www.ird.gov.sb/goods-tax/",
+        "https://www.ird.gov.sb/tax-information/",
+        "https://www.ird.gov.sb/withholding-tax/",
+        "https://www.ird.gov.sb/wp-content/uploads/2025/10/taxes-summaryV3.pdf",
+        "https://www.sinpf.org.sb/employers/contribution-rates/"
+      ],
+      "rowCount": 33,
+      "underReviewRows": 0
+    },
+    {
+      "country": "eswatini",
+      "name": "Eswatini",
+      "currency": "SZL",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "eswatini/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/eswatini/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/eswatini/2026-27",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://www.enpf.co.sz/",
+        "https://www.ers.org.sz/CustomExcise/Excisepage",
+        "https://www.ers.org.sz/CustomExcise/GeneralRules",
+        "https://www.ers.org.sz/ExemptSupplies",
+        "https://www.ers.org.sz/IncomeTax/EstwaniIncomeTax",
+        "https://www.ers.org.sz/IncomeTax/PartTime",
+        "https://www.ers.org.sz/IncomeTax/Paye",
+        "https://www.ers.org.sz/IncomeTax/PresumptiveTax",
+        "https://www.ers.org.sz/IncomeTax/RatesandThres",
+        "https://www.ers.org.sz/IncomeTax/Retirement",
+        "https://www.ers.org.sz/IncomeTax/Withholding",
+        "https://www.ers.org.sz/Registration",
+        "https://www.ers.org.sz/VAT/Eswatini",
+        "https://www.ers.org.sz/VAT/ZeroRated"
+      ],
+      "rowCount": 47,
+      "underReviewRows": 5
+    },
+    {
+      "country": "lesotho",
+      "name": "Lesotho",
+      "currency": "LSL",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "lesotho/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/lesotho/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/lesotho/2026-27",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://www.rsl.org.ls/income-tax",
+        "https://www.rsl.org.ls/pay-you-earn",
+        "https://www.rsl.org.ls/sites/default/files/2024-05/Guide%20on%20Tobacco%20%26%20Alcoholic%20Products%20Levy-.pdf",
+        "https://www.rsl.org.ls/sites/default/files/2024-07/Corporate%20Income%20Tax%20Guide.pdf",
+        "https://www.rsl.org.ls/sites/default/files/2024-07/Tax%20Treatment%20of%20Terminal%20Benefits.pdf",
+        "https://www.rsl.org.ls/sites/default/files/2024-07/Withholding%20Tax%20Guide.pdf",
+        "https://www.rsl.org.ls/sites/default/files/2026-09/Advanced%20Corporation%20Tax%20Guide.pdf",
+        "https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Payment%20of%20Import%20VAT%20at%20MIA%20%281%29.pdf",
+        "https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Registration%20For%20Value%20Added%20Tax%20Purposes%20%20-%20VAT%20101%20%281%29.pdf",
+        "https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Taxation%20of%20Employment%20Income%2026-27.pdf",
+        "https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Value%20Added%20Tax%20Invoice%2C%20Credit%20Note%20and%20Debit%20Note%20-%20VAT%20105%20%281%29.pdf",
+        "https://www.rsl.org.ls/sites/default/files/2026-09/VAT%20ACT%20-%202001.pdf",
+        "https://www.rsl.org.ls/sites/default/files/2026-11/VAT%20Refund%20Declaration%20Requirements%20%28Travellers-private%20shoppers%29%20%281%29.pdf",
+        "https://www.rsl.org.ls/withholding-tax-0"
+      ],
+      "rowCount": 28,
+      "underReviewRows": 8
+    },
+    {
+      "country": "seychelles",
+      "name": "Seychelles",
+      "currency": "SCR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "seychelles/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/seychelles/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/seychelles/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://pensionfund.sc/changes-to-the-rates-of-contribution-towards-spf/",
+        "https://pensionfund.sc/contributions-schemes/mandatory-contribution/",
+        "https://src.gov.sc/customs-and-excises/",
+        "https://src.gov.sc/income-and-non-monetary-benefits-tax/",
+        "https://src.gov.sc/seychelles-tax-system/"
+      ],
+      "rowCount": 49,
+      "underReviewRows": 0
+    },
+    {
+      "country": "cabo-verde",
+      "name": "Cabo Verde",
+      "currency": "CVE",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "cabo-verde/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/cabo-verde/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/cabo-verde/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://boe.incv.cv/Bulletins/DownloadAct?id=5695",
+        "https://www.governo.cv/wp-content/uploads/2026/04/politica-fiscal.pdf",
+        "https://www.mf.gov.cv/documents/54571/64342/Altera%C3%A7%C3%B5es+C%C3%B3digos+Tribut%C3%A1rios_Lei116-IX-2021%2C+de+2+fevereiro.pdf/26a33c81-cb9a-a813-a842-f4152024574c"
+      ],
+      "rowCount": 22,
+      "underReviewRows": 15
+    },
+    {
+      "country": "gabon",
+      "name": "Gabon",
+      "currency": "XAF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "gabon/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/gabon/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/gabon/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://dgi.ga/cfu/",
+        "https://dgi.ga/entreprises/imposition-des-entreprises-individuelles/benefices-professionnels-regimes-bic-bnc-ba/",
+        "https://dgi.ga/imposition-des-personnes-morales/droits-denregistrement-et-timbre/",
+        "https://dgi.ga/imposition-des-personnes-morales/impot-sur-les-societes/",
+        "https://dgi.ga/imposition-des-personnes-morales/ircm/",
+        "https://dgi.ga/imposition-des-personnes-morales/taxes-sur-le-chiffre-daffaires/droits-daccises/",
+        "https://dgi.ga/imposition-des-personnes-morales/taxes-sur-le-chiffre-daffaires/la-contribution-speciale-de-solidarite-css/",
+        "https://dgi.ga/imposition-des-personnes-morales/taxes-sur-le-chiffre-daffaires/tva/",
+        "https://dgi.ga/particuliers/assiette-et-liquidation-de-lirpp/",
+        "https://dgi.ga/particuliers/regles-de-determination-de-la-tcs/"
+      ],
+      "rowCount": 41,
+      "underReviewRows": 0
+    },
+    {
+      "country": "burundi",
+      "name": "Burundi",
+      "currency": "BIF",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "burundi/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/burundi/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/burundi/2026-27",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+        "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf"
+      ],
+      "rowCount": 67,
+      "underReviewRows": 0
+    },
+    {
+      "country": "djibouti",
+      "name": "Djibouti",
+      "currency": "DJF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "djibouti/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/djibouti/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/djibouti/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n-64-an-23-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2024/",
+        "https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n142-an-21-8eme-l-portant-budget-initial-de-letat-pour-lexercice-2022/",
+        "https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n181-an-22-8eme-l-portant-budget-initial-de-letat-de-lexercice-2023/",
+        "https://www.journalofficiel.dj/texte-juridique/loi-n-189-an-25-9eme-l-portant-budget-rectificatif-de-letat-pour-lexercice-2025/",
+        "https://www.journalofficiel.dj/texte-juridique/loi-n150-an-24-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2025/",
+        "https://www.journalofficiel.dj/texte-juridique/loi-n179-an-25-9eme-l-portant-startup-act-djibouti/"
+      ],
+      "rowCount": 41,
+      "underReviewRows": 2
+    },
+    {
+      "country": "jersey",
+      "name": "Jersey",
+      "currency": "GBP",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "jersey/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/jersey/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/jersey/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://www.gov.je/Industry/BusinessAdviceHub/BusinessTaxesSocialSecurity/pages/companytax.aspx",
+        "https://www.gov.je/LifeEvents/MovingToJersey/LivingInJersey/Pages/MoneyTax.aspx",
+        "https://www.gov.je/SiteCollectionDocuments/Government%20and%20administration/Budget%202026%20to%202029.pdf",
+        "https://www.gov.je/TaxesMoney/GST/GSTCustomers/Pages/DeclaringPaying.aspx",
+        "https://www.gov.je/TaxesMoney/GST/GSTCustomers/pages/gstquickguide.aspx",
+        "https://www.gov.je/TaxesMoney/IncomeTax/Companies/Guidelines/pages/oecdpillars.aspx",
+        "https://www.gov.je/TaxesMoney/IncomeTax/Individuals/AllowancesReliefs/pages/2026taxallowances.aspx",
+        "https://www.gov.je/TaxesMoney/PropertyTransactionTaxes/LandTransaction/pages/landtransactiontaxrates.aspx",
+        "https://www.gov.je/Travel/InformationAdvice/DutyFree/Pages/Allowances.aspx",
+        "https://www.gov.je/Working/Contributions/Employers/Pages/HistoricContributionRates.aspx",
+        "https://www.gov.je/Working/Contributions/Employers/Pages/Tables.aspx",
+        "https://www.gov.je/Working/Contributions/Payments/Pages/Class2ContributionsStatement.aspx",
+        "https://www.gov.je/Working/EmploymentRelations/Pages/MinimumWage.aspx"
+      ],
+      "rowCount": 71,
+      "underReviewRows": 0
+    },
+    {
+      "country": "bermuda",
+      "name": "Bermuda",
+      "currency": "BMD",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "bermuda/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/bermuda/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/bermuda/2026-27",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://socialinsurance.gov.bm/Contributions/Contribution-Calendar",
+        "https://socialinsurance.gov.bm/Contributions/Employers",
+        "https://socialinsurance.gov.bm/Portals/0/calendars/Contribution-Calendar-2026.pdf",
+        "https://www.gov.bm/articles/calculating-payroll-tax-2026",
+        "https://www.gov.bm/articles/minimum-hourly-wage-rate-students",
+        "https://www.gov.bm/articles/tabling-corporate-income-tax-act-2023",
+        "https://www.gov.bm/duty-free-allowances",
+        "https://www.gov.bm/files/media-library/20260413/a5073889-customs-traveller-declaration_2.pdf",
+        "https://www.gov.bm/hotel-occupancy-tax",
+        "https://www.gov.bm/how-probate-estate-bermuda",
+        "https://www.gov.bm/land-tax",
+        "https://www.gov.bm/news/new-customs-traveller-declaration-now-in-effect",
+        "https://www.gov.bm/news/public-reminder-minimum-wage-increase-take-effect-september-1-2025",
+        "https://www.gov.bm/passenger-departure-tax",
+        "https://www.gov.bm/stamp-duty-relief",
+        "https://www.gov.bm/types-taxes-bermuda"
+      ],
+      "rowCount": 56,
+      "underReviewRows": 0
+    },
+    {
+      "country": "cayman-islands",
+      "name": "Cayman Islands",
+      "currency": "KYD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "cayman-islands/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/cayman-islands/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/cayman-islands/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://gov.ky/documents/35692/0/Travel+(Departure+Tax+and+Environmental+Protection+Fee)+Act+(2026+Revision),.pdf/8ce52143-7c33-aeb3-eb13-4b2e8d46aee0?t=1770926366494",
+        "https://gov.ky/finance-economy",
+        "https://gov.ky/web/cbc/trade/imports/allowances",
+        "https://gov.ky/web/dlp/frequently-asked-questions",
+        "https://gov.ky/web/dlp/minimum-wage",
+        "https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0168/1964-0168_2013%20Revision.pdf",
+        "https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2012/2012-0001/2012-0001.pdf",
+        "https://legislation.gov.ky/cms/images/LEGISLATION/SUBORDINATE/2025/2025-0063/2025-0063_SL%2063%20of%202025.pdf",
+        "https://www.radiocayman.gov.ky/news/cabinet-approves-increased-duty-allowances-for-returning-residents"
+      ],
+      "rowCount": 30,
+      "underReviewRows": 0
+    },
+    {
+      "country": "faroe-islands",
+      "name": "Faroe Islands",
+      "currency": "DKK",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "faroe-islands/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/faroe-islands/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/faroe-islands/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.taks.fo/en/business/tax/dividend-tax-refunds",
+        "https://www.taks.fo/en/business/tax/tax-and-royalties",
+        "https://www.taks.fo/en/business/vat/general-about-vat",
+        "https://www.taks.fo/en/individuals/tax/taxation-in-the-faroe-islands",
+        "https://www.taks.fo/fo/borgari/bolkar/at-stovna-virki",
+        "https://www.taks.fo/fo/borgari/eftirloen/skatting-av-eftirloen",
+        "https://www.taks.fo/fo/borgari/fradrattur/barnafradrattur",
+        "https://www.taks.fo/fo/borgari/gjoeld-og-agodar/almenn-gjoeld",
+        "https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt",
+        "https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-landsskatt",
+        "https://www.taks.fo/fo/borgari/skattur/hvussu-roknar-man-skatt/",
+        "https://www.taks.fo/fo/borgari/tollur/tollfritt-fyri-ferdandi-til-foeroya",
+        "https://www.taks.fo/fo/vinna/skattur/partafelagsskattur",
+        "https://www.taks.fo/fo/vinna/studul/almenn-gjoeld-hja-arbeidsgevarum"
+      ],
+      "rowCount": 133,
+      "underReviewRows": 0
+    },
+    {
+      "country": "greenland",
+      "name": "Greenland",
+      "currency": "DKK",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "greenland/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/greenland/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/greenland/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://aka.gl/da/borger/skat/forskudsregistrering",
+        "https://aka.gl/da/borger/skat/skat-udskrivningsprocenter",
+        "https://aka.gl/da/borger/skat/skattekort",
+        "https://aka.gl/da/borger/skat/suila-tapit-beskaeftigelsesfradrag",
+        "https://aka.gl/da/borger/skat/vejledninger-skat",
+        "https://aka.gl/da/borger/studerende/studerende-i-danmark",
+        "https://aka.gl/da/erhverv/introduktion-til-skat/skattesatser",
+        "https://aka.gl/da/nyheder/skattekort-og-obligatorisk-pensionsordning",
+        "https://aka.gl/en/individuals/pension/obligatorisk-pension"
+      ],
+      "rowCount": 31,
+      "underReviewRows": 2
+    },
+    {
+      "country": "gibraltar",
+      "name": "Gibraltar",
+      "currency": "GIP",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "gibraltar/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/gibraltar/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/gibraltar/2026-27",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.gibraltar.gov.gi/income-tax-office",
+        "https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/sub-contractor",
+        "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/paye",
+        "https://www.gibraltar.gov.gi/press-releases/the-chief-ministers-budget-address-2026-5362026-12180",
+        "https://www.gibraltar.gov.gi/uploads/Brexit%20Page/72-2026%20-%20Technical%20Notice%20%E2%80%93%20Basic%20Features%20of%20the%20Customs%20Union%20Between%20Gibraltar%20and%20the%20EU.pdf",
+        "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf"
+      ],
+      "rowCount": 63,
+      "underReviewRows": 31
+    },
+    {
+      "country": "isle-of-man",
+      "name": "Isle of Man",
+      "currency": "GBP",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "isle-of-man/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/isle-of-man/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/isle-of-man/2026-27",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/indirect-taxes/air-passenger-duty/",
+        "https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/",
+        "https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/budget/",
+        "https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/",
+        "https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/rates-and-thresholds/",
+        "https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/tax-practitioners-and-technical-information/rates-and-allowances/",
+        "https://www.gov.im/media/1360841/the-islands-natural-advantages.pdf",
+        "https://www.gov.im/media/1391759/pn-227-26-budget.pdf",
+        "https://www.gov.im/media/1393959/income-tax-division-information-pack-august-2026_compressed.pdf",
+        "https://www.gov.im/news/2024/mar/28/vat-registration-and-deregistration-thresholds-to-increase-from-1-april-2024/",
+        "https://www.gov.im/news/2026/feb/18/tynwald-approve-new-minimum-wage-rate-in-the-isle-of-man",
+        "https://www.gov.im/news/2026/jul/22/vat-to-be-removed-from-domestic-electricity-supplies-from-1-october-2026"
+      ],
+      "rowCount": 39,
+      "underReviewRows": 39
+    },
+    {
+      "country": "guernsey",
+      "name": "Guernsey",
+      "currency": "GBP",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "guernsey/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/guernsey/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/guernsey/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://gov.gg/RevenueService/Companies",
+        "https://www.gov.gg/182077",
+        "https://www.gov.gg/CHttpHandler.ashx?id=102818&p=0",
+        "https://www.gov.gg/CHttpHandler.ashx?id=185595&p=0",
+        "https://www.gov.gg/CHttpHandler.ashx?id=194596&p=0",
+        "https://www.gov.gg/CHttpHandler.ashx?id=195732&p=0",
+        "https://www.gov.gg/minimumwage",
+        "https://www.gov.gg/wopa"
+      ],
+      "rowCount": 21,
+      "underReviewRows": 21
+    },
+    {
+      "country": "antigua-and-barbuda",
+      "name": "Antigua and Barbuda",
+      "currency": "XCD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "antigua-and-barbuda/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/antigua-and-barbuda/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/antigua-and-barbuda/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "http://ird.gov.ag/wp-content/uploads/2020/06/Frequently_asked_questions_ABST.pdf",
+        "http://ird.gov.ag/wp-content/uploads/2021/07/Tip-Tuesday-Ver-1.pdf",
+        "http://www.mbs.gov.ag/v2/contribution-rates/",
+        "https://laws.gov.ag/wp-content/uploads/2019/02/a2016-7.pdf",
+        "https://laws.gov.ag/wp-content/uploads/2020/06/No.-35-of-2019-STAMP-AMENDMENT-ACT-2019.pdf",
+        "https://laws.gov.ag/wp-content/uploads/2024/02/No.-13-of-2023-Revenue-Miscellaneous-Provision-Act-2023.pdf",
+        "https://laws.gov.ag/wp-content/uploads/2025/01/No.-19-of-2024-The-Airport-Aministration-Charge-Amendment-Act-2024.pdf",
+        "https://laws.gov.ag/wp-content/uploads/2025/01/No.-2-of-2024-Money-Services-Business-Transfer-Levy-Act-2024.pdf",
+        "https://laws.gov.ag/wp-content/uploads/2026/10/No.-8-of-2026-The-Airport-Administration-Charge-Amendment-Act-2026.pdf",
+        "https://socialsecurity.gov.ag/media-release-pension-contribution-rate-adjustments/"
+      ],
+      "rowCount": 27,
+      "underReviewRows": 2
+    },
+    {
+      "country": "saint-kitts-and-nevis",
+      "name": "Saint Kitts and Nevis",
+      "currency": "XCD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "saint-kitts-and-nevis/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/saint-kitts-and-nevis/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/saint-kitts-and-nevis/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://socialsecurity.kn/contributions-2/",
+        "https://socialsecurity.kn/wp-content/uploads/2024/06/Things-You-Should-Know-12-06-24.pdf",
+        "https://socialsecurity.kn/wp-content/uploads/2025/09/Self-employed-Booklet-2018_updated.pdf",
+        "https://www.sknird.com/corporate-income-tax/",
+        "https://www.sknird.com/faqs/",
+        "https://www.sknird.com/government-of-saint-christopher-and-nevis-announces-temporary-waiver-of-social-services-levy-on-december-2025-bonuses/",
+        "https://www.sknird.com/inland-revenue-department-announces-discounts-vat-rate-days-in-august-2026-and-opens-applications-for-businesses/",
+        "https://www.sknird.com/property-tax/",
+        "https://www.sknird.com/the-inland-revenue-department-confirms-return-of-vat-rate-to-17-effective-july-01-2025/",
+        "https://www.sknird.com/vehicle-licence/",
+        "https://www.sknird.com/wp-content/uploads/2020/10/IRD-VAT-When-to-Register.pdf"
+      ],
+      "rowCount": 24,
+      "underReviewRows": 2
+    },
+    {
+      "country": "saint-lucia",
+      "name": "Saint Lucia",
+      "currency": "XCD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "saint-lucia/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/saint-lucia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/saint-lucia/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://irdstlucia.gov.lc/index.php/component/content/category/33-faqs-vat",
+        "https://irdstlucia.gov.lc/index.php/ird-library/a-z-of-taxes",
+        "https://www.govt.lc/media.govt.lc/www/pressroom/news/attachments/tax-facts---calculations-new-regime-version-2024-view-.pdf",
+        "https://www.stlucianic.org/employers",
+        "https://www.stlucianic.org/faq"
+      ],
+      "rowCount": 43,
+      "underReviewRows": 23
+    },
+    {
+      "country": "saint-vincent-and-the-grenadines",
+      "name": "Saint Vincent and the Grenadines",
+      "currency": "XCD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "saint-vincent-and-the-grenadines/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/saint-vincent-and-the-grenadines/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/saint-vincent-and-the-grenadines/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://ird.gov.vc/images/pdf/tax-tables-2024.pdf",
+        "https://ird.gov.vc/index.php/faqs",
+        "https://ird.gov.vc/index.php/rates/motor-vehicle-licence-rates",
+        "https://ird.gov.vc/index.php/rates/property-tax-rates",
+        "https://ird.gov.vc/index.php/rates/standard-deduction",
+        "https://ird.gov.vc/index.php/taxes"
+      ],
+      "rowCount": 24,
+      "underReviewRows": 1
+    },
+    {
+      "country": "dominica",
+      "name": "Dominica",
+      "currency": "XCD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "dominica/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/dominica/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/dominica/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://ird.gov.dm/customer-service/current-income-tax-rates",
+        "https://ird.gov.dm/customer-service/motor-vehicle-rates",
+        "https://ird.gov.dm/tax-laws/corporate-income-tax",
+        "https://ird.gov.dm/tax-laws/excise-tax",
+        "https://ird.gov.dm/tax-laws/pay-as-you-earn-p-a-y-e",
+        "https://ird.gov.dm/tax-laws/personal-income-tax",
+        "https://ird.gov.dm/tax-laws/travel-tax",
+        "https://ird.gov.dm/tax-laws/value-added-tax",
+        "https://ird.gov.dm/tax-laws/withholding-tax"
+      ],
+      "rowCount": 24,
+      "underReviewRows": 7
+    },
+    {
+      "country": "grenada",
+      "name": "Grenada",
+      "currency": "XCD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "grenada/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/grenada/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/grenada/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-23-of-2015-Property-Transfer-Tax-Amendment.pdf",
+        "https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap149-INCOME-TAX-ACT.pdf",
+        "https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap333A-VALUE-ADDED-TAX-ACT.pdf",
+        "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-2-of-2017-Income-Tax-Amendment-Order.pdf",
+        "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-25-of-2018-Income-Tax-Amendment-Order-1.pdf",
+        "https://nisgrenada.org/contributors/employer/",
+        "https://nisgrenada.org/contributors/self-employed/",
+        "https://www.finance.gd/docs/2025/Budget_Speech_2026.pdf"
+      ],
+      "rowCount": 23,
+      "underReviewRows": 1
+    },
+    {
+      "country": "aruba",
+      "name": "Aruba",
+      "currency": "AWG",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "aruba/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/aruba/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/aruba/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://gobierno.aw/en/the-income-tax-and-payroll-tax-rate-will-change-from-january-1-2025",
+        "https://www.gobierno.aw/en/introduction-of-a-minimum-hourly-wage-effective-january-1-2026",
+        "https://www.impuesto.aw/belastingplan_2023",
+        "https://www.impuesto.aw/bijzonder-belasting-verblijf",
+        "https://www.impuesto.aw/bijzondere-belasting-op-verhuurautos-en-verhuurmotorfietsen",
+        "https://www.impuesto.aw/hoeveel-bbo-en-bavp-moet-u-betalen",
+        "https://www.impuesto.aw/premiegrenzen-aovaww",
+        "https://www.impuesto.aw/premiegrenzen-azv",
+        "https://www.svbaruba.org/dono-di-trabao/resumen-di-tarifa/resumen-di-tarifa-2026/"
+      ],
+      "rowCount": 34,
+      "underReviewRows": 4
+    },
+    {
+      "country": "curacao",
+      "name": "Curaçao",
+      "currency": "XCG",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "curacao/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/curacao/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/curacao/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://belastingdienst.cw/ondernemer/themas/omzetbelasting/",
+        "https://belastingdienst.cw/ondernemer/themas/winstbelasting/",
+        "https://belastingdienst.cw/wp-content/uploads/2026/08/FIN_Succesvol_Ondernemen_versie2-1.pdf",
+        "https://gobiernu.cw/wp-content/uploads/2025/12/226.-Min-reg-vaststelling-bedragen-ib-2026.pdf",
+        "https://gobiernu.cw/wp-content/uploads/2025/12/236.-MR-indexering-minimumloon-2026.pdf",
+        "https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf"
+      ],
+      "rowCount": 44,
+      "underReviewRows": 0
+    },
+    {
+      "country": "belarus",
+      "name": "Belarus",
+      "currency": "BYN",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "belarus/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/belarus/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/belarus/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118",
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://pravo.by/novosti/obshchestvenno-politicheskie-i-v-oblasti-prava/2026/january/91745/"
+      ],
+      "rowCount": 57,
+      "underReviewRows": 0
+    },
+    {
+      "country": "cuba",
+      "name": "Cuba",
+      "currency": "CUP",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "cuba/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/cuba/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/cuba/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://www.gacetaoficial.gob.cu/sites/default/files/go_o_053_2012.pdf",
+        "https://www.gacetaoficial.gob.cu/sites/default/files/goc-2025-o99_1.pdf"
+      ],
+      "rowCount": 42,
+      "underReviewRows": 15
+    },
+    {
+      "country": "nicaragua",
+      "name": "Nicaragua",
+      "currency": "NIO",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "nicaragua/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/nicaragua/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/nicaragua/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.lagaceta.gob.ni/la-gaceta-n-21-viernes-01-febrero-de-2019/",
+        "https://www.lagaceta.gob.ni/la-gaceta-n-241-lunes-17-diciembre-de-2012/",
+        "https://www.lagaceta.gob.ni/la-gaceta-n-41-jueves-28-febrero-de-2019/"
+      ],
+      "rowCount": 46,
+      "underReviewRows": 21
+    },
+    {
+      "country": "turkmenistan",
+      "name": "Turkmenistan",
+      "currency": "TMT",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "turkmenistan/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/turkmenistan/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/turkmenistan/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf"
+      ],
+      "rowCount": 21,
+      "underReviewRows": 21
+    },
+    {
+      "country": "timor-leste",
+      "name": "Timor-Leste",
+      "currency": "USD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "timor-leste/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/timor-leste/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/timor-leste/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://attl.gov.tl/income-tax-instalment/",
+        "https://attl.gov.tl/services-tax/",
+        "https://attl.gov.tl/wage-income-tax/",
+        "https://attl.gov.tl/withholding-tax/",
+        "https://attl.gov.tl/wp-content/uploads/2020/01/Taxes_and_Duties_Act_2008_Eng.pdf",
+        "https://segurancasocial.gov.tl/empregadores"
+      ],
+      "rowCount": 26,
+      "underReviewRows": 10
+    },
+    {
+      "country": "benin",
+      "name": "Benin",
+      "currency": "XOF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "benin/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/benin/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/benin/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://api.impots.bj/media/6984ebbbb7bc0_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf"
+      ],
+      "rowCount": 46,
+      "underReviewRows": 7
+    },
+    {
+      "country": "togo",
+      "name": "Togo",
+      "currency": "XOF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "togo/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/togo/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/togo/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://cnss.tg/employeurs/cotisations-sociales/",
+        "https://www.otr.tg/index.php/en/impots/reglementations-fiscales/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+        "https://www.otr.tg/wp-content/uploads/2026/10/cahier-fiscal-2026.pdf"
+      ],
+      "rowCount": 51,
+      "underReviewRows": 43
+    },
+    {
+      "country": "burkina-faso",
+      "name": "Burkina Faso",
+      "currency": "XOF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "burkina-faso/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/burkina-faso/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/burkina-faso/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf"
+      ],
+      "rowCount": 50,
+      "underReviewRows": 0
+    },
+    {
+      "country": "mali",
+      "name": "Mali",
+      "currency": "XOF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "mali/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/mali/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/mali/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://www.dgi.gouv.ml/CGI/",
+        "https://www.dgi.gouv.ml/les-impots-a-payer/"
+      ],
+      "rowCount": 31,
+      "underReviewRows": 19
+    },
+    {
+      "country": "niger",
+      "name": "Niger",
+      "currency": "XOF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "niger/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/niger/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/niger/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://impots.gouv.ne/media/telech/LIVRE%201%20ET%202%20ENTIER%20CGI%202025.pdf"
+      ],
+      "rowCount": 32,
+      "underReviewRows": 32
+    },
+    {
+      "country": "sierra-leone",
+      "name": "Sierra Leone",
+      "currency": "SLE",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "sierra-leone/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/sierra-leone/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/sierra-leone/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "http://webtestcms.nra.gov.sl/uploads/2022_NRA_TAX_GUIDE_83dc12b316.pdf",
+        "http://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2023_8629ff7803.pdf",
+        "http://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2024_0d6d83e684.pdf",
+        "http://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2025_beb680faed.pdf",
+        "http://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2026_121df05d9b.pdf"
+      ],
+      "rowCount": 28,
+      "underReviewRows": 6
+    },
+    {
+      "country": "liberia",
+      "name": "Liberia",
+      "currency": "LRD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "liberia/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/liberia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/liberia/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.lra.gov.lr/domestic-tax-profile/businesstaxkinds/",
+        "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+        "https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-2024-AMENDING-CERTAIN-PORTIONS-OF-CHAPTERS-8-AND-10-OF-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf",
+        "https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-DECEMBER-2024-AMENDING-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf",
+        "https://www.lra.gov.lr/wp-content/uploads/2025/09/IMPORTANT-REVENUE-NOTICE-ON-PETROLEUM-TAXES-FEES.pdf",
+        "https://www.lra.gov.lr/wp-content/uploads/2026/04/GST-Revenue-Notice.pdf",
+        "https://www.lra.gov.lr/wp-content/uploads/2026/04/LRC-Amendment-December-2025.pdf"
+      ],
+      "rowCount": 32,
+      "underReviewRows": 14
+    },
+    {
+      "country": "guinea",
+      "name": "Guinea",
+      "currency": "GNF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "guinea/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/guinea/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/guinea/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://cnss.gov.gn/cotisations-sociales-employeurs/",
+        "https://dgi.gov.gn/wp-content/uploads/2025/01/LOI-DE-FINANCES-INITIALE-2025_compressed.pdf",
+        "https://mbudget.gov.gn/wp-content/uploads/2022/05/Code-General-des-Impots-2022-2.pdf"
+      ],
+      "rowCount": 46,
+      "underReviewRows": 37
+    },
+    {
+      "country": "gambia",
+      "name": "The Gambia",
+      "currency": "GMD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "gambia/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/gambia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/gambia/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.gra.gm/calculators/corporate-income-tax",
+        "https://www.gra.gm/download-file/221f7a81-6596-11f1-b086-029254d29bb1",
+        "https://www.gra.gm/download-file/8d0c6de0-d217-11ed-9b31-029254d29bb1",
+        "https://www.gra.gm/download-file/8d0c84c3-d217-11ed-9b31-029254d29bb1",
+        "https://www.gra.gm/download-file/8d0ca971-d217-11ed-9b31-029254d29bb1",
+        "https://www.gra.gm/download-file/8d0cb474-d217-11ed-9b31-029254d29bb1",
+        "https://www.gra.gm/download-file/8d0ccc58-d217-11ed-9b31-029254d29bb1",
+        "https://www.gra.gm/download-file/8d0cd78a-d217-11ed-9b31-029254d29bb1",
+        "https://www.gra.gm/download-file/8d0ce2c1-d217-11ed-9b31-029254d29bb1",
+        "https://www.gra.gm/download-file/8d0cfa28-d217-11ed-9b31-029254d29bb1",
+        "https://www.gra.gm/download-file/8d0d0925-d217-11ed-9b31-029254d29bb1"
+      ],
+      "rowCount": 29,
+      "underReviewRows": 19
+    },
+    {
+      "country": "somalia",
+      "name": "Somalia",
+      "currency": "SOS",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "somalia/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/somalia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/somalia/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://mof.gov.so/sites/default/files/Publications/Somalia%20Income%20Tax%20Manual_English%20Version.pdf",
+        "https://mof.gov.so/sites/default/files/Publications/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf"
+      ],
+      "rowCount": 34,
+      "underReviewRows": 0
+    },
+    {
+      "country": "palestine",
+      "name": "Palestine",
+      "currency": "ILS",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "palestine/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/palestine/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/palestine/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.pmof.ps/documents/eForms/incomeTaxForms/grp03/A1.xlsx",
+        "https://www.pmof.ps/documents/eForms/incomeTaxForms/grp03/A4.xlsx",
+        "https://www.pmof.ps/documents/procedural-manuals/incomeServiceGuide.pdf",
+        "https://www.pmof.ps/documents/vat/vat.law.2025.pdf"
+      ],
+      "rowCount": 21,
+      "underReviewRows": 0
+    },
+    {
+      "country": "laos",
+      "name": "Laos",
+      "currency": "LAK",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "laos/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/laos/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/laos/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://laoofficialgazette.gov.la/kcfinder/upload/files/%2060.28.6.2024.pdf",
+        "https://laoofficialgazette.gov.la/kcfinder/upload/files/003.pdf",
+        "https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf",
+        "https://laoofficialgazette.gov.la/kcfinder/upload/files/Law54%E0%BA%AA%E0%BA%9E%E0%BA%8A.pdf"
+      ],
+      "rowCount": 68,
+      "underReviewRows": 0
+    },
+    {
+      "country": "kiribati",
+      "name": "Kiribati",
+      "currency": "AUD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "kiribati/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/kiribati/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/kiribati/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://employment.gov.ki/labour-division/work-relations-wr-unit/employment-and-industrial-relation-code-2015-pg1/",
+        "https://kpf.com.ki/index.php/contact/definition-of-employer",
+        "https://kpf.com.ki/index.php/members/voluntary-scheme",
+        "https://mfed.gov.ki/sites/default/files/2025-06/International%20withholding%20tax%20on%2030_%20fact%20sheet.%20%281%29.pdf",
+        "https://mfed.gov.ki/sites/default/files/2026-01/HVP%20-%202026%20Budget%20Speech.pdf",
+        "https://tax.gov.ki/wp-content/uploads/2025/05/Company-Tax-Return-and-Instructions-2023.pdf",
+        "https://tax.gov.ki/wp-content/uploads/2025/05/Exempt-0-rated-supplies_AUG-2024-1.pdf",
+        "https://tax.gov.ki/wp-content/uploads/2025/05/Guidelines-Obligations-for-VAT-Registered-Businesses.pdf",
+        "https://tax.gov.ki/wp-content/uploads/2025/05/Individual-income-tax-return-and-instructions-2023.pdf",
+        "https://tax.gov.ki/wp-content/uploads/2025/05/Instructions-International-Transportation-Tax-Return.pdf",
+        "https://tax.gov.ki/wp-content/uploads/2025/05/Principals-Matrix-table-17-OCT.pdf",
+        "https://tax.gov.ki/wp-content/uploads/2026/01/JAN-2026-Tax-Obligation-pamphlet.pdf"
+      ],
+      "rowCount": 34,
+      "underReviewRows": 1
+    },
+    {
+      "country": "marshall-islands",
+      "name": "Marshall Islands",
+      "currency": "USD",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "marshall-islands/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/marshall-islands/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/marshall-islands/2026-27",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1986/1986-0015/1986-0015_4.pdf",
+        "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1989/1989-0049/1989-0049_10.pdf",
+        "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1989/1989-0050/1989-0050_5.pdf",
+        "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1990/1990-0075/1990-0075_6.pdf",
+        "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2002/2002-0057/2002-0057_3.pdf",
+        "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0038A/2025-0038A_1.pdf",
+        "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0046/2025-0046_1.pdf",
+        "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0047A/2025-0047A_1.pdf"
+      ],
+      "rowCount": 50,
+      "underReviewRows": 0
+    },
+    {
+      "country": "micronesia",
+      "name": "Micronesia",
+      "currency": "USD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "micronesia/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/micronesia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/micronesia/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "http://fsmssa.fm/files/laws/PublicLaw16-10.pdf",
+        "https://dofa.gov.fm/wp-content/uploads/2025/07/FSM-Code-DutiesCustoms.pdf",
+        "https://dofa.gov.fm/wp-content/uploads/2025/07/FSM-Code-Income-Tax-Regime-for-FSM-Corporations.pdf",
+        "https://dofa.gov.fm/wp-content/uploads/2025/07/FSMCode-Taxation-of-Wages-Salaries-Gross-Revenues.pdf",
+        "https://dofa.gov.fm/wp-content/uploads/2025/07/Guideline-on-Tax-Clause-for-Contractors-1.pdf",
+        "https://www.fsmssa.fm/employers/"
+      ],
+      "rowCount": 35,
+      "underReviewRows": 0
+    },
+    {
+      "country": "palau",
+      "name": "Palau",
+      "currency": "USD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "palau/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/palau/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/palau/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.palaugov.pw/executive-branch/ministries/finance/brt/",
+        "https://www.palaugov.pw/executive-branch/ministries/finance/brt/bpt/",
+        "https://www.palaugov.pw/executive-branch/ministries/finance/brt/pgst-calculating-your-supplies/",
+        "https://www.palaugov.pw/executive-branch/ministries/finance/brt/pgst-types-of-supplies/",
+        "https://www.palaugov.pw/executive-branch/ministries/finance/brt/pgst/",
+        "https://www.palaugov.pw/wp-content/uploads/Taxation-Guidelines-for-Contractors-on-Aid-Projects-Final.pdf"
+      ],
+      "rowCount": 34,
+      "underReviewRows": 0
+    },
+    {
+      "country": "nauru",
+      "name": "Nauru",
+      "currency": "AUD",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "nauru/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/nauru/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/nauru/2026-27",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://naurufinance.info/wp-content/uploads/2023/05/Business-Tax-Act-2016.pdf",
+        "https://naurufinance.info/wp-content/uploads/2024/04/2023-2024.pdf",
+        "https://naurufinance.info/wp-content/uploads/2024/06/QA-Employment-and-Services-Tax-2024-2025-1.pdf",
+        "https://naurufinance.info/wp-content/uploads/2026/03/Nauru-Government-Gazette-No.-304-28-June-2024.pdf",
+        "https://naurufinance.info/wp-content/uploads/2026/10/Business-Tax-Quarterly-Return-Forms-2026-2027-with-Chinese.pdf"
+      ],
+      "rowCount": 28,
+      "underReviewRows": 0
+    },
+    {
+      "country": "tuvalu",
+      "name": "Tuvalu",
+      "currency": "AUD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "tuvalu/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/tuvalu/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/tuvalu/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1992/1992-0005/1992-0005_2.pdf",
+        "https://tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1994/1994-0003/1994-0003_2.pdf",
+        "https://tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/2008/2008-0009/2008-0009_2.pdf",
+        "https://tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/2013/2013-0006/2013-0006_2.pdf",
+        "https://tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0016/1985-0016_2.pdf",
+        "https://tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/2009/2009-0007/2009-0007_2.pdf",
+        "https://tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/2021/2021-0125/2021-0125_1.pdf"
+      ],
+      "rowCount": 27,
+      "underReviewRows": 1
+    },
+    {
+      "country": "cook-islands",
+      "name": "Cook Islands",
+      "currency": "NZD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "cook-islands/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/cook-islands/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/cook-islands/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.mfem.gov.ck/_files/ugd/dbdf40_02d6ca6a6ae54d3fbd45b2d4cce2cf23.pdf",
+        "https://www.mfem.gov.ck/_files/ugd/dbdf40_215007e0b4d049c081d5b5ab95fea3fe.pdf",
+        "https://www.mfem.gov.ck/_files/ugd/dbdf40_6bbd0b3416034140bf4810fd31fea29a.pdf",
+        "https://www.mfem.gov.ck/_files/ugd/dbdf40_754de6a1d2fa41409ab33d556d6a31fc.pdf",
+        "https://www.mfem.gov.ck/_files/ugd/dbdf40_980f74bf1d4d4b77a9b43ab0913e5126.pdf",
+        "https://www.mfem.gov.ck/_files/ugd/dbdf40_bfced603eb0845e5b39e18b9a86aa207.pdf",
+        "https://www.mfem.gov.ck/_files/ugd/dbdf40_dc9bf18c498944e49114e389cc539f03.pdf",
+        "https://www.mfem.gov.ck/_files/ugd/de1ea2_e10b0bab691a4a7da9527c8ca3ccba7a.pdf"
+      ],
+      "rowCount": 25,
+      "underReviewRows": 1
+    },
+    {
+      "country": "niue",
+      "name": "Niue",
+      "currency": "NZD",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "niue/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/niue/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/niue/2026-27",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://mof.gov.nu/niuetax/",
+        "https://mof.gov.nu/wp-content/uploads/2024/04/IncomeTax_1961.pdf",
+        "https://mof.gov.nu/wp-content/uploads/2024/06/TF1-Inidividual-Income-Tax-Form.pdf",
+        "https://mof.gov.nu/wp-content/uploads/2025/09/Niue-NCT-Act-2009.pdf"
+      ],
+      "rowCount": 18,
+      "underReviewRows": 0
+    },
+    {
+      "country": "puerto-rico",
+      "name": "Puerto Rico",
+      "currency": "USD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "puerto-rico/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/puerto-rico/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/puerto-rico/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://hacienda.pr.gov/sites/default/files/1-2011.pdf",
+        "https://www.dol.gov/agencies/whd/minimum-wage/state",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes",
+        "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+        "https://www.irs.gov/pub/irs-pdf/p570.pdf",
+        "https://www.trabajo.pr.gov/seguro_choferil.asp",
+        "https://www.trabajo.pr.gov/servicio_contributivo.asp",
+        "https://www.trabajo.pr.gov/sinot.asp"
+      ],
+      "rowCount": 47,
+      "underReviewRows": 27
+    },
+    {
+      "country": "us-virgin-islands",
+      "name": "US Virgin Islands",
+      "currency": "USD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "us-virgin-islands/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/us-virgin-islands/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/us-virgin-islands/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://bir.vi.gov/content/form/202cacde-d788-4df8-a21a-d18d3a0a3063/index.pdf",
+        "https://bir.vi.gov/content/form/41f8adb5-aeb2-4413-aa17-f079d78c07a5/index.pdf",
+        "https://bir.vi.gov/content/form/54318eff-3ff8-4a04-ac40-9b51edc8bc18/index.pdf",
+        "https://www.dol.gov/agencies/whd/minimum-wage/state",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes",
+        "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+        "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+        "https://www.irs.gov/pub/irs-pdf/p570.pdf"
+      ],
+      "rowCount": 36,
+      "underReviewRows": 0
+    },
+    {
+      "country": "guam",
+      "name": "Guam",
+      "currency": "USD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "guam/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/guam/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/guam/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://col.guamcourts.gov/sites/default/files/11gc024_Q.pdf",
+        "https://col.guamcourts.gov/sites/default/files/11gc026_Q.pdf",
+        "https://www.dol.gov/agencies/whd/minimum-wage/state",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes",
+        "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+        "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+        "https://www.irs.gov/pub/irs-pdf/p570.pdf"
+      ],
+      "rowCount": 46,
+      "underReviewRows": 0
+    },
+    {
+      "country": "british-virgin-islands",
+      "name": "British Virgin Islands",
+      "currency": "USD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "british-virgin-islands/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/british-virgin-islands/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/british-virgin-islands/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://assets.publishing.service.gov.uk/media/5a7c6e67ed915d6969f44cf9/about_treasury_support_ukoverseas_territories_030412.pdf",
+        "https://bvi.gov.vg/content/hotel-accommodation-tax",
+        "https://bvi.gov.vg/content/payroll-tax",
+        "https://bvi.gov.vg/content/property-tax",
+        "https://www.gov.vg/news/new-minimum-wage-take-effect-july-1",
+        "https://www.vissb.vg/contributions/",
+        "https://www.vissb.vg/wp-content/uploads/2026/09/2026-SSB-Maximum-Earnings.pdf",
+        "https://www.vissb.vg/wp-content/uploads/2026/10/2027-SSB-Maximum-Earnings.pdf"
+      ],
+      "rowCount": 16,
+      "underReviewRows": 9
+    },
+    {
+      "country": "turks-and-caicos-islands",
+      "name": "Turks and Caicos Islands",
+      "currency": "USD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "turks-and-caicos-islands/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/turks-and-caicos-islands/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/turks-and-caicos-islands/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://assets.publishing.service.gov.uk/media/5a7c6e67ed915d6969f44cf9/about_treasury_support_ukoverseas_territories_030412.pdf",
+        "https://borderforce.gov.tc/cash-allowances",
+        "https://gov.tc/revenue/htt",
+        "https://gov.tc/revenue/ipst",
+        "https://gov.tc/revenue/streams",
+        "https://www.tcinib.tc/contribution-rates/"
+      ],
+      "rowCount": 16,
+      "underReviewRows": 0
+    },
+    {
+      "country": "anguilla",
+      "name": "Anguilla",
+      "currency": "XCD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "anguilla/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/anguilla/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/anguilla/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://assets.publishing.service.gov.uk/media/5a7c6e67ed915d6969f44cf9/about_treasury_support_ukoverseas_territories_030412.pdf",
+        "https://ird.gov.ai/Content/documents/GST%20GUIDE%20-COMPLETING%20THE%20GENERAL%20SERVICES%20TAX%20RETURN.pdf",
+        "https://ird.gov.ai/Services/Tax/money_transmission_levy",
+        "https://ird.gov.ai/Services/Tax/usl",
+        "https://ssbai.com/",
+        "https://ssbai.com/contributions.php?type=self",
+        "https://ssbai.com/post.php?post_id=107"
+      ],
+      "rowCount": 17,
+      "underReviewRows": 0
+    },
+    {
+      "country": "new-caledonia",
+      "name": "New Caledonia",
+      "currency": "XPF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "new-caledonia/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/new-caledonia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/new-caledonia/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://bofip.impots.gouv.fr/bofip/1771-PGP.html/identifiant%3DBOI-INT-CVB-NCL-20160728",
+        "https://dsf.gouv.nc/impots/contribution-sociale-additionnelle-limpot-sur-les-societes-csa",
+        "https://dsf.gouv.nc/impots/impot-sur-le-revenu-des-creances-depots-et-cautionnements-ircdc",
+        "https://dsf.gouv.nc/impots/impot-sur-les-societes",
+        "https://dsf.gouv.nc/impots/limpot-sur-le-revenu-des-valeurs-mobilieres-irvm",
+        "https://dsf.gouv.nc/professionnels-impots-et-taxes/la-taxe-generale-sur-la-consommation-tgc",
+        "https://dsf.gouv.nc/sites/default/files/documents/Notice%20d%C3%A9claration%20de%20revenus%20normale%202025.pdf",
+        "https://www.cafat.nc/wp-content/uploads/Charges-sociales-au-01-01-2026.pdf",
+        "https://www.cafat.nc/wp-content/uploads/Fiche-des-parametres-novembre-2026.pdf"
+      ],
+      "rowCount": 33,
+      "underReviewRows": 13
+    },
+    {
+      "country": "french-polynesia",
+      "name": "French Polynesia",
+      "currency": "XPF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "french-polynesia/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/french-polynesia/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/french-polynesia/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://bofip.impots.gouv.fr/bofip/2452-PGP.html/identifiant=BOI-INT-CVB-PYF-20120912",
+        "https://www.service-public.pf/dicp/particuliers/vos-impots/contribution-solidarite-territoriale-revenus-sources-multiples/",
+        "https://www.service-public.pf/dicp/particuliers/vos-impots/impot-foncier-proprietes-baties/",
+        "https://www.service-public.pf/dicp/particuliers/vos-impots/le-regime-des-revenus-locatifs-immobiliers/",
+        "https://www.service-public.pf/dicp/professionnels/vos-impots/contribution-suppleementaire-a-limpot-sur-les-benefices/",
+        "https://www.service-public.pf/dicp/professionnels/vos-impots/impot-sur-les-transactions/",
+        "https://www.service-public.pf/dicp/professionnels/vos-impots/regime-fiscal-simplifie-des-tres-petites-entreprises/",
+        "https://www.service-public.pf/dicp/professionnels/vos-impots/taxe-sur-la-valeur-ajoutee/",
+        "https://www.service-public.pf/dicp/wp-content/uploads/sites/59/2025/02/Note-dinformation-residence-fiscale-et-non-imposition-sur-le-revenu.pdf",
+        "https://www.service-public.pf/trav/wp-content/uploads/sites/23/2026/02/CPS_Taux-de-cotisations_2026.pdf"
+      ],
+      "rowCount": 26,
+      "underReviewRows": 0
+    },
+    {
+      "country": "mauritania",
+      "name": "Mauritania",
+      "currency": "MRU",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "mauritania/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/mauritania/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/mauritania/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://www.finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf",
+        "https://www.finances.gov.mr/sites/default/files/2023-08/LFR%202023-FR%20Final%201%20-%20Copie_0.pdf",
+        "https://www.finances.gov.mr/sites/default/files/2024-01/LFI%20%202024%20FR%20.pdf",
+        "https://www.finances.gov.mr/sites/default/files/2025-01/LOI%20DE%20FINANCES%20POUR%20L%27ANNEE%202025.pdf",
+        "https://www.finances.gov.mr/sites/default/files/2025-08/LOI%20DE%20FINANCES%20RECTIFICATIVE%20POUR%20L%E2%80%99ANN%C3%89E%202025.pdf",
+        "https://www.finances.gov.mr/sites/default/files/2026-01/Loi%20de%20Finances%20pour%20l%E2%80%99ann%C3%A9e%202026.pdf"
+      ],
+      "rowCount": 79,
+      "underReviewRows": 0
+    },
+    {
+      "country": "chad",
+      "name": "Chad",
+      "currency": "XAF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "chad/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/chad/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/chad/2026",
+      "lastVerified": "2026-11-26",
+      "sourceUrls": [
+        "https://douanes.td/wp-content/uploads/2026/04/Loi-de-Finances-2026-Tchad.pdf"
+      ],
+      "rowCount": 50,
+      "underReviewRows": 0
+    },
+    {
+      "country": "central-african-republic",
+      "name": "Central African Republic",
+      "currency": "XAF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "central-african-republic/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/central-african-republic/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/central-african-republic/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://finances.gouv.cf/sites/default/files/2023-01/LOI%20DE%20FINANCES%202023.pdf",
+        "https://finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+        "https://finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf"
+      ],
+      "rowCount": 24,
+      "underReviewRows": 0
+    },
+    {
+      "country": "south-sudan",
+      "name": "South Sudan",
+      "currency": "SSP",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "south-sudan/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/south-sudan/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/south-sudan/2026-27",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://mofp.gov.ss/publications/financial-act-fy-2024-2025/download"
+      ],
+      "rowCount": 47,
+      "underReviewRows": 3
+    },
+    {
+      "country": "comoros",
+      "name": "Comoros",
+      "currency": "KMF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "comoros/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/comoros/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/comoros/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://douane.gov.km/douane-comorienne/uploads/documents/9ad384a7cfc8052ec6cf83e026766746.pdf",
+        "https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf",
+        "https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf"
+      ],
+      "rowCount": 54,
+      "underReviewRows": 0
+    },
+    {
+      "country": "guinea-bissau",
+      "name": "Guinea-Bissau",
+      "currency": "XOF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "guinea-bissau/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/guinea-bissau/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/guinea-bissau/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://alfandegas.mef.gw/guia-do-viajante/guia-do-viajante-entrada/",
+        "https://alfandegas.mef.gw/tabela-resumida-tributos-no-comercio-exterior/",
+        "https://kontaktu.mef.gw/legislation"
+      ],
+      "rowCount": 40,
+      "underReviewRows": 0
+    },
+    {
+      "country": "sudan",
+      "name": "Sudan",
+      "currency": "SDG",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "sudan/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/sudan/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/sudan/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf",
+        "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+        "https://tax.gov.sd/wp-content/uploads/2025/05/%D8%AA%D8%B9%D8%AF%D9%8A%D9%84-%D8%A7%D9%84%D8%AF%D8%AE%D9%84-2022.pdf",
+        "https://tax.gov.sd/wp-content/uploads/2025/05/vat.pdf"
+      ],
+      "rowCount": 20,
+      "underReviewRows": 14
+    },
+    {
+      "country": "angola",
+      "name": "Angola",
+      "currency": "AOA",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "angola/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/angola/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/angola/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://governo.gov.ao/noticias/1671/economia/actualizacao-remuneratoria/conselho-de-ministros-aprova-salario-minimo-nacional-de-70-mil-kwanzas",
+        "https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-industrial",
+        "https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-predial-urbano",
+        "https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-aplicacao-de-capitais",
+        "https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-rendimentos-do-trabalho",
+        "https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-valor-acrescentado",
+        "https://portaldocontribuinte.minfin.gov.ao/legislacao"
+      ],
+      "rowCount": 58,
+      "underReviewRows": 4
+    },
+    {
+      "country": "mozambique",
+      "name": "Mozambique",
+      "currency": "MZN",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "mozambique/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/mozambique/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/mozambique/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20ADUANEIRA%2FLEI%2FBR_248_I_SERIE_2%C2%BA%20SUPLEMENTO_2025_260116_124640.pdf",
+        "https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20ADUANEIRA%2FLEI%2FLei%2019-2022%20%20prova%20o%20C%C3%B3digo%20do%20Imposto%20sobre%20Consumos%20Espec%C3%ADficos%20e%20revoga%20a%20Lei%20n.%C2%BA%2017_2017%2C%20de%2028%20de%20Dezembro..pdf",
+        "https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20ADUANEIRA%2FLEI%2FLei%2022%20IVA%202022.pdf",
+        "https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20ADUANEIRA%2FLEI%2FLei_17_2022_Aprova%20o%20texto%20da%20Pauta%20Aduaneira%20e%20as%20respectivas%20Instru%C3%A7%C3%B5es%20Preliminares%20e%20revoga%20a%20Lei%20n.%C2%BA%2011_2016%2C%20de%2030%20de%20Dezembro..pdf",
+        "https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FDECRETO%2FDecreto%20n.%C2%BA%2046-2004%20SISA%20(C%C3%B3digo%20da%20Sisa).pdf",
+        "https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FLEI%2FBR_248_I_SERIE_SUPLEMENTO_2025.pdf",
+        "https://www.at.gov.mz/perguntas-frequentes",
+        "https://www.inss.gov.mz/taxa-contributiva-contribuinte/",
+        "https://www.inss.gov.mz/taxa-contributiva-tco/",
+        "https://www.inss.gov.mz/taxa-contributiva-tcp/"
+      ],
+      "rowCount": 81,
+      "underReviewRows": 4
+    },
+    {
+      "country": "french-southern-territories",
+      "name": "French Southern Territories",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "french-southern-territories/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/french-southern-territories/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/french-southern-territories/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://bofip.impots.gouv.fr/doctrine/pgp/4941-PGP",
+        "https://questions.assemblee-nationale.fr/dyn/14/questions/QANR5L14QE96031.pdf"
+      ],
+      "rowCount": 4,
+      "underReviewRows": 2
+    },
+    {
+      "country": "pitcairn-islands",
+      "name": "Pitcairn Islands",
+      "currency": "NZD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "pitcairn-islands/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/pitcairn-islands/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/pitcairn-islands/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.government.pn/s/Cap-12-Immigration-Ordinance-2014-Rev-Ed.pdf",
+        "https://www.government.pn/s/Land-Tenure-Reform-Ordinance.pdf"
+      ],
+      "rowCount": 2,
+      "underReviewRows": 0
+    },
+    {
+      "country": "american-samoa",
+      "name": "American Samoa",
+      "currency": "USD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "american-samoa/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/american-samoa/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/american-samoa/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.americansamoa.gov/_files/ugd/4bfff9_1996ff9edcd146a3935f528e3a12435a.pdf",
+        "https://www.americansamoa.gov/_files/ugd/4bfff9_a3bcba04ed65461ba9c6e20f503a8725.xlsx?dn=2025%20Tax%20Forms%20Updated-V3-%204.11.2026.xlsx",
+        "https://www.dol.gov/agencies/whd/state/minimum-wage/american-samoa/fish-canning",
+        "https://www.dol.gov/agencies/whd/state/minimum-wage/american-samoa/government",
+        "https://www.dol.gov/agencies/whd/state/minimum-wage/american-samoa/miscellaneous",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes",
+        "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+        "https://www.irs.gov/pub/irs-pdf/p570.pdf"
+      ],
+      "rowCount": 43,
+      "underReviewRows": 2
+    },
+    {
+      "country": "northern-mariana-islands",
+      "name": "Northern Mariana Islands",
+      "currency": "USD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "northern-mariana-islands/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/northern-mariana-islands/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/northern-mariana-islands/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://cnmilaw.gov/legacy/pdf/cmc_section/T4/1202.pdf",
+        "https://cnmilaw.gov/legacy/pdf/cmc_section/T4/1204.pdf",
+        "https://cnmilaw.gov/legacy/pdf/cmc_section/T4/1301.pdf",
+        "https://cnmilaw.gov/legacy/pdf/cmc_section/T4/1302.pdf",
+        "https://cnmilaw.gov/legacy/pdf/cmc_section/T4/1303.pdf",
+        "https://cnmilaw.gov/legacy/pdf/cmc_section/T4/1402.pdf",
+        "https://cnmilaw.gov/legacy/pdf/cmc_section/T4/1403.pdf",
+        "https://cnmilaw.gov/legacy/pdf/cmc_section/T4/1405.pdf",
+        "https://cnmilaw.gov/legacy/pdf/cmc_section/T4/1501.pdf",
+        "https://cnmilaw.gov/legacy/pdf/cmc_section/T4/1502.pdf",
+        "https://cnmilaw.gov/legacy/pdf/cmc_section/T4/1702.pdf",
+        "https://cnmilaw.gov/legacy/pdf/cmc_section/T4/1708.pdf",
+        "https://www.dol.gov/agencies/whd/minimum-wage/state",
+        "https://www.finance.gov.mp/division-forms/revenue-taxation/2025/f1040nmi--2025.pdf",
+        "https://www.finance.gov.mp/division-forms/revenue-taxation/instructions/withholding_guidelines.pdf",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes",
+        "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+        "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+        "https://www.irs.gov/pub/irs-pdf/p570.pdf"
+      ],
+      "rowCount": 85,
+      "underReviewRows": 0
+    },
+    {
+      "country": "montserrat",
+      "name": "Montserrat",
+      "currency": "XCD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "montserrat/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/montserrat/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/montserrat/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://parliament.ms/wp-content/uploads/2026/05/17.01-Income-and-Incorporation-Tax-Act.pdf",
+        "https://parliament.ms/wp-content/uploads/2026/05/17.02-Stamp-Act.pdf",
+        "https://parliament.ms/wp-content/uploads/2026/05/17.09-Embarkation-Tax-Act.pdf",
+        "https://parliament.ms/wp-content/uploads/2026/05/17.13-Hotels-Tax-Act.pdf",
+        "https://parliament.ms/wp-content/uploads/2026/05/17.14-Insurance-Levy-Act.pdf",
+        "https://parliament.ms/wp-content/uploads/2026/05/17.16-Property-Tax-Act.pdf",
+        "https://parliament.ms/wp-content/uploads/2026/05/17.17-Telecommunications-Service-Tax-Act.pdf",
+        "https://parliament.ms/wp-content/uploads/2026/05/18.09-Social-Security-Act.pdf",
+        "https://www.gov.ms/wp-content/uploads/2022/02/SRO-No-8-of-2022-Contributions-Amendment-Regulations.pdf",
+        "https://www.gov.ms/wp-content/uploads/2022/02/SRO-No.-6-of-2022-Self-Employed-Persons-Amendment-Regulations-.pdf"
+      ],
+      "rowCount": 34,
+      "underReviewRows": 0
+    },
+    {
+      "country": "falkland-islands",
+      "name": "Falkland Islands",
+      "currency": "FKP",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "falkland-islands/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/falkland-islands/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/falkland-islands/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.gov.fk/customs/wp-content/uploads/sites/8/2026/06/CI-Duty-and-Charges-FY-2026-27-5.pdf",
+        "https://www.gov.fk/pensions/falkland-islands-pension-scheme/",
+        "https://www.gov.fk/pensions/retirement-pension-scheme/",
+        "https://www.gov.fk/press/reminder-of-the-increase-in-the-rate-of-embarkation-tax/",
+        "https://www.gov.fk/taxation/companies/",
+        "https://www.gov.fk/taxation/employers/minimum-wage/",
+        "https://www.gov.fk/taxation/employers/poat/",
+        "https://www.gov.fk/taxation/individuals-employees/",
+        "https://www.gov.fk/taxation/individuals-employees/self-employment-partnerships/",
+        "https://www.gov.fk/taxation/wp-content/uploads/sites/25/2026/02/2026-Employers-Guide.pdf",
+        "https://www.gov.fk/taxation/wp-content/uploads/sites/25/2026/02/CT-guide0.pdf"
+      ],
+      "rowCount": 27,
+      "underReviewRows": 0
+    },
+    {
+      "country": "saint-helena",
+      "name": "Saint Helena",
+      "currency": "SHP",
+      "current_year": "2026-27",
+      "years": [
+        "2026-27"
+      ],
+      "regions": [],
+      "files": [
+        "saint-helena/2026-27.json"
+      ],
+      "pageUrl": "https://calcbloc.com/saint-helena/tax-tables/2026-27",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/saint-helena/2026-27",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://www.sainthelena.gov.sh/app/uploads/gazette/85652/LN-1-Income-Tax-Rates-Ascension.pdf",
+        "https://www.sainthelena.gov.sh/documents/St-Helena-Tariff-July-2025.pdf",
+        "https://www.sainthelena.gov.sh/documents/Tax-Guide-No.-12-Questions-on-Taxes-Allowances-on-St-Helena",
+        "https://www.sainthelena.gov.sh/public-services/income-tax/"
+      ],
+      "rowCount": 21,
+      "underReviewRows": 0
+    },
+    {
+      "country": "sint-maarten",
+      "name": "Sint Maarten",
+      "currency": "XCG",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "sint-maarten/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/sint-maarten/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/sint-maarten/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://lokaleregelgeving.overheid.nl/CVDR141922",
+        "https://lokaleregelgeving.overheid.nl/CVDR142521",
+        "https://lokaleregelgeving.overheid.nl/CVDR142645",
+        "https://lokaleregelgeving.overheid.nl/CVDR207008",
+        "https://lokaleregelgeving.overheid.nl/CVDR207083",
+        "https://lokaleregelgeving.overheid.nl/CVDR448776",
+        "https://lokaleregelgeving.overheid.nl/CVDR448833",
+        "https://lokaleregelgeving.overheid.nl/CVDR448872",
+        "https://lokaleregelgeving.overheid.nl/CVDR448974",
+        "https://lokaleregelgeving.overheid.nl/CVDR697488",
+        "https://lokaleregelgeving.overheid.nl/CVDR697494",
+        "https://lokaleregelgeving.overheid.nl/CVDR697495",
+        "https://lokaleregelgeving.overheid.nl/CVDR697496",
+        "https://lokaleregelgeving.overheid.nl/CVDR697499",
+        "https://lokaleregelgeving.overheid.nl/CVDR697503",
+        "https://lokaleregelgeving.overheid.nl/CVDR697506",
+        "https://lokaleregelgeving.overheid.nl/CVDR704125",
+        "https://www.sintmaartengov.org/Documents/Official%20Publications/AB%202026,%20no.%2011%20Bijlage%20I%20TABEL%20INKOMSTENBELASTING%202026.pdf",
+        "https://www.sintmaartengov.org/Documents/Official%20Publications/AB%202026,%20no.%2011%20Bijlage%20II%20TABEL%20LOONBELASTING%202026.pdf",
+        "https://www.sintmaartengov.org/news/Pages/Minister-Brug-Announces-Updated-Minimum-Hourly-Wage-Effective-January-1-2026.aspx",
+        "https://www.szv.sx/publicfiles/868/documents/2026%20SZV%20AOV%20AWW%20Amounts.pdf",
+        "https://www.szv.sx/publicfiles/868/documents/Check-Lists/SZV%20-%20Wage%20Limits%20&%20Premium_2024_April.pdf"
+      ],
+      "rowCount": 118,
+      "underReviewRows": 1
+    },
+    {
+      "country": "caribbean-netherlands",
+      "name": "Caribbean Netherlands",
+      "currency": "USD",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "caribbean-netherlands/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/caribbean-netherlands/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/caribbean-netherlands/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://english.rijksdienstcn.com/latest/news/2025/december/04/new-minimum-wage-child-benefit-and-social-security-benefit-amounts-in-the-caribbean-netherlands-as-of-1-january-2026",
+        "https://lokaleregelgeving.overheid.nl/CVDR30561",
+        "https://lokaleregelgeving.overheid.nl/CVDR685386",
+        "https://lokaleregelgeving.overheid.nl/CVDR743002",
+        "https://lokaleregelgeving.overheid.nl/CVDR743003",
+        "https://lokaleregelgeving.overheid.nl/CVDR743004",
+        "https://wetten.overheid.nl/BWBR0029244/2026-04-11",
+        "https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/algemene-bestedingsbelasting-bedrijven/tarieven-abb",
+        "https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/kansspelbelasting-bedrijven/wanneer-kansspelbelasting",
+        "https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/opbrengstbelasting/tarief-opbrengstbelasting",
+        "https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/overdrachtsbelasting/tarief-overdrachtsbelasting",
+        "https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/inkomstenbelasting/binnenlands-belastingplichtigen",
+        "https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/inkomstenbelasting/buitenlands-belastingplichtigen",
+        "https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/inkomstenbelasting/inkomen-van-buiten-caribisch-nederland",
+        "https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/inkomstenbelasting/tarieven-en-belastingvrije-bedragen-inkomstenbelasting",
+        "https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/vastgoedbelasting/tarief-vastgoedbelasting",
+        "https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-particulieren/internetaankopen",
+        "https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-particulieren/invoerbelastingen-particulieren",
+        "https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-particulieren/reizigersbagage/accijnstarieven",
+        "https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-particulieren/reizigersbagage/geld-en-waardepapieren",
+        "https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-particulieren/reizigersbagage/reizigersvrijstelling",
+        "https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/2026/handboek-loonheffingen-2026/bes-handboek-loonheffingen-2026.pdf"
+      ],
+      "rowCount": 84,
+      "underReviewRows": 0
+    },
+    {
+      "country": "saint-barthelemy",
+      "name": "Saint-Barthélemy",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "saint-barthelemy/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/saint-barthelemy/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/saint-barthelemy/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://actes.eservices-comstbarth.fr/PJ/Deliberation%20CT/Deliberation%20CT_2024/2024_038ct_annexe.pdf",
+        "https://bofip.impots.gouv.fr/bofip/1340-PGP.html/identifiant=BOI-TVA-CHAMP-20-10-20230118",
+        "https://bofip.impots.gouv.fr/bofip/1911-PGP.html/identifiant=BOI-IR-CHAMP-10-20160728",
+        "https://www.comstbarth.fr/in/rest/public/Attachment/attach_cmsUpload_a687c0be-3095-4dfc-8921-f4a19be57d68"
+      ],
+      "rowCount": 35,
+      "underReviewRows": 0
+    },
+    {
+      "country": "saint-martin",
+      "name": "Saint-Martin",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "saint-martin/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/saint-martin/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/saint-martin/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://bofip.impots.gouv.fr/bofip/1911-PGP.html/identifiant=BOI-IR-CHAMP-10-20160728",
+        "https://www.impots-saint-martin.fr/files/file/News/CGI_SM_au_05_06_2026.pdf"
+      ],
+      "rowCount": 49,
+      "underReviewRows": 0
+    },
+    {
+      "country": "saint-pierre-and-miquelon",
+      "name": "Saint Pierre and Miquelon",
+      "currency": "EUR",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "saint-pierre-and-miquelon/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/saint-pierre-and-miquelon/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/saint-pierre-and-miquelon/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://bofip.impots.gouv.fr/bofip/1340-PGP.html/identifiant=BOI-TVA-CHAMP-20-10-20230118",
+        "https://bofip.impots.gouv.fr/bofip/1911-PGP.html/identifiant=BOI-IR-CHAMP-10-20160728",
+        "https://www.services-fiscaux975.fr/files/file/Calculette/Calculette%202026%20revenus%202025/donnees.js?v=20260205",
+        "https://www.services-fiscaux975.fr/files/file/Documentation/Generique/Retenue_a_la_source_et_salari%C3%A9s_non-r%C3%A9sidents.pdf",
+        "https://www.services-fiscaux975.fr/fr/38.html",
+        "https://www.services-fiscaux975.fr/fr/6-faq.html"
+      ],
+      "rowCount": 31,
+      "underReviewRows": 17
+    },
+    {
+      "country": "wallis-and-futuna",
+      "name": "Wallis and Futuna",
+      "currency": "XPF",
+      "current_year": "2026",
+      "years": [
+        "2026"
+      ],
+      "regions": [],
+      "files": [
+        "wallis-and-futuna/2026.json"
+      ],
+      "pageUrl": "https://calcbloc.com/wallis-and-futuna/tax-tables/2026",
+      "apiUrl": "https://calcbloc.com/api/v1/tax-tables/wallis-and-futuna/2026",
+      "lastVerified": "2026-11-27",
+      "sourceUrls": [
+        "https://bofip.impots.gouv.fr/bofip/1340-PGP.html/identifiant=BOI-TVA-CHAMP-20-10-20230118",
+        "https://www.ieom.fr/IMG/pdf/rapport-annuel-wf-2024-2.pdf",
+        "https://www.wallis-et-futuna.gouv.fr/Services-de-l-Etat-et-du-Territoire/Les-autres-services-de-l-Etat-et-du-Territoire/Service-des-Douanes-et-Contributions-diverses"
+      ],
+      "rowCount": 20,
+      "underReviewRows": 15
     }
   ],
   "pending": [
